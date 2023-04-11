@@ -1,0 +1,22 @@
+@font-family: {
+	inter: 'Inter';
+	inconsolata: 'Inconsolata';
+}
+
+
+#text-styles(@weight, @size, @height) {
+	font-weight: @weight;
+	font-size: @size;
+	line-height: @height;
+}
+
+#text-styles(@weight, @size, @align, @height) {
+	font-weight: @weight;
+	font-size: @size;
+	text-align: @align;
+	line-height: @height;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+}

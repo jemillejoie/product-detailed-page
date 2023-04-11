@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Product Details Page Design</title>
+
+	<link rel="stylesheet" href="less/style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<div class="mask" style="display: none"></div>
+	<div class="navbar">
+		<div class="navbar-top">
+			<div class="navbar-top-content">
+				<p>
+					Welcome to Needus & Get the best product
+				</p>
+				<div class="lang-currency">
+					<div class="lang-currency-content">
+						ENG &nbsp
+						<img src="img/caret-down-icon.png">
+					</div>
+					<div>
+						|
+					</div>
+					<div class="lang-currency-content">
+						USD &nbsp
+						<img src="img/caret-down-icon.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navbar-mid">
+			<div class="navbar-mid-content">
+				<h2>Needus<span>.</span></h2>
+				<form class="search-bar">
+					<input placeholder="Search Products">
+					<div class="search-bar-dropdown" onmouseover="showDropdown('search-bar-dropdown-item')" onmouseout="hideDropdown('search-bar-dropdown-item')">
+						<div class="search-bar-dropdown-heading" onclick="dropdown('search-bar-dropdown-item', 'search-bar-dropdown-caret')">
+							All Categories &nbsp 
+							<img id="search-bar-dropdown-caret" src="img/caret-down-black-icon.png">
+						</div>
+						<ul id="search-bar-dropdown-item">
+							<li>Category 1</li>
+							<li>Category 2</li>
+							<li>Category 3</li>
+						</ul>
+					</div>
+					<button>
+						<img src="img/search-icon.png">
+					</button>
+				</form>
+				<div class="user-buttons">
+					<div class="authentication">
+						<a>Login</a>
+						<span> | </span>
+						<a>Signup</a>
+					</div>
+					<div class="nav-icons desktop">
+						<div class="heart">
+							<img src="img/heart-icon.png">
+						</div>
+						<div class="cart">
+							<img src="img/cart-icon.png">
+							<div class="cart-number">
+								6
+							</div>
+						</div>
+					</div>
+					<div class="nav-icons mobile" style="display: none;">
+						<div class="search" >
+							<img src="img/search-mb-icon.png">
+						</div>
+						<div class="user">
+							<img src="img/user-icon.png">
+						</div>
+						<div class="heart">
+							<img src="img/heart-mb-icon.png">
+						</div>
+						<div class="cart">
+							<img src="img/cart-mb-icon.png">
+							<div class="cart-number">
+								6
+							</div>
+						</div>
+					</div>
+					<div class="hamburger-menu" onclick="hamburgerMenu()">
+						<img src="img/hamburger-menu-icon.png" id="hamburger">
+						<img style="display: none;" src="img/close-icon.png" id="close-icon">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navbar-bottom">
+			<div class="navbar-bottom-content" id="navbar-bottom-content">
+				<div class="categories" onclick="dropdown('all-categories-dropdown-item', 'all-categories-caret')" onmouseover="showDropdown('all-categories-dropdown-item')" onmouseout="hideDropdown('all-categories-dropdown-item')">
+					<div class="categories-content">
+						<img src="img/list-icon.png">
+						All Categories
+						<img id="all-categories-caret" src="img/caret-down-icon.png">
+					</div>
+					<ul id="all-categories-dropdown-item">
+						<a href="#"><li>Category 1</li></a>
+						<a href="#"><li>Category 2</li></a>
+						<a href="#"><li>Category 3</li></a>
+					</ul>
+				</div>
+				<ul class="menus" id="menus">
+					<li onmouseover="showDropdown('home-dropdown')" onmouseout="hideDropdown('home-dropdown')">
+						<a onclick="dropdown('home-dropdown', 'home-caret')" class="menus-title navbar-title">
+							HOME &nbsp
+							<img id="home-caret" src="img/caret-down-icon.png">
+						</a>
+						<ul hidden class="menus-level-1" id="home-dropdown">
+							<li><a>Home 1</a></li>
+							<li><a>Home 2</a></li>
+							<li onmouseover="showDropdown('home-dropdown-1')" onmouseout="hideDropdown('home-dropdown-1')">
+								<a onclick="dropdown('home-dropdown-1', 'home-caret-1')" class="menus-title">
+									Home 3
+									<img id="home-caret-1" src="img/caret-down-icon.png">
+								</a>
+								<ul hidden class="menus-level-2" id="home-dropdown-1">
+									<li><a>Home 3.1</a></li>
+									<li><a>Home 3.2</a></li>
+									<li onmouseover="showDropdown('home-dropdown-1-2')" onmouseout="hideDropdown('home-dropdown-1-2')">
+										<a onclick="dropdown('home-dropdown-1-2', 'home-caret-1-2')" class="menus-title">
+											Home 3.3
+											<img id="home-caret-1-2" src="img/caret-down-icon.png">
+										</a>
+										<ul hidden id="home-dropdown-1-2" class="menus-level-3">
+											<li><a>Home 3.3.1</a></li>
+											<li><a>Home 3.3.2</a></li>
+											<li><a>Home 3.3.3</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li onmouseover="showDropdown('about-dropdown')" onmouseout="hideDropdown('about-dropdown')">
+						<a onclick="dropdown('about-dropdown', 'about-caret')" class="menus-title navbar-title">
+							ABOUT &nbsp
+							<img id="about-caret" src="img/caret-down-icon.png">
+						</a>
+						<ul hidden id="about-dropdown" class="menus-level-1">
+							<li><a>About 1</a></li>
+							<li><a>About 2</a></li>
+							<li><a>About 3</a></li>
+						</ul>
+					</li>
+					<li class="active" onmouseover="showDropdown('product-dropdown')" onmouseout="hideDropdown('product-dropdown')">
+						<a onclick="dropdown('product-dropdown', 'product-caret')" class="menus-title navbar-title">
+							PRODUCT &nbsp
+							<img id="product-caret" hidden src="img/caret-down-icon.png">
+							<img src="img/caret-down-orange-icon.png">
+						</a>
+						<ul hidden id="product-dropdown" class="menus-level-1">
+							<li><a>Product 1</a></li>
+							<li><a>Product 2</a></li>
+							<li><a>Product 3</a></li>
+						</ul>					
+					</li>
+					<li onmouseover="showDropdown('pages-dropdown')" onmouseout="hideDropdown('pages-dropdown')">
+						<a onclick="dropdown('pages-dropdown', 'pages-caret')" class="menus-title navbar-title">
+							PAGES &nbsp
+							<img id="pages-caret" src="img/caret-down-icon.png">
+						</a>
+						<ul hidden id="pages-dropdown" class="menus-level-1">
+							<li><a>Pages 1</a></li>
+							<li><a>Pages 2</a></li>
+							<li><a>Pages 3</a></li>
+						</ul>
+					</li>
+					<li onmouseover="showDropdown('contact-dropdown')" onmouseout="hideDropdown('contact-dropdown')">
+						<a onclick="dropdown('contact-dropdown', 'contact-caret')" class="menus-title navbar-title">
+							CONTACT &nbsp
+							<img id="contact-caret" src="img/caret-down-icon.png">
+						</a>
+						<ul hidden id="contact-dropdown" class="menus-level-1">
+							<li><a>Contact 1</a></li>
+							<li><a>Contact 2</a></li>
+							<li><a>Contact 3</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="contact" id="navbar-contact">
+					<div class="contact-content" id="contact-content">
+						<img src="img/contact-icon.png">
+						<div class="contact-details">
+							<p>CONTACT US 24/7</p>
+							<h6>+12012987481</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" class="hamburger-menu-content" id="hamburger-menu-content"></div>
+	<div class="page-title">
+		<h1>TV Collection</h1>
+		<p>Home / Product / Tv Collection</p>
+	</div>
+	<div class="content">
+		<div class="product">
+			<div class="product-container">
+				<div class="product-thumbnail">
+					<div onclick="thumbnail('thumbnail-1')" id="thumbnail-1" class="product-thumbnail-img active">
+						<img src="img/tv-1.png">
+					</div>
+					<div onclick="thumbnail('thumbnail-2')" id="thumbnail-2" class="product-thumbnail-img">
+						<img src="img/tv-2.png">
+					</div>
+					<div onclick="thumbnail('thumbnail-3')" id="thumbnail-3" class="product-thumbnail-img">
+						<img src="img/tv-3.png">
+					</div>
+					<div onclick="thumbnail('thumbnail-4')" id="thumbnail-4" class="product-thumbnail-img">
+						<img src="img/tv-4.png">
+					</div>
+				</div>
+				<div class="product-image">
+					<div class="product-image-show">
+						<img id="tv-1" src="img/tv-1.png">
+						<img id="tv-2" style="display: none" src="img/tv-2.png">
+						<img id="tv-3" style="display: none" src="img/tv-3.png">
+						<img id="tv-4" style="display: none" src="img/tv-4.png">
+					</div>
+					<div class="product-image-name">
+						<p>*LG C2 42 (106cm) 4K Smart OLED evo TV</p>
+					</div>
+				</div>
+			</div>
+			<div class="product-details">
+				<ul class="attributes">
+					<li><span>Brand:</span> LG</li>
+					<li><span>Model:</span> OLED42C2PSA</li>
+					<li><span>Availability:</span> Only 2 in Stock</li>
+				</ul>
+				<h2>
+					LG C2 42 (106cm) 4K Smart OLED evo TV | WebOS | Cinema HDR
+				</h2>
+				<div class="ratings">
+					<img src="img/star-filled-icon.png">
+					<img src="img/star-filled-icon.png">
+					<img src="img/star-filled-icon.png">
+					<img src="img/star-filled-icon.png">
+					<img src="img/star-nofill-icon.png">
+				</div>
+				<ul class="description">
+					<li>α9 Gen5 AI Processor with AI Picture Pro & AI 4K Upscaling</li>
+					<li>Pixel Dimming, Perfect Black, 100% Color Fidelity & Color Volume</li>
+					<li>Hands-free Voice Control, Always Ready</li>
+					<li>Dolby Vision IQ with Precision Detail, Dolby Atmos, Filmmaker Mode</li>
+					<li>Eye Comfort Display: Low-Blue Light, Flicker-Free</li>
+				</ul>
+				<div class="size">
+					<button onclick="sizes('size-1')" id="size-1" class="active">
+						106 cm (42)
+					</button>
+					<button onclick="sizes('size-2')" id="size-2">
+						121 cm (48)
+					</button>
+					<button onclick="sizes('size-3')" id="size-3">
+						139 cm (55)
+					</button>
+					<button onclick="sizes('size-4')" id="size-4">
+						164 cm (65)
+					</button>
+					<button onclick="sizes('size-5')" id="size-5">
+						196 cm (77)
+					</button>
+					<button onclick="sizes('size-6')" id="size-6">
+						210 cm (83)
+					</button>
+				</div>
+				<div class="price">
+					<p>USD(incl. of all taxes)</p>
+					<h3>$600.72 <span>$800.00</span></h3>
+				</div>
+				<div class="buy">
+					<div class="quantity">
+						<button onclick="subtractQty()" id="subract">
+							-
+						</button>
+						<input id="qty-num" class="quantity-number" value="1" type="number" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" oninput="noLeadingZeros()">
+							<button onclick="addQty()" id="add">
+								+
+							</button>
+						</div>
+						<button class="buy-now-btn btn">
+							Buy Now
+						</button>
+						<button class="add-to-cart-btn btn">
+							Add to Cart
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="details">
+				<div class="details-title">
+					<h2 onclick="details('1')" id="details-title-1" class="active">Description</h2>
+					<h2 onclick="details('2')" id="details-title-2">Specification</h2>
+					<h2 onclick="details('3')" id="details-title-3">Reviews</h2>
+				</div>
+				<div class="details-text">
+					<div id="details-text-1" class="details-text-description details-text-content">
+						<p>
+							The LG C2 42 (106cm) 4K Smart OLED evo TV is the best all-around OLED TV we've tested. Although all OLEDs deliver similar fantastic picture quality, this one stands out for its value because it has many gaming-oriented features that are great for gamers.
+						</p>
+						<ul>
+							<li>
+								*Only 65G2 is shown in the image for example purposes. All 2022 LG OLED models feature eco-friendly packaging.
+							</li>
+							<li>
+								**65C2 Stand model is at a minimum 39% lighter than the C1 series.
+								<span style="display: none">More...</span>
+							</li>
+							<li>
+								***The 'Reducing CO2' footprint label applies to 65C2 only. All other C2 models feature a 'CO2 Measured' label.
+							</li>
+							<li>
+								****UL ECV certification based on TV frame and back cover. Percentage of recycled content varies by model and size.<span>More...</span>
+							</li>
+						</ul>
+					</div>
+					<div id="details-text-2" class="details-text-content" style="display: none;">
+						<table>
+							<tr>
+								<th>Resolution</th>
+								<td>3840x2160p</td>
+							</tr>
+							<tr>
+								<th>RF antena</th>
+								<td>Yes</td>
+							</tr>
+							<tr>
+								<th>USB 2.0 in</th>
+								<td>Yes</td>
+							</tr>
+							<tr>
+								<th>Optical Digital Audio out</th>
+								<td>Yes</td>
+							</tr>
+							<tr>
+								<th>LAN port</th>
+								<td>Yes</td>
+							</tr>
+							<tr>
+								<th>HDMI 2.1</th>
+								<td>Yes</td>
+							</tr>
+							<tr>
+								<th>Power Requirement</th>
+								<td>AC 100-240V 50/60Hz</td>
+							</tr>
+						</table>
+					</div>
+					<div id="details-text-3" class="details-text-content" style="display: none;">
+						<div class="review-container">
+							<div class="info">
+								<p class="date">07/08/2022</p>
+								<h4>John Doe</h4>
+							</div>
+							<div class="stars">
+								<img src="img/star-filled-icon.png">
+								<img src="img/star-filled-icon.png">
+								<img src="img/star-filled-icon.png">
+								<img src="img/star-filled-icon.png">
+								<img src="img/star-filled-icon.png">
+							</div>
+							<h3>Worth the HYPE!!!</h3>
+							<p>
+								I've been waiting for awhile to get an OLED TV and this didn't disappoint!! GREAT PICTURE!!! I find myself just in awe of the picture this produces, movies, games or sports the C2 DELIVERS!! Would highly recommend to anyone wanting to upgrade their home viewing experience.
+							</p>
+						</div>
+						<div class="review-container">
+							<div class="info">
+								<p class="date">11/29/2022</p>
+								<h4>Anna Maria</h4>
+							</div>
+							<div class="stars">
+								<img src="img/star-filled-icon.png">
+								<img src="img/star-nofill-icon.png">
+								<img src="img/star-nofill-icon.png">
+								<img src="img/star-nofill-icon.png">
+								<img src="img/star-nofill-icon.png">
+							</div>
+							<h3>Screen is very brittle</h3>
+							<p>
+								Had it for a month and the screen broke. LG won't cover. Go with a different company.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="related-products">
+				<h2>Related Products</h2>
+				<div class="related-products-all">
+					<div class="related-products-group">
+						<div class="related-products-container">
+							<div class="related-products-container-item">
+								<div class="top-btn">
+									<h6 class="new">NEW</h6>
+									<div class="heart">
+										<img src="img/heart-filled-icon.png">
+									</div>
+								</div>
+								<div class="quick-view">
+									<div class="text">
+										<h6>Quick View</h6>
+										<div class="arrow"></div>
+									</div>
+									<img src="img/quick-view-icon.png">
+								</div>
+								<div class="image">
+									<img src="img/product-1.png">
+								</div>
+								<div class="add-to-cart-btn">
+									<button>
+										<img src="img/cart-icon.png">
+										Add to cart
+									</button>
+								</div>
+							</div>
+							<div class="related-products-container-details">
+								<h3><a href="#">
+									Sony BRAVIA XR Android Tv
+								</a></h3>
+								<h4>$800.22<span>$1000.66</span></h4>
+							</div>
+						</div>
+						<div class="related-products-container">
+							<div class="related-products-container-item">
+								<div class="top-btn">
+									<h6 class="sale">-10%</h6>
+									<div class="heart">
+										<img src="img/heart-nofill-icon.png">
+									</div>
+								</div>
+								<div class="image">
+									<img src="img/product-2.png">
+								</div>
+								<div class="add-to-cart-btn">
+									<button>
+										<img src="img/cart-icon.png">
+										Add to cart
+									</button>
+								</div>
+							</div>
+							<div class="related-products-container-details">
+								<h3><a href="#">
+									Mi P1 Smart Android HD TV
+								</a></h3>
+								<h4>$400.00</h4>
+							</div>
+						</div>
+					</div>
+					<div class="related-products-group">
+						<div class="related-products-container">
+							<div class="related-products-container-item">
+								<div class="top-btn">
+									<h6 class="hot">HOT</h6>
+									<div class="heart">
+										<img src="img/heart-nofill-icon.png">
+									</div>
+								</div>
+								<div class="image">
+									<img src="img/product-3.png">
+								</div>
+								<div class="add-to-cart-btn">
+									<button>
+										<img src="img/cart-icon.png">
+										Add to cart
+									</button>
+								</div>
+							</div>
+							<div class="related-products-container-details">
+								<h3><a href="#">
+									Konka OLED Android Tv
+								</a></h3>
+								<h4>$700.00</h4>
+							</div>
+						</div>
+						<div class="related-products-container">
+							<div class="related-products-container-item">
+								<div class="top-btn">
+									<h6 class="warranty">2 Years Warranty</h6>
+									<div class="heart">
+										<img src="img/heart-nofill-icon.png">
+									</div>
+								</div>
+								<div class="image">
+									<img src="img/product-4.png">
+								</div>
+								<div class="add-to-cart-btn">
+									<button class="out-of-stock">
+										<img src="img/cart-colored-icon.png">
+										Out of Stock
+									</button>
+								</div>
+							</div>
+							<div class="related-products-container-details">
+								<h3><a href="#">
+									TCL Roku Android Tv
+								</a></h3>
+								<h4>$800.00</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="navigation">
+					<div class="navigation-btn active"></div>
+					<div class="navigation-btn"></div>
+					<div class="navigation-btn"></div>
+					<div class="navigation-btn"></div>
+					<div class="navigation-btn mobile" style="display: none"></div>
+				</div>
+			</div>
+		</div>
+		<div class="newsletter">
+			<div class="overlay">
+				<div class="newsletter-container">
+					<div class="newsletter-caption">
+						<img src="img/news-letter-icon.png">
+						<div class="newsletter-text">
+							<h2>Join our newsletter and get offers</h2>
+							<p>Sign up our newsletter</p>
+						</div>
+					</div>
+					<form>
+						<input placeholder="Enter your email">
+						<button>SUBSCRIBE</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="footer" id="footer">
+			<div class="footer-container">
+				<div class="footer-content">
+					<div class="about">
+						<h4 onclick="dropdown('about-footer', 'about-footer-caret')">
+							ABOUT US
+							<img id="about-footer-caret" style="display: none;" src="img/caret-down-icon.png">
+						</h4>
+						<div class="about-content" id="about-footer">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet lacinia nulla ut laoreet. Quisque ultricies et tortor nec laoreet. 
+							</p>
+							<div class="social-icons">
+								<div>
+									<img src="img/fb-icon.png">
+								</div>
+								<div>
+									<img src="img/whatsapp-icon.png">
+								</div>
+								<div>
+									<img src="img/ig-icon.png">
+								</div>
+								<div>
+									<img src="img/skype-icon.png">
+								</div>
+								<div>
+									<img src="img/yt-icon.png">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="links">
+						<div class="links-container">
+							<h4 onclick="dropdown('information-footer', 'information-caret')">
+								INFORMATION
+								<img style="display: none;" src="img/caret-down-icon.png" id="information-caret">
+							</h4>
+							<ul id="information-footer">
+								<a href="#"><li>About</li></a>
+								<a href="#"><li>Delivery information</li></a>
+								<a href="#"><li>Privacy Policy</li></a>
+								<a href="#"><li>Sales</li></a>
+								<a href="#"><li>Terms & Conditions</li></a>
+								<a href="#"><li>EMI Payment</li></a>
+							</ul>
+						</div>
+						<div class="links-container">
+							<h4 onclick="dropdown('account-footer', 'account-caret')">
+								ACCOUNT
+								<img style="display: none;" src="img/caret-down-icon.png" id="account-caret">
+							</h4>
+							<ul id="account-footer">
+								<a href="#"><li>My Account</li></a>
+								<a href="#"><li>My Orders</li></a>
+								<a href="#"><li>Returns</li></a>
+								<a href="#"><li>Shipping</li></a>
+								<a href="#"><li>Wishlist</li></a>
+								<a href="#"><li>Account Details</li></a>
+							</ul>
+						</div>
+						<div class="links-container">
+							<h4 onclick="dropdown('store-footer', 'store-caret')">
+								STORE
+								<img style="display: none;" src="img/caret-down-icon.png" id="store-caret">
+							</h4>
+							<ul id="store-footer">
+								<a href="#"><li>Affiliate</li></a>
+								<a href="#"><li>Discounts</li></a>
+								<a href="#"><li>Sale</li></a>
+								<a href="#"><li>Contact</li></a>
+								<a href="#"><li>All Collections</li></a>
+							</ul>
+						</div>
+					</div>
+					<div class="contact">
+						<h4 onclick="dropdown('contact-us-footer', 'contact-us-caret')">
+							CONTACT US
+							<img style="display: none;" src="img/caret-down-icon.png" id="contact-us-caret">
+						</h4>
+						<ul id="contact-us-footer">
+							<li class="email">
+								If you have any query, please contact us 
+								<a href="#">
+									needus24@gmail.com 
+								</a>
+							</li>
+							<a href="#"><li>
+								<img src="img/location-icon.png">
+								California, USA
+							</li></a>
+							<a href="#"><li>
+								<img src="img/phone-icon.png">
+								+12012987481
+							</li></a>
+						</ul>
+					</div>
+				</div>
+				<div class="copyright">
+					<div class="cards">
+						<img src="img/card-1.png">
+						<img src="img/card-2.png">
+						<img src="img/card-3.png">
+						<img src="img/card-4.png">
+						<img src="img/card-5.png">
+					</div>
+					<div class="credits">
+						<img src="img/credit-icon.png">
+						<p>Copyright.2022.All Right Reserved</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	</html>
