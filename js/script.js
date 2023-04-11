@@ -1,19 +1,3 @@
-// function dropdown(itemID, caretID){
-// 	var item = document.getElementById(itemID);
-// 	var caret = document.getElementById(caretID);
-
-// 	if(item.style.display == "block"){
-// 		item.style.display = "none";
-		
-// 		if(caret.classList.contains('expand'))
-// 			caret.classList.remove('expand');
-// 	}
-// 	else {
-// 		item.style.display = "block";
-// 		caret.classList.add('expand');
-// 	}
-// }
-
 function dropdown(itemID, caretID){
 	var items = document.getElementById(itemID);
 	var caret = document.getElementById(caretID);
@@ -131,17 +115,6 @@ function details(num){
 			y.style.display = 'none';
 	}
 }
-
-// function activeThumbnail(){
-// 	var item = document.getElementById('thumbnail-2');
-// 	if(window.matchMedia("(max-width: 767px)").matches)
-// 		item.classList.add('active');
-// 	else if(window.matchMedia("(min-width: 767px)").matches)
-// 		item.classList.remove('active');
-// }
-
-// var mobile = window.matchMedia("(max-width: 767px)");
-// window.onresize = activeThumbnail;
 
 function hamburgerMenu(){
 	var container = document.getElementById('hamburger-menu-content');
