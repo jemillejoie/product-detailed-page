@@ -208,17 +208,17 @@
 	<div class="content">
 		<div class="product">
 			<div class="product-container">
-				<div class="product-thumbnail">
-					<div onclick="thumbnail('thumbnail-1')" id="thumbnail-1" class="product-thumbnail-img active">
+				<div id="product-thumbnail" class="product-thumbnail">
+					<div id="thumbnail-1" class="product-thumbnail-img active">
 						<img src="img/tv-1.png">
 					</div>
-					<div onclick="thumbnail('thumbnail-2')" id="thumbnail-2" class="product-thumbnail-img">
+					<div id="thumbnail-2" class="product-thumbnail-img">
 						<img src="img/tv-2.png">
 					</div>
-					<div onclick="thumbnail('thumbnail-3')" id="thumbnail-3" class="product-thumbnail-img">
+					<div id="thumbnail-3" class="product-thumbnail-img">
 						<img src="img/tv-3.png">
 					</div>
-					<div onclick="thumbnail('thumbnail-4')" id="thumbnail-4" class="product-thumbnail-img">
+					<div id="thumbnail-4" class="product-thumbnail-img">
 						<img src="img/tv-4.png">
 					</div>
 				</div>
@@ -257,23 +257,23 @@
 					<li>Dolby Vision IQ with Precision Detail, Dolby Atmos, Filmmaker Mode</li>
 					<li>Eye Comfort Display: Low-Blue Light, Flicker-Free</li>
 				</ul>
-				<div class="size">
-					<button onclick="sizes('size-1')" id="size-1" class="active">
+				<div id="size" class="size">
+					<button id="size-1" class="active">
 						106 cm (42)
 					</button>
-					<button onclick="sizes('size-2')" id="size-2">
+					<button id="size-2">
 						121 cm (48)
 					</button>
-					<button onclick="sizes('size-3')" id="size-3">
+					<button id="size-3">
 						139 cm (55)
 					</button>
-					<button onclick="sizes('size-4')" id="size-4">
+					<button id="size-4">
 						164 cm (65)
 					</button>
-					<button onclick="sizes('size-5')" id="size-5">
+					<button id="size-5">
 						196 cm (77)
 					</button>
-					<button onclick="sizes('size-6')" id="size-6">
+					<button id="size-6">
 						210 cm (83)
 					</button>
 				</div>
@@ -283,11 +283,11 @@
 				</div>
 				<div class="buy">
 					<div class="quantity">
-						<button onclick="subtractQty()" id="subract">
+						<button id="subtract">
 							-
 						</button>
-						<input id="qty-num" class="quantity-number" value="1" type="number" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" oninput="noLeadingZeros()">
-							<button onclick="addQty()" id="add">
+						<input id="qty-num" class="quantity-number" value="1" type="number">
+							<button id="add">
 								+
 							</button>
 						</div>
@@ -301,10 +301,10 @@
 				</div>
 			</div>
 			<div class="details">
-				<div class="details-title">
-					<h2 onclick="details('1')" id="details-title-1" class="active">Description</h2>
-					<h2 onclick="details('2')" id="details-title-2">Specification</h2>
-					<h2 onclick="details('3')" id="details-title-3">Reviews</h2>
+				<div id="details-title" class="details-title">
+					<h2 id="details-title-1" class="active">Description</h2>
+					<h2 id="details-title-2">Specification</h2>
+					<h2 id="details-title-3">Reviews</h2>
 				</div>
 				<div class="details-text">
 					<div id="details-text-1" class="details-text-description details-text-content">
@@ -652,6 +652,7 @@
 		</div>
 	</body>
 
+	<script type="text/javascript" src="js/variables.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/eventListeners.js"></script>
 </html>

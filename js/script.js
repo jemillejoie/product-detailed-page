@@ -87,6 +87,10 @@ function subtractQty(){
 		document.getElementById('qty-num').value = parseInt(val) - 1;
 }
 
+function intOnly(){
+	return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))
+}
+
 function noLeadingZeros(){
 	var val = document.getElementById('qty-num');
 

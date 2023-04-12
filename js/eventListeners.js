@@ -1,13 +1,3 @@
-const searchBarDropdown = document.getElementById('search-bar-dropdown')
-const categories = document.getElementById('categories')
-const homeMenu = document.getElementById('home-menu')
-const homeMenu3 = document.getElementById('home-menu-3')
-const homeMenu33 = document.getElementById('home-menu-3-3')
-const aboutMenu = document.getElementById('about-menu')
-const productMenu = document.getElementById('product-menu')
-const pagesMenu = document.getElementById('pages-menu')
-const contactMenu = document.getElementById('contact-menu')
-
 searchBarDropdown.addEventListener(
 	'mouseover',
 	showDropdown.bind(null, 'search-bar-dropdown-item'),
@@ -137,3 +127,38 @@ document.getElementById('contact-menu-heading').addEventListener(
 	'click',
 	dropdown.bind(null, 'contact-dropdown', 'contact-caret'),
 	false)
+
+for(let i=1; i<=productThumbnail.children.length; i++){
+	document.getElementById('thumbnail-' + i).addEventListener(
+		'click',
+		thumbnail.bind(null, 'thumbnail-' + i),
+		false)
+}
+
+for(let i=1; i<=size.children.length; i++){
+	document.getElementById('size-' + i).addEventListener(
+		'click',
+		sizes.bind(null, 'size-' + i),
+		false)
+}
+
+document.getElementById('subtract').addEventListener(
+	'click',
+	subtractQty,
+	false)
+
+document.getElementById('add').addEventListener(
+	'click',
+	addQty,
+	false)
+
+productQty.addEventListener('keypress', intOnly, false)
+
+productQty.addEventListener('input', noLeadingZeros, false)
+
+for(let i=1; i<=detailsTitle.children.length; i++){
+	document.getElementById('details-title-' + i).addEventListener(
+		'click',
+		details.bind(null, i),
+		false)
+}
