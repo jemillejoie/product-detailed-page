@@ -6,11 +6,11 @@
  * @param {String} caretID - ID of the caret icon
  */
 function dropdown(itemID, caretID){
-	const items = document.getElementById(itemID);
-	const caret = document.getElementById(caretID);
-	const dropdown = document.querySelectorAll(`[id^=${itemID}]`);
-	const carets = document.querySelectorAll(`[id^=${caretID}]`);
-	const mobile = window.matchMedia("(max-width: 767px)");
+	const items = document.getElementById(itemID),
+		caret = document.getElementById(caretID),
+		dropdown = document.querySelectorAll(`[id^=${itemID}]`),
+		carets = document.querySelectorAll(`[id^=${caretID}]`),
+		mobile = window.matchMedia("(max-width: 767px)");
 
 	if(mobile.matches) {
 		if(items.style.display === "block"){
@@ -65,12 +65,12 @@ function hideDropdown(itemID){
  * @param {String} thumbnailID - ID of the thumbnail
  */
 function thumbnail(thumbnailID){
-	const thumbnail = document.getElementById(thumbnailID);
-	const tv = document.getElementById(`tv-${thumbnailID.slice(10)}`);
+	const thumbnail = document.getElementById(thumbnailID),
+		tv = document.getElementById(`tv-${thumbnailID.slice(10)}`);
 
 	for(let i=1; i<=productThumbnail.children.length; i++) {
-		const x = document.getElementById(`thumbnail-${i}`);
-		const y = document.getElementById(`tv-${i}`);
+		const x = document.getElementById(`thumbnail-${i}`),
+			y = document.getElementById(`tv-${i}`);
 
 		if(x===thumbnail)
 			thumbnail.classList.add('active');
@@ -163,12 +163,12 @@ function noLeadingZeros(){
  * 3 : Reviews
  */
 function details(num){
-	const title = document.getElementById(`details-title-${num}`);
-	const text = document.getElementById(`details-text-${num}`);
+	const title = document.getElementById(`details-title-${num}`),
+		text = document.getElementById(`details-text-${num}`);
 
 	for(let i=1; i<=detailsTitle.children.length; i++){
-		const x = document.getElementById(`details-title-${i}`);
-		const y = document.getElementById(`details-text-${i}`);
+		const x = document.getElementById(`details-title-${i}`),
+			y = document.getElementById(`details-text-${i}`);
 
 		if(x===title)
 			title.classList.add('active');
@@ -188,14 +188,14 @@ function details(num){
  * the contents (navbar menu) are shown.
  */
 function hamburgerMenu(){
-	const container = document.getElementById('hamburger-menu-content');
-	const close = document.getElementById('close-icon');
-	const hamburger  = document.getElementById('hamburger');
-	const body = document.getElementsByTagName('body')[0];
-	const menus = document.getElementById('menus');
-	const contact = document.getElementById('contact-content');
-	const allMenus = document.querySelectorAll('[class*="menus"]');
-	const allCaret = document.querySelectorAll('[id*="caret"]');
+	const container = document.getElementById('hamburger-menu-content'),
+		close = document.getElementById('close-icon'),
+		hamburger  = document.getElementById('hamburger'),
+		body = document.getElementsByTagName('body')[0],
+		menus = document.getElementById('menus'),
+		contact = document.getElementById('contact-content'),
+		allMenus = document.querySelectorAll('[class*="menus"]'),
+		allCaret = document.querySelectorAll('[id*="caret"]');
 
 	if(container.style.display === "none"){
 		container.style.display = "block";
@@ -231,9 +231,9 @@ function hamburgerMenu(){
  * are displayed correctly as the window resizes.
  */
 function resize(){
-	const caret = document.querySelectorAll('[id*="caret"]');
-	const menus = document.querySelectorAll('[class*="menus"]');
-	const footer = document.querySelectorAll('[id*="footer"]');
+	const caret = document.querySelectorAll('[id*="caret"]'),
+		menus = document.querySelectorAll('[class*="menus"]'),
+		footer = document.querySelectorAll('[id*="footer"]');
 
 	document.getElementById('hamburger-menu-content').style.display = "none";
 	document.getElementById('close-icon').style.display = "none";
