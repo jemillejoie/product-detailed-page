@@ -81,7 +81,7 @@ function addQty(){
 function subtractQty(){
 	var val = document.getElementById('qty-num').value;
 
-	if(parseInt(val)<=0 || val=='')
+	if(parseInt(val)<=0 || !val)
 		document.getElementById('qty-num').value = 0;
 	else
 		document.getElementById('qty-num').value = parseInt(val) - 1;
@@ -92,7 +92,7 @@ function noLeadingZeros(){
 
 	val.value = parseInt(val.value);
 
-	if(val.value=='')
+	if(!val.value)
 		val.value = 0;
 }
 
