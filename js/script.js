@@ -1,3 +1,10 @@
+/**
+ * This is for showing and hiding the dropdown items
+ * in navbar and footer on mobile view
+ * 
+ * @param {String} itemID - ID of the dropdown item
+ * @param {String} caretID - ID of the caret icon
+ */
 function dropdown(itemID, caretID){
 	const items = document.getElementById(itemID);
 	const caret = document.getElementById(caretID);
@@ -26,12 +33,24 @@ function dropdown(itemID, caretID){
 	}
 }
 
+/**
+ * This is for showing the dropdown items
+ * in navbar on desktop view
+ * 
+ * @param {String} itemID - ID of the dropdown item
+ */
 function showDropdown(itemID){
 	const item = document.getElementById(itemID);
 	if(window.matchMedia("(min-width: 767px)").matches)
 		item.style.display = "block";
 }
 
+/**
+ * This is for hiding the dropdown items
+ * in navbar on desktop view
+ * 
+ * @param {String} itemID - ID of the dropdown item
+ */
 function hideDropdown(itemID){
 	const item = document.getElementById(itemID);
 
@@ -39,10 +58,15 @@ function hideDropdown(itemID){
 		item.style.display = "none";
 }
 
+/**
+ * This is for showing the bigger images 
+ * of the product when the thumbnail is clicked
+ * 
+ * @param {String} thumbnailID - ID of the thumbnail
+ */
 function thumbnail(thumbnailID){
 	const thumbnail = document.getElementById(thumbnailID);
-	const idNum = thumbnailID.slice(10);
-	const tv = document.getElementById(`tv-${idNum}`);
+	const tv = document.getElementById(`tv-${thumbnailID.slice(10)}`);
 
 	for(let i=1; i<=productThumbnail.children.length; i++) {
 		const x = document.getElementById(`thumbnail-${i}`);
@@ -60,6 +84,12 @@ function thumbnail(thumbnailID){
 	}
 }
 
+/**
+* highlight the border and text of
+* the chosen product size
+* 
+* @param {String} sizeID - ID of the size
+*/
 function sizes(sizeID){
 	const size = document.getElementById(sizeID);
 
@@ -73,11 +103,22 @@ function sizes(sizeID){
 	}
 }
 
+/**
+* This is for the add [+] button.
+* When clicked, the value in the product quantity's
+* input field is incremented by one.
+*/
 function addQty(){
 	const val = document.getElementById('qty-num').value;
 	document.getElementById('qty-num').value = parseInt(val) + 1;
 }
 
+/**
+* This is for the subtract [-] button.
+* When clicked, the value in the product quantity's
+* input field is decremented by one.
+* The value should not be less than 0.
+*/
 function subtractQty(){
 	const val = document.getElementById('qty-num').value;
 
@@ -87,10 +128,19 @@ function subtractQty(){
 		document.getElementById('qty-num').value = parseInt(val) - 1;
 }
 
+/**
+ * This is to prevent the use of non-numerical values
+ * in the product quantity's input field.
+ * Only charcode 48-57 are numerical values
+ */
 function intOnly(){
-	return (event.charCode !==8 && event.charCode ===0 || (event.charCode >= 48 && event.charCode <= 57))
+	return (event.charCode !== 8 && event.charCode === 0 || (event.charCode >= 48 && event.charCode <= 57))
 }
 
+/**
+ * This is for removing the leading zeros
+ * in the product quantity's input field
+ */
 function noLeadingZeros(){
 	const val = document.getElementById('qty-num');
 
@@ -100,6 +150,18 @@ function noLeadingZeros(){
 		val.value = 0;
 }
 
+/**
+ * This is for showing the description,
+ * specification, and reviews of the product.
+ * When the title is clicked,
+ * the corresponding content or text is shown.
+ * 
+ * @param {(String|Number)} num - unique number at the end of the ID
+ * 
+ * 1 : Description
+ * 2 : Specification
+ * 3 : Reviews
+ */
 function details(num){
 	const title = document.getElementById(`details-title-${num}`);
 	const text = document.getElementById(`details-text-${num}`);
@@ -120,6 +182,11 @@ function details(num){
 	}
 }
 
+/**
+ * This is for the hamburger menu on mobile view.
+ * When the hamburger button is cliked,
+ * the contents (navbar menu) are shown.
+ */
 function hamburgerMenu(){
 	const container = document.getElementById('hamburger-menu-content');
 	const close = document.getElementById('close-icon');
@@ -159,8 +226,11 @@ function hamburgerMenu(){
 	}
 }
 
+/**
+ * This is for ensuring that the navbar, footer, and carets
+ * are displayed correctly as the window resizes.
+ */
 function resize(){
-	const hamburgerChild = document.getElementById('hamburger')
 	const caret = document.querySelectorAll('[id*="caret"]');
 	const menus = document.querySelectorAll('[class*="menus"]');
 	const footer = document.querySelectorAll('[id*="footer"]');
@@ -188,6 +258,3 @@ function resize(){
 		footer[i].style.display = null;
 	}
 }
-
-window.onresize = hamburgerMenu;
-window.onresize = resize;

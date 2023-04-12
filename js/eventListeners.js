@@ -1,3 +1,6 @@
+window.onresize = hamburgerMenu;
+window.onresize = resize;
+
 searchBarDropdown.addEventListener(
 	'mouseover',
 	showDropdown.bind(null, 'search-bar-dropdown-item'),
