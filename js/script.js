@@ -1,20 +1,20 @@
 function dropdown(itemID, caretID){
-	var items = document.getElementById(itemID);
-	var caret = document.getElementById(caretID);
-	var dropdown = document.querySelectorAll('[id^='+itemID+']');
-	var carets = document.querySelectorAll('[id^='+caretID+']');
-	var mobile = window.matchMedia("(max-width: 767px)");
+	const items = document.getElementById(itemID);
+	const caret = document.getElementById(caretID);
+	const dropdown = document.querySelectorAll('[id^='+itemID+']');
+	const carets = document.querySelectorAll('[id^='+caretID+']');
+	const mobile = window.matchMedia("(max-width: 767px)");
 
 	if(mobile.matches) {
 		if(items.style.display == "block"){
 			items.style.display = "none";
 			caret.classList.remove("expand");
 
-			for(var i=0; i<dropdown.length; i++){
+			for(let i=0; i<dropdown.length; i++){
 				dropdown[i].style.display = null;
 			}
 
-			for(var i=0; i<carets.length; i++){
+			for(let i=0; i<carets.length; i++){
 				if(carets[i].classList.contains("expand"))
 					carets[i].classList.remove("expand");
 			}
@@ -27,26 +27,26 @@ function dropdown(itemID, caretID){
 }
 
 function showDropdown(itemID){
-	var item = document.getElementById(itemID);
+	const item = document.getElementById(itemID);
 	if(window.matchMedia("(min-width: 767px)").matches)
 		item.style.display = "block";
 }
 
 function hideDropdown(itemID){
-	var item = document.getElementById(itemID);
+	const item = document.getElementById(itemID);
 
 	if(window.matchMedia("(min-width: 767px)").matches)
 		item.style.display = "none";
 }
 
 function thumbnail(thumbnailID){
-	var thumbnail = document.getElementById(thumbnailID);
-	var idNum = thumbnailID.slice(10);
-	var tv = document.getElementById('tv-'+idNum);
+	const thumbnail = document.getElementById(thumbnailID);
+	const idNum = thumbnailID.slice(10);
+	const tv = document.getElementById('tv-'+idNum);
 
-	for(var i=1; i<=4; i++) {
-		var x = document.getElementById('thumbnail-'+i);
-		var y = document.getElementById('tv-'+i);
+	for(let i=1; i<=4; i++) {
+		const x = document.getElementById('thumbnail-'+i);
+		const y = document.getElementById('tv-'+i);
 
 		if(x==thumbnail)
 			thumbnail.classList.add('active');
@@ -61,10 +61,10 @@ function thumbnail(thumbnailID){
 }
 
 function sizes(sizeID){
-	var size = document.getElementById(sizeID);
+	const size = document.getElementById(sizeID);
 
-	for(var i=1; i<=6; i++){
-		var x = document.getElementById('size-'+i);
+	for(let i=1; i<=6; i++){
+		const x = document.getElementById('size-'+i);
 
 		if(size==x)
 			size.classList.add('active');
@@ -74,12 +74,12 @@ function sizes(sizeID){
 }
 
 function addQty(){
-	var val = document.getElementById('qty-num').value;
+	const val = document.getElementById('qty-num').value;
 	document.getElementById('qty-num').value = parseInt(val) + 1;
 }
 
 function subtractQty(){
-	var val = document.getElementById('qty-num').value;
+	const val = document.getElementById('qty-num').value;
 
 	if(parseInt(val)<=0 || val=='')
 		document.getElementById('qty-num').value = 0;
@@ -92,7 +92,7 @@ function intOnly(){
 }
 
 function noLeadingZeros(){
-	var val = document.getElementById('qty-num');
+	const val = document.getElementById('qty-num');
 
 	val.value = parseInt(val.value);
 
@@ -101,12 +101,12 @@ function noLeadingZeros(){
 }
 
 function details(num){
-	var title = document.getElementById('details-title-'+num);
-	var text = document.getElementById('details-text-'+num);
+	const title = document.getElementById('details-title-'+num);
+	const text = document.getElementById('details-text-'+num);
 
-	for(var i=1; i<=3; i++){
-		var x = document.getElementById('details-title-'+i);
-		var y = document.getElementById('details-text-'+i);
+	for(let i=1; i<=3; i++){
+		const x = document.getElementById('details-title-'+i);
+		const y = document.getElementById('details-text-'+i);
 
 		if(x==title)
 			title.classList.add('active');
@@ -121,14 +121,14 @@ function details(num){
 }
 
 function hamburgerMenu(){
-	var container = document.getElementById('hamburger-menu-content');
-	var close = document.getElementById('close-icon');
-	var hamburger  = document.getElementById('hamburger');
-	var body = document.getElementsByTagName('body')[0];
-	var menus = document.getElementById('menus');
-	var contact = document.getElementById('contact-content');
-	var allMenus = document.querySelectorAll('[class*="menus"]');
-	var allCaret = document.querySelectorAll('[id*="caret"]');
+	const container = document.getElementById('hamburger-menu-content');
+	const close = document.getElementById('close-icon');
+	const hamburger  = document.getElementById('hamburger');
+	const body = document.getElementsByTagName('body')[0];
+	const menus = document.getElementById('menus');
+	const contact = document.getElementById('contact-content');
+	const allMenus = document.querySelectorAll('[class*="menus"]');
+	const allCaret = document.querySelectorAll('[id*="caret"]');
 
 	if(container.style.display == "none"){
 		container.style.display = "block";
@@ -147,11 +147,11 @@ function hamburgerMenu(){
 		document.getElementById('navbar-bottom-content').prepend(menus);
 		document.getElementById('navbar-contact').append(contact);
 
-		for(var i=0; i<allMenus.length; i++){
+		for(let i=0; i<allMenus.length; i++){
 			allMenus[i].style.display = null;
 		}
 
-		for(var i=0; i<allCaret.length; i++){
+		for(let i=0; i<allCaret.length; i++){
 			if(allCaret[i].classList.contains('expand')){
 				allCaret[i].classList.remove('expand');
 			}
@@ -160,10 +160,10 @@ function hamburgerMenu(){
 }
 
 function resize(){
-	var hamburgerChild = document.getElementById('hamburger')
-	var caret = document.querySelectorAll('[id*="caret"]');
-	var menus = document.querySelectorAll('[class*="menus"]');
-	var footer = document.querySelectorAll('[id*="footer"]');
+	const hamburgerChild = document.getElementById('hamburger')
+	const caret = document.querySelectorAll('[id*="caret"]');
+	const menus = document.querySelectorAll('[class*="menus"]');
+	const footer = document.querySelectorAll('[id*="footer"]');
 
 	document.getElementById('hamburger-menu-content').style.display = "none";
 	document.getElementById('close-icon').style.display = "none";
@@ -172,7 +172,7 @@ function resize(){
 	document.getElementById('navbar-bottom-content').prepend(document.getElementById('menus'));
 	document.getElementById('navbar-contact').append(document.getElementById('contact-content'));
 
-	for(var i=0; i<caret.length; i++){
+	for(let i=0; i<caret.length; i++){
 		caret[i].style.display = null;
 
 		if(caret[i].classList.contains('expand')){
@@ -180,11 +180,11 @@ function resize(){
 		}
 	}
 
-	for(var i=0; i<menus.length; i++){
+	for(let i=0; i<menus.length; i++){
 		menus[i].style.display = null;
 	}
 
-	for(var i=0; i<footer.length; i++){
+	for(let i=0; i<footer.length; i++){
 		footer[i].style.display = null;
 	}
 }
