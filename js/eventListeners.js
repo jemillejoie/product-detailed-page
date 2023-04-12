@@ -135,7 +135,7 @@ for(let i=1; i<=productThumbnail.children.length; i++){
 		false)
 }
 
-for(let i=1; i<=size.children.length; i++){
+for(let i=1; i<=sizeBtns.children.length; i++){
 	document.getElementById(`size-${i}`).addEventListener(
 		'click',
 		sizes.bind(null, `size-${i}`),

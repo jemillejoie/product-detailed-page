@@ -44,7 +44,7 @@ function thumbnail(thumbnailID){
 	const idNum = thumbnailID.slice(10);
 	const tv = document.getElementById(`tv-${idNum}`);
 
-	for(let i=1; i<=4; i++) {
+	for(let i=1; i<=productThumbnail.children.length; i++) {
 		const x = document.getElementById(`thumbnail-${i}`);
 		const y = document.getElementById(`tv-${i}`);
 
@@ -63,7 +63,7 @@ function thumbnail(thumbnailID){
 function sizes(sizeID){
 	const size = document.getElementById(sizeID);
 
-	for(let i=1; i<=6; i++){
+	for(let i=1; i<=sizeBtns.children.length; i++){
 		const x = document.getElementById(`size-${i}`);
 
 		if(size==x)
@@ -104,7 +104,7 @@ function details(num){
 	const title = document.getElementById(`details-title-${num}`);
 	const text = document.getElementById(`details-text-${num}`);
 
-	for(let i=1; i<=3; i++){
+	for(let i=1; i<=detailsTitle.children.length; i++){
 		const x = document.getElementById(`details-title-${i}`);
 		const y = document.getElementById(`details-text-${i}`);
 
