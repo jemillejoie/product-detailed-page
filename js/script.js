@@ -1,28 +1,27 @@
 function dropdown(itemID, caretID){
-	var items = document.getElementById(itemID);
-	var caret = document.getElementById(caretID);
-	var dropdown = document.querySelectorAll('[id^='+itemID+']');
-	var carets = document.querySelectorAll('[id^='+caretID+']');
-	var mobile = window.matchMedia("(max-width: 767px)");
+	let items = document.getElementById(itemID),
+	caret = document.getElementById(caretID),
+	dropdown = document.querySelectorAll(`[id^=${itemID}]`),
+	carets = document.querySelectorAll(`[id^=${caretID}]`),
+	mobile = window.matchMedia("(max-width: 767px)");
 
-	if(mobile.matches) {
-		if(items.style.display == "block"){
-			items.style.display = "none";
-			caret.classList.remove("expand");
+	if(!mobile.matches) return
+	if(items.style.display == "block"){
+		items.style.display = "none";
+		caret.classList.remove("expand");
 
-			for(var i=0; i<dropdown.length; i++){
-				dropdown[i].style.display = null;
-			}
-
-			for(var i=0; i<carets.length; i++){
-				if(carets[i].classList.contains("expand"))
-					carets[i].classList.remove("expand");
-			}
+		for(let i = 0; i < dropdown.length; i++){
+			dropdown[i].style.display = null;
 		}
-		else {
-			items.style.display = "block";
-			caret.classList.add("expand");
+
+		for(let i = 0; i < carets.length; i++){
+			if(!carets[i].classList.contains("expand")) continue;
+			carets[i].classList.remove("expand");
 		}
+	}
+	else {
+		items.style.display = "block";
+		caret.classList.add("expand");
 	}
 }
 
