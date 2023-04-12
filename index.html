@@ -11,8 +11,6 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 	<div class="mask" style="display: none"></div>
@@ -42,8 +40,8 @@
 				<h2>Needus<span>.</span></h2>
 				<form class="search-bar">
 					<input placeholder="Search Products">
-					<div class="search-bar-dropdown" onmouseover="showDropdown('search-bar-dropdown-item')" onmouseout="hideDropdown('search-bar-dropdown-item')">
-						<div class="search-bar-dropdown-heading" onclick="dropdown('search-bar-dropdown-item', 'search-bar-dropdown-caret')">
+					<div id="search-bar-dropdown" class="search-bar-dropdown">
+						<div id="search-bar-dropdown-heading" class="search-bar-dropdown-heading">
 							All Categories &nbsp 
 							<img id="search-bar-dropdown-caret" src="img/caret-down-black-icon.png">
 						</div>
@@ -91,7 +89,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="hamburger-menu" onclick="hamburgerMenu()">
+					<div id="hamburger-menu" class="hamburger-menu">
 						<img src="img/hamburger-menu-icon.png" id="hamburger">
 						<img style="display: none;" src="img/close-icon.png" id="close-icon">
 					</div>
@@ -100,7 +98,7 @@
 		</div>
 		<div class="navbar-bottom">
 			<div class="navbar-bottom-content" id="navbar-bottom-content">
-				<div class="categories" onclick="dropdown('all-categories-dropdown-item', 'all-categories-caret')" onmouseover="showDropdown('all-categories-dropdown-item')" onmouseout="hideDropdown('all-categories-dropdown-item')">
+				<div id="categories" class="categories">
 					<div class="categories-content">
 						<img src="img/list-icon.png">
 						All Categories
@@ -113,28 +111,28 @@
 					</ul>
 				</div>
 				<ul class="menus" id="menus">
-					<li onmouseover="showDropdown('home-dropdown')" onmouseout="hideDropdown('home-dropdown')">
-						<a onclick="dropdown('home-dropdown', 'home-caret')" class="menus-title navbar-title">
+					<li id="home-menu">
+						<a id="home-menu-heading" class="menus-title navbar-title">
 							HOME &nbsp
 							<img id="home-caret" src="img/caret-down-icon.png">
 						</a>
 						<ul hidden class="menus-level-1" id="home-dropdown">
 							<li><a>Home 1</a></li>
 							<li><a>Home 2</a></li>
-							<li onmouseover="showDropdown('home-dropdown-1')" onmouseout="hideDropdown('home-dropdown-1')">
-								<a onclick="dropdown('home-dropdown-1', 'home-caret-1')" class="menus-title">
+							<li id="home-menu-3">
+								<a id="home-menu-heading-3" class="menus-title">
 									Home 3
-									<img id="home-caret-1" src="img/caret-down-icon.png">
+									<img id="home-caret-3" src="img/caret-down-icon.png">
 								</a>
-								<ul hidden class="menus-level-2" id="home-dropdown-1">
+								<ul hidden class="menus-level-2" id="home-dropdown-3">
 									<li><a>Home 3.1</a></li>
 									<li><a>Home 3.2</a></li>
-									<li onmouseover="showDropdown('home-dropdown-1-2')" onmouseout="hideDropdown('home-dropdown-1-2')">
-										<a onclick="dropdown('home-dropdown-1-2', 'home-caret-1-2')" class="menus-title">
+									<li id="home-menu-3-3">
+										<a id="home-menu-heading-3-3" class="menus-title">
 											Home 3.3
-											<img id="home-caret-1-2" src="img/caret-down-icon.png">
+											<img id="home-caret-3-3" src="img/caret-down-icon.png">
 										</a>
-										<ul hidden id="home-dropdown-1-2" class="menus-level-3">
+										<ul hidden id="home-dropdown-3-3" class="menus-level-3">
 											<li><a>Home 3.3.1</a></li>
 											<li><a>Home 3.3.2</a></li>
 											<li><a>Home 3.3.3</a></li>
@@ -144,8 +142,8 @@
 							</li>
 						</ul>
 					</li>
-					<li onmouseover="showDropdown('about-dropdown')" onmouseout="hideDropdown('about-dropdown')">
-						<a onclick="dropdown('about-dropdown', 'about-caret')" class="menus-title navbar-title">
+					<li id="about-menu">
+						<a id="about-menu-heading" class="menus-title navbar-title">
 							ABOUT &nbsp
 							<img id="about-caret" src="img/caret-down-icon.png">
 						</a>
@@ -155,8 +153,8 @@
 							<li><a>About 3</a></li>
 						</ul>
 					</li>
-					<li class="active" onmouseover="showDropdown('product-dropdown')" onmouseout="hideDropdown('product-dropdown')">
-						<a onclick="dropdown('product-dropdown', 'product-caret')" class="menus-title navbar-title">
+					<li id="product-menu" class="active">
+						<a id="product-menu-heading" class="menus-title navbar-title">
 							PRODUCT &nbsp
 							<img id="product-caret" hidden src="img/caret-down-icon.png">
 							<img src="img/caret-down-orange-icon.png">
@@ -167,8 +165,8 @@
 							<li><a>Product 3</a></li>
 						</ul>					
 					</li>
-					<li onmouseover="showDropdown('pages-dropdown')" onmouseout="hideDropdown('pages-dropdown')">
-						<a onclick="dropdown('pages-dropdown', 'pages-caret')" class="menus-title navbar-title">
+					<li id="pages-menu">
+						<a id="pages-menu-heading" class="menus-title navbar-title">
 							PAGES &nbsp
 							<img id="pages-caret" src="img/caret-down-icon.png">
 						</a>
@@ -178,8 +176,8 @@
 							<li><a>Pages 3</a></li>
 						</ul>
 					</li>
-					<li onmouseover="showDropdown('contact-dropdown')" onmouseout="hideDropdown('contact-dropdown')">
-						<a onclick="dropdown('contact-dropdown', 'contact-caret')" class="menus-title navbar-title">
+					<li id="contact-menu">
+						<a id="contact-menu-heading" class="menus-title navbar-title">
 							CONTACT &nbsp
 							<img id="contact-caret" src="img/caret-down-icon.png">
 						</a>
@@ -653,4 +651,7 @@
 			</div>
 		</div>
 	</body>
-	</html>
+
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/eventListeners.js"></script>
+</html>
