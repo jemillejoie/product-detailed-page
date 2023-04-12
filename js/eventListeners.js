@@ -162,3 +162,28 @@ for(let i=1; i<=detailsTitle.children.length; i++){
 		details.bind(null, i),
 		false)
 }
+
+document.getElementById('about-footer-heading').addEventListener(
+	'click',
+	dropdown.bind(null, 'about-footer-content', 'about-footer-caret'),
+	false)
+
+document.getElementById('information-footer-heading').addEventListener(
+	'click',
+	dropdown.bind(null, 'information-footer-content', 'information-footer-caret'),
+	false)
+
+document.getElementById('account-footer-heading').addEventListener(
+	'click',
+	dropdown.bind(null, 'account-footer-content', 'account-footer-caret'),
+	false)
+
+document.getElementById('store-footer-heading').addEventListener(
+	'click',
+	dropdown.bind(null, 'store-footer-content', 'store-footer-caret'),
+	false)
+
+document.getElementById('contact-footer-heading').addEventListener(
+	'click',
+	dropdown.bind(null, 'contact-footer-content', 'contact-footer-caret'),
+	false)
