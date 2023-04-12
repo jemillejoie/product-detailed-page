@@ -129,16 +129,16 @@ document.getElementById('contact-menu-heading').addEventListener(
 	false)
 
 for(let i=1; i<=productThumbnail.children.length; i++){
-	document.getElementById('thumbnail-' + i).addEventListener(
+	document.getElementById(`thumbnail-${i}`).addEventListener(
 		'click',
-		thumbnail.bind(null, 'thumbnail-' + i),
+		thumbnail.bind(null, `thumbnail-${i}`),
 		false)
 }
 
 for(let i=1; i<=size.children.length; i++){
-	document.getElementById('size-' + i).addEventListener(
+	document.getElementById(`size-${i}`).addEventListener(
 		'click',
-		sizes.bind(null, 'size-' + i),
+		sizes.bind(null, `size-${i}`),
 		false)
 }
 
@@ -157,7 +157,7 @@ productQty.addEventListener('keypress', intOnly, false)
 productQty.addEventListener('input', noLeadingZeros, false)
 
 for(let i=1; i<=detailsTitle.children.length; i++){
-	document.getElementById('details-title-' + i).addEventListener(
+	document.getElementById(`details-title-${i}`).addEventListener(
 		'click',
 		details.bind(null, i),
 		false)

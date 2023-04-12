@@ -1,8 +1,8 @@
 function dropdown(itemID, caretID){
 	const items = document.getElementById(itemID);
 	const caret = document.getElementById(caretID);
-	const dropdown = document.querySelectorAll('[id^='+itemID+']');
-	const carets = document.querySelectorAll('[id^='+caretID+']');
+	const dropdown = document.querySelectorAll(`[id^=${itemID}]`);
+	const carets = document.querySelectorAll(`[id^=${caretID}]`);
 	const mobile = window.matchMedia("(max-width: 767px)");
 
 	if(mobile.matches) {
@@ -42,11 +42,11 @@ function hideDropdown(itemID){
 function thumbnail(thumbnailID){
 	const thumbnail = document.getElementById(thumbnailID);
 	const idNum = thumbnailID.slice(10);
-	const tv = document.getElementById('tv-'+idNum);
+	const tv = document.getElementById(`tv-${idNum}`);
 
 	for(let i=1; i<=4; i++) {
-		const x = document.getElementById('thumbnail-'+i);
-		const y = document.getElementById('tv-'+i);
+		const x = document.getElementById(`thumbnail-${i}`);
+		const y = document.getElementById(`tv-${i}`);
 
 		if(x==thumbnail)
 			thumbnail.classList.add('active');
@@ -64,7 +64,7 @@ function sizes(sizeID){
 	const size = document.getElementById(sizeID);
 
 	for(let i=1; i<=6; i++){
-		const x = document.getElementById('size-'+i);
+		const x = document.getElementById(`size-${i}`);
 
 		if(size==x)
 			size.classList.add('active');
@@ -101,12 +101,12 @@ function noLeadingZeros(){
 }
 
 function details(num){
-	const title = document.getElementById('details-title-'+num);
-	const text = document.getElementById('details-text-'+num);
+	const title = document.getElementById(`details-title-${num}`);
+	const text = document.getElementById(`details-text-${num}`);
 
 	for(let i=1; i<=3; i++){
-		const x = document.getElementById('details-title-'+i);
-		const y = document.getElementById('details-text-'+i);
+		const x = document.getElementById(`details-title-${i}`);
+		const y = document.getElementById(`details-text-${i}`);
 
 		if(x==title)
 			title.classList.add('active');
