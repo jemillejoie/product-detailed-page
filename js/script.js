@@ -6,7 +6,7 @@ function dropdown(itemID, caretID){
 	const mobile = window.matchMedia("(max-width: 767px)");
 
 	if(mobile.matches) {
-		if(items.style.display == "block"){
+		if(items.style.display === "block"){
 			items.style.display = "none";
 			caret.classList.remove("expand");
 
@@ -48,12 +48,12 @@ function thumbnail(thumbnailID){
 		const x = document.getElementById(`thumbnail-${i}`);
 		const y = document.getElementById(`tv-${i}`);
 
-		if(x==thumbnail)
+		if(x===thumbnail)
 			thumbnail.classList.add('active');
 		else if(x.classList.contains('active'))
 			x.classList.remove('active');
 		
-		if(y==tv)
+		if(y===tv)
 			tv.style.display = "block";
 		else
 			y.style.display = "none";
@@ -66,7 +66,7 @@ function sizes(sizeID){
 	for(let i=1; i<=sizeBtns.children.length; i++){
 		const x = document.getElementById(`size-${i}`);
 
-		if(size==x)
+		if(size===x)
 			size.classList.add('active');
 		else if(x.classList.contains('active'))
 			x.classList.remove('active');
@@ -81,14 +81,14 @@ function addQty(){
 function subtractQty(){
 	const val = document.getElementById('qty-num').value;
 
-	if(parseInt(val)<=0 || val=='')
+	if(parseInt(val)<=0 || val==='')
 		document.getElementById('qty-num').value = 0;
 	else
 		document.getElementById('qty-num').value = parseInt(val) - 1;
 }
 
 function intOnly(){
-	return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))
+	return (event.charCode !==8 && event.charCode ===0 || (event.charCode >= 48 && event.charCode <= 57))
 }
 
 function noLeadingZeros(){
@@ -96,7 +96,7 @@ function noLeadingZeros(){
 
 	val.value = parseInt(val.value);
 
-	if(val.value=='')
+	if(val.value==='')
 		val.value = 0;
 }
 
@@ -108,12 +108,12 @@ function details(num){
 		const x = document.getElementById(`details-title-${i}`);
 		const y = document.getElementById(`details-text-${i}`);
 
-		if(x==title)
+		if(x===title)
 			title.classList.add('active');
 		else if(x.classList.contains('active'))
 			x.classList.remove('active');
 
-		if(y==text)
+		if(y===text)
 			text.style.display = 'block';
 		else
 			y.style.display = 'none';
@@ -130,7 +130,7 @@ function hamburgerMenu(){
 	const allMenus = document.querySelectorAll('[class*="menus"]');
 	const allCaret = document.querySelectorAll('[id*="caret"]');
 
-	if(container.style.display == "none"){
+	if(container.style.display === "none"){
 		container.style.display = "block";
 		close.style.display = "block";
 		hamburger.style.display = "none";
@@ -139,7 +139,7 @@ function hamburgerMenu(){
 		container.append(menus);
 		container.append(contact);
 	}
-	else{
+	else {
 		container.style.display = "none";
 		close.style.display = "none";
 		hamburger.style.display = "block";
