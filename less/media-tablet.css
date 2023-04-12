@@ -150,7 +150,7 @@ p {
     font-size: 10px;
     line-height: 10px;
   }
-  .navbar-bottom-content .contact-content h6 {
+  .navbar-bottom-content .contact-content a {
     font-weight: 500;
     font-size: 12px;
     line-height: 12px;

@@ -160,7 +160,7 @@ p {
     font-size: 0.75vw;
     line-height: inherit;
   }
-  .navbar-bottom-content .contact-content h6 {
+  .navbar-bottom-content .contact-content a {
     font-weight: 500;
     font-size: 0.75vw;
     line-height: inherit;
@@ -728,7 +728,7 @@ p {
     font-size: 10px;
     line-height: 10px;
   }
-  .navbar-bottom-content .contact-content h6 {
+  .navbar-bottom-content .contact-content a {
     font-weight: 500;
     font-size: 12px;
     line-height: 12px;
@@ -1711,11 +1711,8 @@ p {
   .hamburger-menu-content .menus li ul {
     padding-left: 20px;
   }
-  .hamburger-menu-content .menus .active .menus-title #product-caret {
-    display: block;
-  }
-  .hamburger-menu-content .menus .active .menus-title img {
-    display: none;
+  .hamburger-menu-content .menus .active {
+    color: #E73C17;
   }
   .hamburger-menu-content .contact-content {
     padding-top: 50px;
@@ -1780,6 +1777,9 @@ a {
 }
 .navbar-mid-content h2 span {
   color: #E73C17;
+}
+.navbar-mid-content h2 a:hover {
+  color: #191919;
 }
 .navbar-mid-content .search-bar {
   display: flex;

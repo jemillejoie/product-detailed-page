@@ -160,7 +160,7 @@ p {
     font-size: 0.75vw;
     line-height: inherit;
   }
-  .navbar-bottom-content .contact-content h6 {
+  .navbar-bottom-content .contact-content a {
     font-weight: 500;
     font-size: 0.75vw;
     line-height: inherit;

@@ -572,11 +572,8 @@ p {
   .hamburger-menu-content .menus li ul {
     padding-left: 20px;
   }
-  .hamburger-menu-content .menus .active .menus-title #product-caret {
-    display: block;
-  }
-  .hamburger-menu-content .menus .active .menus-title img {
-    display: none;
+  .hamburger-menu-content .menus .active {
+    color: #E73C17;
   }
   .hamburger-menu-content .contact-content {
     padding-top: 50px;
