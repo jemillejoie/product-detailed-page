@@ -81,10 +81,8 @@ function addQty(){
 function subtractQty(){
 	var val = document.getElementById('qty-num').value;
 
-	if(parseInt(val)<=0 || val=='')
-		document.getElementById('qty-num').value = 0;
-	else
-		document.getElementById('qty-num').value = parseInt(val) - 1;
+	if (parseInt(val) <= 0 ) return;
+	document.getElementById('qty-num').value = parseInt(val) - 1;
 }
 
 function intOnly(){
@@ -96,8 +94,8 @@ function noLeadingZeros(){
 
 	val.value = parseInt(val.value);
 
-	if(val.value=='')
-		val.value = 0;
+	if(val.value) return 
+	val.value = 0;
 }
 
 function details(num){
