@@ -12,24 +12,24 @@ function dropdown(itemID, caretID){
 		carets = document.querySelectorAll(`[id^=${caretID}]`),
 		mobile = window.matchMedia("(max-width: 767px)");
 
-	if(mobile.matches) {
-		if(items.style.display === "block"){
-			items.style.display = "none";
+	if(!mobile.matches) return
+
+	if(items.style.display === "block"){
+		items.style.display = "none";
 			caret.classList.remove("expand");
 
-			for(let i=0; i<dropdown.length; i++){
-				dropdown[i].style.display = null;
-			}
+		for(let i=0; i<dropdown.length; i++){
+			dropdown[i].style.display = null;
+		}
 
-			for(let i=0; i<carets.length; i++){
-				if(carets[i].classList.contains("expand"))
-					carets[i].classList.remove("expand");
-			}
+		for(let i=0; i<carets.length; i++){
+			if(carets[i].classList.contains("expand"))
+				carets[i].classList.remove("expand");
 		}
-		else {
-			items.style.display = "block";
-			caret.classList.add("expand");
-		}
+	}
+	else {
+		items.style.display = "block";
+		caret.classList.add("expand");
 	}
 }
 
@@ -41,8 +41,11 @@ function dropdown(itemID, caretID){
  */
 function showDropdown(itemID){
 	const item = document.getElementById(itemID);
-	if(window.matchMedia("(min-width: 767px)").matches)
-		item.style.display = "block";
+
+	if(!window.matchMedia("(min-width: 767px)").matches)
+		return
+
+	item.style.display = "block";
 }
 
 /**
@@ -54,8 +57,10 @@ function showDropdown(itemID){
 function hideDropdown(itemID){
 	const item = document.getElementById(itemID);
 
-	if(window.matchMedia("(min-width: 767px)").matches)
-		item.style.display = "none";
+	if(!window.matchMedia("(min-width: 767px)").matches)
+		return
+
+	item.style.display = "none";
 }
 
 /**
@@ -122,7 +127,7 @@ function addQty(){
 function subtractQty(){
 	const val = document.getElementById('qty-num').value;
 
-	if(parseInt(val)<=0 || val==='')
+	if(parseInt(val)<=0)
 		document.getElementById('qty-num').value = 0;
 	else
 		document.getElementById('qty-num').value = parseInt(val) - 1;
@@ -146,8 +151,10 @@ function noLeadingZeros(){
 
 	val.value = parseInt(val.value);
 
-	if(val.value==='')
-		val.value = 0;
+	if(val.value)
+		return
+
+	val.value = 0;
 }
 
 /**
@@ -245,9 +252,8 @@ function resize(){
 	for(let i=0; i<caret.length; i++){
 		caret[i].style.display = null;
 
-		if(caret[i].classList.contains('expand')){
+		if(caret[i].classList.contains('expand'))
 			caret[i].classList.remove('expand');
-		}
 	}
 
 	for(let i=0; i<menus.length; i++){
