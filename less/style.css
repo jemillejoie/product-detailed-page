@@ -32,38 +32,42 @@ p {
   }
   .navbar-mid-content h2 {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 39px;
     line-height: 50.35px;
   }
   .navbar-mid-content .search-bar {
-    width: 48vw;
-    height: 76px;
+    width: 50vw;
+    height: 4vw;
   }
   .navbar-mid-content .search-bar input {
-    width: 33vw;
+    width: 32vw;
     font-weight: 300;
-    font-size: 1vw;
+    font-size: 20px;
     line-height: 24px;
-    padding: 0 45px;
+    padding: 0 2vw;
   }
   .navbar-mid-content .search-bar-dropdown {
-    width: 9vw;
     font-weight: 300;
-    font-size: 1vw;
+    font-size: 18px;
     line-height: 24px;
+    height: inherit;
+    position: relative;
   }
   .navbar-mid-content .search-bar-dropdown img {
     width: 1vw;
   }
   .navbar-mid-content .search-bar-dropdown-heading {
-    height: 76px;
+    height: inherit;
   }
   .navbar-mid-content .search-bar-dropdown ul {
-    width: 9vw;
+    width: 100%;
   }
   .navbar-mid-content .search-bar button {
-    width: 63px;
-    height: 66px;
+    width: 3.5vw;
+    height: inherit;
+  }
+  .navbar-mid-content .search-bar button img {
+    width: 1.2vw;
   }
   .navbar-mid .user-buttons {
     width: 236px;
@@ -100,9 +104,9 @@ p {
     height: 76px;
   }
   .navbar-bottom-content .categories-content {
-    width: 14vw;
+    width: inherit;
     font-weight: 500;
-    font-size: 1.3vw;
+    font-size: 20px;
     line-height: 29px;
   }
   .navbar-bottom-content .categories-content img {
@@ -110,7 +114,7 @@ p {
   }
   .navbar-bottom-content .categories ul {
     font-weight: 500;
-    font-size: 1.3vw;
+    font-size: 20px;
     text-align: center;
     line-height: 29px;
     padding-left: 0;
@@ -120,14 +124,14 @@ p {
   }
   .navbar-bottom-content .menus {
     font-weight: 400;
-    font-size: 0.8vw;
+    font-size: 16px;
     line-height: 19px;
   }
   .navbar-bottom-content .menus img {
-    width: 0.8vw;
+    width: 1vw;
   }
   .navbar-bottom-content .menus-title {
-    width: 7vw;
+    width: 10vw;
   }
   .navbar-bottom-content .menus .navbar-title {
     height: 56px;
@@ -145,25 +149,26 @@ p {
     padding-left: 2vw;
   }
   .navbar-bottom-content .contact {
-    width: 15vw;
+    width: 17vw;
     height: 76px;
     padding-right: 10px;
   }
   .navbar-bottom-content .contact-content {
-    width: 10vw;
+    width: inherit;
+    gap: 2vw;
   }
   .navbar-bottom-content .contact-content img {
     width: 2vw;
   }
   .navbar-bottom-content .contact-content p {
     font-weight: 300;
-    font-size: 0.75vw;
-    line-height: inherit;
+    font-size: 13px;
+    line-height: 20px;
   }
   .navbar-bottom-content .contact-content a {
     font-weight: 500;
-    font-size: 0.75vw;
-    line-height: inherit;
+    font-size: 13px;
+    line-height: 20px;
   }
   .page-title {
     height: 256px;
@@ -446,7 +451,6 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     width: 1518px;
     gap: 20px;
     padding: 15px;
@@ -469,14 +473,14 @@ p {
     height: 73px;
   }
   .newsletter form input {
-    width: 447px;
+    width: 24vw;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    padding: 0 38px;
+    padding: 0 2vw;
   }
   .newsletter form button {
-    width: 268px;
+    width: 14vw;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -487,13 +491,12 @@ p {
   .footer-content {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     padding: 58px 0 84px;
     border-bottom: 1px solid white;
     gap: 20px;
   }
   .footer-content .about {
-    width: 359px;
+    width: 19vw;
   }
   .footer-content .about h4 {
     font-weight: 500;
@@ -513,7 +516,7 @@ p {
   .footer-content .about .social-icons {
     display: flex;
     align-items: flex-end;
-    gap: 20px;
+    gap: 1vw;
     height: 48.31px;
   }
   .footer-content .about .social-icons img:hover {
@@ -521,7 +524,7 @@ p {
   }
   .footer-content .links {
     display: flex;
-    gap: 130px;
+    gap: 6.5vw;
   }
   .footer-content .links-container h4 {
     font-weight: 500;
@@ -543,7 +546,7 @@ p {
     padding-bottom: 13px;
   }
   .footer-content .contact {
-    max-width: 343px;
+    max-width: 18vw;
   }
   .footer-content .contact h4 {
     font-weight: 500;
@@ -1801,7 +1804,6 @@ a {
 }
 .navbar-mid-content .search-bar-dropdown-heading {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 4px;
 }
@@ -1884,7 +1886,7 @@ a {
 .navbar-bottom-content .categories-content {
   height: inherit;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin: auto;
   cursor: pointer;
@@ -1961,7 +1963,7 @@ a {
 }
 .navbar-bottom-content .contact-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   height: inherit;
 }

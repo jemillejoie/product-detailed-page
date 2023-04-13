@@ -80,8 +80,6 @@ button, a {
 				}
 			}
 
-
-
 			.search-bar {
 				#flex.space-between(center);
 				color: @color[dustyGray];
@@ -101,7 +99,7 @@ button, a {
 					cursor: pointer;
 
 					&-heading {
-						#flex.space-between(center);
+						#flex.align-items(center);
 						padding: 0 4px;
 					}
 
@@ -193,7 +191,7 @@ button, a {
 
 				&-content {
 					height: inherit;
-					#flex.space-between(center);
+					#flex.space-evenly(center);
 					margin: auto;
 					cursor: pointer;
 				}
@@ -280,7 +278,7 @@ button, a {
 				border-left: 2px solid @color[gallery];
 
 				&-content {
-					#flex.space-between(center);
+					#flex.flex-end(center);
 					height: inherit;
 				}
 			}

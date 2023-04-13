@@ -30,37 +30,42 @@
 				max-width: 1800px;
 
 				h2{
-					#text-styles(700, 48px, 50.35px);
+					#text-styles(700, 39px, 50.35px);
 				}
 
 				.search-bar {
-					#width-height(48vw, 76px);
+					#width-height(50vw, 4vw);
 
 					input {
-						width: 33vw;
-						#text-styles(300, 1vw, 24px);
-						padding: 0 45px;
+						width: 32vw;
+						#text-styles(300, 20px, 24px);
+						padding: 0 2vw;
 					}
 
 					&-dropdown {
-						width: 9vw;
-						#text-styles(300, 1vw, 24px);
+						#text-styles(300, 18px, 24px);
+						height: inherit;
+						position: relative;
 
 						img {
 							width: 1vw;
 						}
 
 						&-heading {
-							height: 76px;
+							height: inherit;
 						}
 
 						ul {
-							width: 9vw;
+							width: 100%;
 						}
 					}
 
 					button {
-						#width-height(63px, 66px);
+						#width-height(3.5vw, inherit);
+
+						img {
+							width: 1.2vw
+						}
 					}
 				}
 			}
@@ -105,8 +110,8 @@
 					#width-height(20vw, 76px);
 
 					&-content {
-						width: 14vw;
-						#text-styles(500, 1.3vw, 29px);
+						width: inherit;
+						#text-styles(500, 20px, 29px);
 
 						img {
 							width: 1.4vw;
@@ -114,7 +119,7 @@
 					}
 
 					ul {
-						#text-styles(500, 1.3vw, center, 29px);
+						#text-styles(500, 20px, center, 29px);
 						padding-left: 0;
 
 						li {
@@ -124,14 +129,14 @@
 				}
 
 				.menus {
-					#text-styles(400, 0.8vw, 19px);
+					#text-styles(400, 16px, 19px);
 
 					img {
-						width: 0.8vw;
+						width: 1vw;
 					}
 
 					&-title {
-						width: 7vw;
+						width: 10vw;
 					}
 
 					.navbar-title {
@@ -157,22 +162,23 @@
 				}
 
 				.contact {
-					#width-height(15vw, 76px);
+					#width-height(17vw, 76px);
 					padding-right: 10px;
 
 					&-content {
-						width: 10vw;
+						width: inherit;
+						gap: 2vw;
 
 						img {
 							width: 2vw;
 						}
 
 						p {
-							#text-styles(300, 0.75vw, inherit);
+							#text-styles(300, 13px, 20px);
 						}
 
 						a {
-							#text-styles(500, 0.75vw, inherit);
+							#text-styles(500, 13px, 20px);
 						}
 					}
 				}
@@ -478,7 +484,7 @@
 		min-height: 120px;
 
 		&-container {
-			#flex.space-between(center, wrap);
+			#flex.space-between(center);
 			width: 1518px;
 			gap: 20px;
 			padding: 15px;
@@ -505,13 +511,13 @@
 			height: 73px;
 
 			input {
-				width: 447px;
+				width: 24vw;
 				#text-styles(400, 20px, 24px);
-				padding: 0 38px;
+				padding: 0 2vw;
 			}
 
 			button {
-				width: 268px;
+				width: 14vw;
 				#text-styles(600, 20px, 24px);
 			}
 		}
@@ -525,13 +531,12 @@
 		&-content {
 			display: flex;
 			justify-content: space-between;
-			flex-wrap: wrap;
 			padding: 58px 0 84px;
 			border-bottom: 1px solid white;
 			gap:20px;
 
 			.about {
-				width: 359px;
+				width: 19vw;
 
 				h4 {
 					#text-styles(500, 24px, 29px);
@@ -549,7 +554,7 @@
 
 				.social-icons {
 					#flex.align-items(flex-end);
-					gap: 20px;
+					gap: 1vw;
 					height: 48.31px;
 
 					img {
@@ -562,7 +567,7 @@
 
 			.links {
 				display: flex;
-				gap:130px;
+				gap:6.5vw;
 
 				&-container {
 					h4 {
@@ -587,7 +592,7 @@
 			}
 
 			.contact {
-				max-width: 343px;
+				max-width: 18vw;
 
 				h4{
 					#text-styles(500, 24px, 29px);
