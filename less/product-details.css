@@ -459,17 +459,18 @@ p {
     line-height: 24px;
   }
   .newsletter form {
+    width: 50%;
     height: 73px;
   }
   .newsletter form input {
-    width: 24vw;
+    width: 60%;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     padding: 0 2vw;
   }
   .newsletter form button {
-    width: 14vw;
+    width: 40%;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
