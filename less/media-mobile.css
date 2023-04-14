@@ -8,40 +8,37 @@ p {
   margin: 0;
 }
 @media only screen and (max-width: 767px) {
-  .navbar {
-    height: 56px;
-  }
-  .navbar-top {
+  header .header-top {
     display: none;
   }
-  .navbar-mid {
+  header .header-container {
+    height: 56px;
+  }
+  header .header-content {
     height: inherit;
   }
-  .navbar-mid-content {
-    height: inherit;
-  }
-  .navbar-mid-content h2 {
+  header .header-content h2 {
     font-weight: 600;
     font-size: 19px;
     line-height: 19px;
     color: black;
   }
-  .navbar-mid-content .search-bar {
+  header .header-content .search-bar {
     display: none !important;
   }
-  .navbar-mid .user-buttons {
+  header .header-content .user-buttons {
     width: 137px;
   }
-  .navbar-mid .user-buttons .authentication {
+  header .header-content .user-buttons .authentication {
     display: none !important;
   }
-  .navbar-mid .user-buttons .nav-icons {
+  header .header-content .user-buttons .nav-icons {
     width: 94px;
   }
-  .navbar-mid .user-buttons .nav-icons img {
+  header .header-content .user-buttons .nav-icons img {
     width: 16px;
   }
-  .navbar-mid .user-buttons .nav-icons .cart-number {
+  header .header-content .user-buttons .nav-icons .cart-number {
     font-weight: 500;
     font-size: 7px;
     line-height: 8px;
@@ -51,7 +48,7 @@ p {
     top: -5px;
     right: -5px;
   }
-  .navbar-mid .user-buttons .hamburger-menu {
+  header .header-content .user-buttons .hamburger-menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,16 +56,16 @@ p {
     padding: 8px;
     cursor: pointer;
   }
-  .navbar-mid .user-buttons .hamburger-menu img {
+  header .header-content .user-buttons .hamburger-menu img {
     width: 14px;
   }
-  .navbar-mid .user-buttons .mobile {
+  header .header-content .user-buttons .mobile {
     display: flex !important;
   }
-  .navbar-mid .user-buttons .desktop {
+  header .header-content .user-buttons .desktop {
     display: none !important;
   }
-  .navbar-bottom {
+  nav {
     display: none;
   }
   .page-title {
@@ -415,13 +412,13 @@ p {
     font-size: 10px;
     line-height: 12px;
   }
-  .footer-content {
+  footer .footer-content {
     padding-top: 29px;
   }
-  .footer-content .about {
+  footer .footer-content .about {
     padding-bottom: 21px;
   }
-  .footer-content .about h4 {
+  footer .footer-content .about h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -433,36 +430,36 @@ p {
     height: 31px;
     cursor: pointer;
   }
-  .footer-content .about h4 i {
+  footer .footer-content .about h4 i {
     display: block !important;
     font-size: 20px;
   }
-  .footer-content .about-content {
+  footer .footer-content .about-content {
     display: none;
     padding: 20px;
     background: gray;
   }
-  .footer-content .about-content p {
+  footer .footer-content .about-content p {
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
     text-align: justify;
     padding-bottom: 10px;
   }
-  .footer-content .about-content .social-icons {
+  footer .footer-content .about-content .social-icons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
   }
-  .footer-content .about-content .social-icons img {
+  footer .footer-content .about-content .social-icons img {
     width: 20px;
     height: 20px;
   }
-  .footer-content .links-container {
+  footer .footer-content .links-container {
     padding-bottom: 21px;
   }
-  .footer-content .links-container h4 {
+  footer .footer-content .links-container h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -474,11 +471,11 @@ p {
     height: 31px;
     cursor: pointer;
   }
-  .footer-content .links-container h4 i {
+  footer .footer-content .links-container h4 i {
     display: block !important;
     font-size: 20px;
   }
-  .footer-content .links-container ul {
+  footer .footer-content .links-container ul {
     display: none;
     font-weight: 400;
     font-size: 10px;
@@ -487,10 +484,10 @@ p {
     margin: 0;
     background: gray;
   }
-  .footer-content .links-container ul li {
+  footer .footer-content .links-container ul li {
     padding-bottom: 13px;
   }
-  .footer-content .contact h4 {
+  footer .footer-content .contact h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -502,11 +499,11 @@ p {
     height: 31px;
     cursor: pointer;
   }
-  .footer-content .contact h4 i {
+  footer .footer-content .contact h4 i {
     display: block !important;
     font-size: 20px;
   }
-  .footer-content .contact ul {
+  footer .footer-content .contact ul {
     display: none;
     font-weight: 400;
     font-size: 10px;
@@ -514,38 +511,38 @@ p {
     padding: 20px 20px 10px;
     background: gray;
   }
-  .footer-content .contact ul li {
+  footer .footer-content .contact ul li {
     padding-bottom: 10px;
   }
-  .footer-content .contact ul li:not(.email) {
+  footer .footer-content .contact ul li:not(.email) {
     display: flex;
     align-items: center;
     gap: 4px;
   }
-  .footer-content .contact ul li a {
+  footer .footer-content .contact ul li a {
     font-weight: 500;
   }
-  .footer-content .contact ul li img {
+  footer .footer-content .contact ul li img {
     width: 20px;
     height: 20px;
   }
-  .footer .copyright {
+  footer .copyright {
     padding: 27px 0 42px;
     gap: 15px;
   }
-  .footer .copyright .cards {
+  footer .copyright .cards {
     gap: 5px;
   }
-  .footer .copyright .cards img {
+  footer .copyright .cards img {
     width: 20px;
   }
-  .footer .copyright .credits {
+  footer .copyright .credits {
     font-weight: 400;
     font-size: 6px;
     line-height: 7px;
     gap: 3px;
   }
-  .footer .copyright .credits img {
+  footer .copyright .credits img {
     width: 10px;
   }
   .hamburger-menu-content {

@@ -6,15 +6,16 @@
 @img: "../img/";
 
 @media only screen and (max-width: 767px) {
-	.navbar {
-		height: 56px;
+	header {
 
-		&-top {
-			display: none;
-		}
+		.header {
+			&-top {
+				display: none;
+			}
 
-		&-mid {
-			height: inherit;
+			&-container {
+				height: 56px;
+			}
 
 			&-content {
 				height: inherit;
@@ -27,57 +28,57 @@
 				.search-bar {
 					display: none !important;
 				}
-			}
 
-			.user-buttons {
-				width: 137px;
+				.user-buttons {
+					width: 137px;
 
-				.authentication {
-					display: none !important;
-				}
-
-				.nav-icons {
-					width: 94px;
-
-					img {
-						width: 16px;
+					.authentication {
+						display: none !important;
 					}
 
-					.cart {
-						&-number {
-							#text-styles(500, 7px, 8px);
-							#width-height(12px, 12px);
-							color: white;
-							top: -5px;
-							right: -5px;
+					.nav-icons {
+						width: 94px;
+
+						img {
+							width: 16px;
+						}
+
+						.cart {
+							&-number {
+								#text-styles(500, 7px, 8px);
+								#width-height(12px, 12px);
+								color: white;
+								top: -5px;
+								right: -5px;
+							}
 						}
 					}
-				}
 
-				.hamburger-menu {
-					#flex.center(center);
-					background: @color[pomegranate];
-					padding: 8px;
-					cursor: pointer;
+					.hamburger-menu {
+						#flex.center(center);
+						background: @color[pomegranate];
+						padding: 8px;
+						cursor: pointer;
 
-					img {
-						width: 14px;
+						img {
+							width: 14px;
+						}
 					}
-				}
 
-				.mobile {
-					display: flex !important;
-				}
+					.mobile {
+						display: flex !important;
+					}
 
-				.desktop {
-					display: none !important;
+					.desktop {
+						display: none !important;
+					}
 				}
 			}
 		}
+	}
 
-		&-bottom {
-			display: none;
-		}
+	nav {
+		display: none;
 	}
 
 	.page-title {
@@ -454,51 +455,12 @@
 		}
 	}
 
-	.footer {
-		&-content {
-			padding-top: 29px;
+	footer {
+		.footer {
+			&-content {
+				padding-top: 29px;
 
-			.about {
-				padding-bottom: 21px;
-
-				h4 {
-					#flex.space-between(center);
-					#text-styles(500, 10px, 12px);
-					background: @color[doveGray];
-					padding: 0 12px;
-					height: 31px;
-					cursor: pointer;
-
-					i {
-						display: block !important;
-						font-size: 20px;
-					}
-				}
-
-				&-content {
-					display: none;
-					padding: 20px;
-					background: gray;
-
-					p {
-						#text-styles(400, 10px, 12px);
-						text-align: justify;
-						padding-bottom: 10px;
-					}
-
-					.social-icons {
-						#flex.center(center);
-						gap: 10px;
-
-						img {
-							#width-height(20px, 20px);
-						}
-					}
-				}
-			}
-
-			.links {
-				&-container {
+				.about {
 					padding-bottom: 21px;
 
 					h4 {
@@ -515,55 +477,96 @@
 						}
 					}
 
+					&-content {
+						display: none;
+						padding: 20px;
+						background: gray;
+
+						p {
+							#text-styles(400, 10px, 12px);
+							text-align: justify;
+							padding-bottom: 10px;
+						}
+
+						.social-icons {
+							#flex.center(center);
+							gap: 10px;
+
+							img {
+								#width-height(20px, 20px);
+							}
+						}
+					}
+				}
+
+				.links {
+					&-container {
+						padding-bottom: 21px;
+
+						h4 {
+							#flex.space-between(center);
+							#text-styles(500, 10px, 12px);
+							background: @color[doveGray];
+							padding: 0 12px;
+							height: 31px;
+							cursor: pointer;
+
+							i {
+								display: block !important;
+								font-size: 20px;
+							}
+						}
+
+						ul {
+							display: none;
+							#text-styles(400, 10px, 12px);
+							padding: 20px 20px 7px;
+							margin: 0;
+							background: gray;
+
+							li {
+								padding-bottom: 13px;
+							}
+						}
+					}
+				}
+
+				.contact {
+					h4{
+						#flex.space-between(center);
+						#text-styles(500, 10px, 12px);
+						background: @color[doveGray];
+						padding: 0 12px;
+						height: 31px;
+						cursor: pointer;
+
+						i {
+							display: block !important;
+							font-size: 20px;
+						}
+					}
+
 					ul {
 						display: none;
 						#text-styles(400, 10px, 12px);
-						padding: 20px 20px 7px;
-						margin: 0;
+						padding: 20px 20px 10px;
 						background: gray;
 
 						li {
-							padding-bottom: 13px;
-						}
-					}
-				}
-			}
+							padding-bottom: 10px;
 
-			.contact {
-				h4{
-					#flex.space-between(center);
-					#text-styles(500, 10px, 12px);
-					background: @color[doveGray];
-					padding: 0 12px;
-					height: 31px;
-					cursor: pointer;
+							&:not(.email){
+								#flex.align-items(center);
+								gap: 4px;
+							}
 
-					i {
-						display: block !important;
-						font-size: 20px;
-					}
-				}
+							a {
+								font-weight: 500;
+							}
 
-				ul {
-					display: none;
-					#text-styles(400, 10px, 12px);
-					padding: 20px 20px 10px;
-					background: gray;
-
-					li {
-						padding-bottom: 10px;
-
-						&:not(.email){
-							#flex.align-items(center);
-							gap: 4px;
-						}
-
-						a {
-							font-weight: 500;
-						}
-
-						img {
-							#width-height(20px, 20px);
+							img {
+								#width-height(20px, 20px);
+							}
 						}
 					}
 				}

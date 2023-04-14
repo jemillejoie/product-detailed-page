@@ -6,24 +6,24 @@
 @img: "../img/";
 
 @media only screen and (min-width: 1025px) {
-	.navbar {
-		min-height: 286px;
+	header {
+		.header {
+			&-top {
+				#text-styles(300, 16px, 19.36px);
+				height: 65px;
 
-		&-top {
-			height: 65px;
-			#text-styles(300, 16px, 19.36px);
+				&-container {
+					max-width: 1800px;
 
-			&-content {
-				max-width: 1800px;
-
-				.lang-currency {
-					width: 157px;
+					.lang-currency {
+						width: 157px;
+					}
 				}
 			}
-		}
 
-		&-mid {
-			min-height: 150px;
+			&-container {
+				min-height: 150px;
+			}
 
 			&-content {
 				min-height: inherit;
@@ -68,108 +68,108 @@
 						}
 					}
 				}
-			}
 
-			.user-buttons {
-				width: 236px;
-				gap: 36px;
+				.user-buttons {
+					width: 236px;
+					gap: 36px;
 
-				.authentication {
-					#text-styles(300, 20px, 24.2px);
-				}
+					.authentication {
+						#text-styles(300, 20px, 24.2px);
+					}
 
-				.nav-icons {
-					width: 65px;
+					.nav-icons {
+						width: 65px;
 
-					.cart {
-						&-number {
-							#width-height(30px, 30px);
-							top: -16px;
-							right: -13px;
+						.cart {
+							&-number {
+								#width-height(30px, 30px);
+								top: -16px;
+								right: -13px;
+							}
+						}
+
+						.mobile {
+							display: none;
 						}
 					}
 
-					.mobile {
+					.hamburger-menu {
 						display: none;
 					}
 				}
-
-				.hamburger-menu {
-					display: none;
-				}
 			}
 		}
+	}
 
-		&-bottom {
-			min-height: 76px;
+	.navbar {
+		min-height: 76px;
 
-			&-content {
-				max-width: 1760px;
+		&-content {
+			max-width: 1760px;
 
-				.categories {
-					#width-height(21%, 76px);
+			.categories {
+				#width-height(21%, 76px);
 
-					&-content {
-						#text-styles(500, 20px, 29px);
-					}
-
-					ul {
-						#text-styles(500, 20px, center, 29px);
-						padding-left: 0;
-
-						li {
-							padding: 1vw 0;
-						}
-					}
+				&-content {
+					#text-styles(500, 20px, 29px);
 				}
 
-				.menus {
-					#text-styles(400, 16px, 19px);
+				ul {
+					#text-styles(500, 20px, center, 29px);
+					padding-left: 0;
 
-					&-title {
-						width: 130px;
-					}
-
-					.navbar-title {
-						height: 56px;
-					}
-
-					&-level {
-						&-1 {
-							top: 75px;
-							padding-left: 20px;
-						}
-
-						&-2 {
-							left: 100%;
-							padding-left: 20px;
-						}
-
-						&-3 {
-							left: 100%;
-							padding-left: 20px;
-						}
+					li {
+						padding: 1vw 0;
 					}
 				}
+			}
 
-				.contact {
-					#width-height(17%, 76px);
-					padding-right: 10px;
+			.menus {
+				#text-styles(400, 16px, 19px);
 
-					&-content {
-						gap: 2vw;
+				&-title {
+					width: 130px;
+				}
 
-						img {
-							height: 40px;
-						}
+				.navbar-title {
+					height: 56px;
+				}
 
-						p {
-							#text-styles(300, 13px, 20px);
-						}
+				&-level {
+					&-1 {
+						top: 75px;
+						padding-left: 20px;
+					}
 
-						a {
-							#text-styles(500, 13px, 20px);
-						}
+					&-2 {
+						left: 100%;
+						padding-left: 20px;
+					}
+
+					&-3 {
+						left: 100%;
+						padding-left: 20px;
+					}
+				}
+			}
+
+			.contact {
+				#width-height(17%, 76px);
+				padding-right: 10px;
+
+				&-content {
+					gap: 2vw;
+
+					img {
+						height: 40px;
+					}
+
+					p {
+						#text-styles(300, 13px, 20px);
+					}
+
+					a {
+						#text-styles(500, 13px, 20px);
 					}
 				}
 			}
@@ -205,7 +205,7 @@
 
 			&-thumbnail {
 				&-img {
-					#width-height(10vw, 8vw);
+					#width-height(200px, 151px);
 					margin-bottom: 39px;
 
 					img {
@@ -218,7 +218,7 @@
 				margin-bottom: 50px;
 
 				&-show {
-					#width-height(36vw, 37.5vw);
+					#width-height(695px, 715px);
 					margin-bottom: 45px;
 
 					img {
@@ -513,53 +513,20 @@
 		}
 	}
 
-	.footer {
-		&-container {
+	footer {
+		.footer {
 			max-width: 1800px;
-		}
 
-		&-content {
-			display: flex;
-			justify-content: space-between;
-			padding: 58px 0 84px;
-			border-bottom: 1px solid white;
-			gap:20px;
-
-			.about {
-				width: 19vw;
-
-				h4 {
-					#text-styles(500, 24px, 29px);
-					padding-bottom: 29px;
-
-					i {
-						display: none;
-					}
-				}
-
-				p {
-					#text-styles(400, 18px, 30px);
-					padding-bottom: 13px;
-				}
-
-				.social-icons {
-					#flex.align-items(flex-end);
-					gap: 1vw;
-					height: 48.31px;
-
-					img {
-						&:hover {
-							padding-bottom: 17px;
-						}
-					}
-				}
-			}
-
-			.links {
+			&-content {
 				display: flex;
-				gap:6.5vw;
+				justify-content: space-between;
+				padding: 58px 0 84px;
+				border-bottom: 1px solid white;
+				gap:20px;
 
-				&-container {
+				.about {
+					width: 19vw;
+
 					h4 {
 						#text-styles(500, 24px, 29px);
 						padding-bottom: 29px;
@@ -569,44 +536,77 @@
 						}
 					}
 
+					p {
+						#text-styles(400, 18px, 30px);
+						padding-bottom: 13px;
+					}
+
+					.social-icons {
+						#flex.align-items(flex-end);
+						gap: 1vw;
+						height: 48.31px;
+
+						img {
+							&:hover {
+								padding-bottom: 17px;
+							}
+						}
+					}
+				}
+
+				.links {
+					display: flex;
+					gap:6.5vw;
+
+					&-container {
+						h4 {
+							#text-styles(500, 24px, 29px);
+							padding-bottom: 29px;
+
+							i {
+								display: none;
+							}
+						}
+
+						ul {
+							#text-styles(400, 18px, 22px);
+							padding: 0;
+							margin: 0;
+
+							li {
+								padding-bottom: 13px;
+							}
+						}
+					}
+				}
+
+				.contact {
+					max-width: 18vw;
+
+					h4{
+						#text-styles(500, 24px, 29px);
+						padding-bottom: 29px;
+
+						i {
+							display: none;
+						}
+					}
+
 					ul {
-						#text-styles(400, 18px, 22px);
+						#text-styles(400, 18px, 30px);
 						padding: 0;
-						margin: 0;
 
 						li {
-							padding-bottom: 13px;
-						}
-					}
-				}
-			}
+							padding-bottom: 21px;
 
-			.contact {
-				max-width: 18vw;
+							&:not(.email){
+								#flex.align-items(center);
+								gap: 4px;
+							}
 
-				h4{
-					#text-styles(500, 24px, 29px);
-					padding-bottom: 29px;
-
-					i {
-						display: none;
-					}
-				}
-
-				ul {
-					#text-styles(400, 18px, 30px);
-					padding: 0;
-
-					li {
-						padding-bottom: 21px;
-
-						&:not(.email){
-							#flex.align-items(center);
-							gap: 4px;
-						}
-
-						a {
-							font-weight: 500;
+							a {
+								font-weight: 500;
+							}
 						}
 					}
 				}
