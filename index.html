@@ -11,6 +11,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div class="mask" style="display: none"></div>
@@ -23,14 +25,14 @@
 				<div class="lang-currency">
 					<div class="lang-currency-content">
 						ENG &nbsp
-						<img src="img/caret-down-icon.png" alt="caret down icon">
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
 					</div>
 					<div>
 						|
 					</div>
 					<div class="lang-currency-content">
 						USD &nbsp
-						<img src="img/caret-down-icon.png" alt="caret down icon">
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
 					</div>
 				</div>
 			</div>
@@ -47,7 +49,7 @@
 					<div id="search-bar-dropdown" class="search-bar-dropdown">
 						<div id="search-bar-dropdown-heading" class="search-bar-dropdown-heading">
 							All Categories &nbsp 
-							<img id="search-bar-dropdown-caret" src="img/caret-down-black-icon.png" alt="caret down icon">
+							<i class="	fa fa-angle-down" aria-hidden="true"></i>
 						</div>
 						<ul id="search-bar-dropdown-item">
 							<li>Category 1</li>
@@ -104,9 +106,9 @@
 			<div class="navbar-bottom-content" id="navbar-bottom-content">
 				<div id="categories" class="categories">
 					<div class="categories-content">
-						<img src="img/list-icon.png" alt="list icon" >
+						<i class="fa fa-list-ul" aria-hidden="true"></i>
 						All Categories
-						<img id="all-categories-caret" src="img/caret-down-icon.png" alt="caret down icon">
+						<i id="all-categories-caret" class="fa fa-angle-down" aria-hidden="true"></i>
 					</div>
 					<ul id="all-categories-dropdown-item">
 						<a href="#"><li>Category 1</li></a>
@@ -118,23 +120,23 @@
 					<li id="home-menu">
 						<a id="home-menu-heading" class="menus-title navbar-title">
 							HOME &nbsp
-							<img id="home-caret" src="img/caret-down-icon.png" alt="caret down icon">
+							<i id="home-caret" class="fa fa-angle-down" aria-hidden="true"></i>
 						</a>
 						<ul hidden class="menus-level-1" id="home-dropdown">
 							<li><a>Home 1</a></li>
 							<li><a>Home 2</a></li>
 							<li id="home-menu-3">
 								<a id="home-menu-heading-3" class="menus-title">
-									Home 3
-									<img id="home-caret-3" src="img/caret-down-icon.png" alt="caret down icon">
+									Home 3 &nbsp
+									<i id="home-caret-3" class="fa fa-angle-down" aria-hidden="true"></i>
 								</a>
 								<ul hidden class="menus-level-2" id="home-dropdown-3">
 									<li><a>Home 3.1</a></li>
 									<li><a>Home 3.2</a></li>
 									<li id="home-menu-3-3">
 										<a id="home-menu-heading-3-3" class="menus-title">
-											Home 3.3
-											<img id="home-caret-3-3" src="img/caret-down-icon.png" alt="caret down icon">
+											Home 3.3 &nbsp
+											<i id="home-caret-3-3" class="fa fa-angle-down" aria-hidden="true"></i>
 										</a>
 										<ul hidden id="home-dropdown-3-3" class="menus-level-3">
 											<li><a>Home 3.3.1</a></li>
@@ -149,7 +151,7 @@
 					<li id="about-menu">
 						<a id="about-menu-heading" class="menus-title navbar-title">
 							ABOUT &nbsp
-							<img id="about-caret" src="img/caret-down-icon.png" alt="caret down icon">
+							<i id="about-caret" class="fa fa-angle-down" aria-hidden="true"></i>
 						</a>
 						<ul hidden id="about-dropdown" class="menus-level-1">
 							<li><a>About 1</a></li>
@@ -160,7 +162,7 @@
 					<li id="product-menu">
 						<a id="product-menu-heading" class="menus-title navbar-title active">
 							PRODUCT &nbsp
-							<img id="product-caret" src="img/caret-down-orange-icon.png" alt="caret down icon">
+							<i id="product-caret" class="fa fa-angle-down" aria-hidden="true"></i>
 						</a>
 						<ul hidden id="product-dropdown" class="menus-level-1">
 							<li><a>Product 1</a></li>
@@ -171,7 +173,7 @@
 					<li id="pages-menu">
 						<a id="pages-menu-heading" class="menus-title navbar-title">
 							PAGES &nbsp
-							<img id="pages-caret" src="img/caret-down-icon.png" alt="caret down icon">
+							<i id="pages-caret" class="fa fa-angle-down" aria-hidden="true"></i>
 						</a>
 						<ul hidden id="pages-dropdown" class="menus-level-1">
 							<li><a>Pages 1</a></li>
@@ -182,7 +184,7 @@
 					<li id="contact-menu">
 						<a id="contact-menu-heading" class="menus-title navbar-title">
 							CONTACT &nbsp
-							<img id="contact-caret" src="img/caret-down-icon.png" alt="caret down icon">
+							<i id="contact-caret" class="fa fa-angle-down" aria-hidden="true"></i>
 						</a>
 						<ul hidden id="contact-dropdown" class="menus-level-1">
 							<li><a>Contact 1</a></li>
@@ -547,7 +549,7 @@
 					<div class="about">
 						<h4 id="about-footer-heading">
 							ABOUT US
-							<img id="about-footer-caret" style="display: none;" src="img/caret-down-icon.png" alt="caret down icon">
+							<i id="about-footer-caret" style="display: none;" class="fa fa-angle-down" aria-hidden="true"></i>
 						</h4>
 						<div class="about-content" id="about-footer-content">
 							<p>
@@ -576,7 +578,7 @@
 						<div class="links-container">
 							<h4 id="information-footer-heading">
 								INFORMATION
-								<img style="display: none;" src="img/caret-down-icon.png" id="information-footer-caret" alt="caret down icon">
+								<i id="information-footer-caret" style="display: none;" class="fa fa-angle-down" aria-hidden="true"></i>
 							</h4>
 							<ul id="information-footer-content">
 								<a href="#"><li>About</li></a>
@@ -590,7 +592,7 @@
 						<div class="links-container">
 							<h4 id="account-footer-heading">
 								ACCOUNT
-								<img style="display: none;" src="img/caret-down-icon.png" id="account-footer-caret" alt="caret down icon">
+								<i id="account-footer-caret" style="display: none;" class="fa fa-angle-down" aria-hidden="true"></i>
 							</h4>
 							<ul id="account-footer-content">
 								<a href="#"><li>My Account</li></a>
@@ -604,7 +606,7 @@
 						<div class="links-container">
 							<h4 id="store-footer-heading">
 								STORE
-								<img style="display: none;" src="img/caret-down-icon.png" id="store-footer-caret" alt="caret down icon">
+								<i id="store-footer-caret" style="display: none;" class="fa fa-angle-down" aria-hidden="true"></i>
 							</h4>
 							<ul id="store-footer-content">
 								<a href="#"><li>Affiliate</li></a>
@@ -618,7 +620,7 @@
 					<div class="contact">
 						<h4 id="contact-footer-heading">
 							CONTACT US
-							<img style="display: none;" src="img/caret-down-icon.png" id="contact-footer-caret" alt="caret down icon">
+							<i id="contact-footer-caret" style="display: none;" class="fa fa-angle-down" aria-hidden="true"></i>
 						</h4>
 						<ul id="contact-footer-content">
 							<li class="email">

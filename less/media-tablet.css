@@ -487,7 +487,7 @@ p {
     line-height: 29px;
     padding-bottom: 29px;
   }
-  .footer-content .about h4 img {
+  .footer-content .about h4 i {
     display: none;
   }
   .footer-content .about p {
@@ -515,7 +515,7 @@ p {
     line-height: 29px;
     padding-bottom: 29px;
   }
-  .footer-content .links-container h4 img {
+  .footer-content .links-container h4 i {
     display: none;
   }
   .footer-content .links-container ul {
@@ -534,7 +534,7 @@ p {
     line-height: 29px;
     padding: 20px 0;
   }
-  .footer-content .contact h4 img {
+  .footer-content .contact h4 i {
     display: none;
   }
   .footer-content .contact ul {

@@ -93,6 +93,7 @@ p {
     margin: 30px 0 37px;
   }
   .content .product-container {
+    justify-content: center;
     flex-wrap: wrap;
   }
   .content .product-thumbnail {
@@ -432,8 +433,9 @@ p {
     height: 31px;
     cursor: pointer;
   }
-  .footer-content .about h4 img {
+  .footer-content .about h4 i {
     display: block !important;
+    font-size: 20px;
   }
   .footer-content .about-content {
     display: none;
@@ -472,8 +474,9 @@ p {
     height: 31px;
     cursor: pointer;
   }
-  .footer-content .links-container h4 img {
+  .footer-content .links-container h4 i {
     display: block !important;
+    font-size: 20px;
   }
   .footer-content .links-container ul {
     display: none;
@@ -499,8 +502,9 @@ p {
     height: 31px;
     cursor: pointer;
   }
-  .footer-content .contact h4 img {
+  .footer-content .contact h4 i {
     display: block !important;
+    font-size: 20px;
   }
   .footer-content .contact ul {
     display: none;
@@ -547,11 +551,15 @@ p {
   .hamburger-menu-content {
     width: 100vw;
     height: 100vh;
-    background: #D9D9D9;
+    background: #2F333A;
     z-index: 5;
     padding: 20px 20px 100px;
   }
   .hamburger-menu-content .menus {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
     margin: 0;
     padding: 0;
   }
@@ -576,6 +584,10 @@ p {
     color: #E73C17;
   }
   .hamburger-menu-content .contact-content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
     padding-top: 50px;
     text-align: center;
   }
