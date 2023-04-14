@@ -1,80 +1,90 @@
-@import 'text-styles';
-@import 'flex';
-@import 'colors';
-@import 'width-height';
+@import '../text-styles/text-styles';
+@import '../text-styles/colors';
+@import '../flex/flex';
+@import '../measurements/width-height';
 
 @img: "../img/";
 
-@media only screen and (min-width: 767px) and (max-width: 1024px) {
+@media only screen and (min-width: 1025px) {
 	header {
 		.header {
 			&-top {
-				#text-styles(300, 12px, 12px);
-				height: 50px;
+				#text-styles(300, 16px, 19.36px);
+				height: 65px;
 
-				.lang-currency {
-					width: 120px;
+				&-container {
+					max-width: 1800px;
+
+					.lang-currency {
+						width: 157px;
+					}
 				}
 			}
 
 			&-container {
-				min-height: 100px;
+				min-height: 150px;
 			}
 
 			&-content {
 				min-height: inherit;
+				max-width: 1800px;
 
 				h2{
-					#text-styles(700, 30px, 30px);
+					#text-styles(700, 39px, 50.35px);
 				}
 
 				.search-bar {
-					#width-height(400px, 60px);
+					#width-height(50%, 76px);
 
 					input {
-						width: 70%;
-						#text-styles(300, 16px, 16px);
-						padding: 0 20px;
+						width: 62%;
+						#text-styles(300, 20px, 24px);
+						padding: 0 5%;
 					}
 
 					&-dropdown {
-						width: 160px;
-						#text-styles(300, 14px, 14px);
+						#text-styles(300, 18px, 24px);
+						height: inherit;
+						position: relative;
+
+						img {
+							width: 1vw;
+						}
 
 						&-heading {
-							height: 60px;
+							height: inherit;
 						}
 
 						ul {
-							width: 120px;
+							width: 100%;
 						}
 					}
 
 					button {
-						#width-height(60px, 60px);
+						#width-height(3.5vw, inherit);
+
+						img {
+							width: 1.2vw
+						}
 					}
 				}
 
 				.user-buttons {
-					width: 160px;
+					width: 236px;
+					gap: 36px;
 
 					.authentication {
-						#text-styles(300, 16px, 16px);
+						#text-styles(300, 20px, 24.2px);
 					}
 
 					.nav-icons {
-						width: 45px;
-
-						img {
-							width: 17px;
-						}
+						width: 65px;
 
 						.cart {
 							&-number {
-								font-size: 12px;
-								#width-height(16px, 16px);
-								top: -8px;
-								right: -6px;
+								#width-height(30px, 30px);
+								top: -16px;
+								right: -13px;
 							}
 						}
 
@@ -92,81 +102,74 @@
 	}
 
 	.navbar {
-		height: 60px;
+		min-height: 76px;
 
 		&-content {
-			height: inherit;
+			max-width: 1760px;
 
 			.categories {
-				#width-height(150px, inherit);
+				#width-height(21%, 76px);
 
 				&-content {
-					width: inherit;
-					#text-styles(500, 14px, 14px);
-
-					img {
-						width: 20px;
-					}
+					#text-styles(500, 20px, 29px);
 				}
 
 				ul {
-					#text-styles(500, 14px, 14px);
-					padding: 10px 10px 10px 30px;
+					#text-styles(500, 20px, center, 29px);
+					padding-left: 0;
 
 					li {
-						padding: 10px 0;
+						padding: 1vw 0;
 					}
 				}
 			}
 
 			.menus {
-				#text-styles(400, 12px, 12px);
+				#text-styles(400, 16px, 19px);
 
 				&-title {
-					width: 90px;
+					width: 130px;
 				}
 
 				.navbar-title {
-					height: 50px;
+					height: 56px;
 				}
 
 				&-level {
 					&-1 {
-						top: 55px;
-						padding: 10px 0 0 20px;
+						top: 75px;
+						padding-left: 20px;
 					}
 
 					&-2 {
-						left: 65px;
-						top: 0;
+						left: 100%;
 						padding-left: 20px;
 					}
 
 					&-3 {
-						left: 85px;
-						top: 0;
+						left: 100%;
 						padding-left: 20px;
 					}
 				}
 			}
 
 			.contact {
-				height: inherit;
+				#width-height(17%, 76px);
+				padding-right: 10px;
 
 				&-content {
-					width: 140px;
-					padding: 0 10px;
+					gap: 2vw;
 
 					img {
-						width: 25px;
+						height: 40px;
 					}
 
 					p {
-						#text-styles(300, 10px, 10px);
+						#text-styles(300, 13px, 20px);
 					}
 
 					a {
-						#text-styles(500, 12px, 12px);
+						#text-styles(500, 13px, 20px);
 					}
 				}
 			}
@@ -174,33 +177,36 @@
 	}
 
 	.page-title {
-		height: 200px;
+		height: 256px;
 
 		h1 {
-			#text-styles(500, 30px, 55px);
-			padding-bottom: 15px;
+			#text-styles(500, 40px, 65px);
+			padding-bottom: 20px;
 		}
 
 		p {
-			#text-styles(300, 14px, 20px);
+			#text-styles(300, 18px, 32px);
+			letter-spacing: 0.15em;
 		}
 	}
 
 	.content {
-		max-width: 1064px;		
-
+		max-width: 1802px;
+		
 		.product {
-			margin: 50px 0;
+			max-width: 1665px;
+			margin: 96px 0;
+			gap: 34px;
 
 			&-container {
-				width: 728px;
-				justify-content: space-between;
+				justify-content: space-around;
+				gap: 34px;
 			}
 
 			&-thumbnail {
 				&-img {
-					#width-height(157px, 118px);
-					margin-bottom: 31px;
+					#width-height(200px, 151px);
+					margin-bottom: 39px;
 
 					img {
 						width: 75%;
@@ -209,15 +215,15 @@
 			}
 
 			&-image {
-				margin-bottom: 30px;
+				margin-bottom: 50px;
 
 				&-show {
-					#width-height(535px, 564px);
-					margin-bottom: 36px;
+					#width-height(695px, 715px);
+					margin-bottom: 45px;
 
 					img {
 						width: 90%;
-						filter: drop-shadow(0px 30px 30px fade(@color[codGray], 60%));
+						filter: drop-shadow(0px 40px 40px fade(@color[codGray], 60%));
 					}
 				}
 
@@ -323,7 +329,7 @@
 			&-title {
 				#flex.space-between(center);
 				width: 608px;
-
+				
 				h2 {
 					#text-styles(500, 24px, 29px);
 					padding-bottom: 23px;
@@ -335,7 +341,7 @@
 				min-height: 421px;
 
 				&-content {
-					width: 70%;
+					width: 57%;
 					#text-styles(300, 18px, 32px);
 
 					p {
@@ -349,6 +355,7 @@
 					.review-container {
 						margin: 20px 0;
 						padding: 20px;
+						border: 1px solid @color[gallery];
 
 						.stars img {
 							height: 20px;
@@ -371,9 +378,7 @@
 			}
 
 			&-group {
-				width: 728px;
 				gap: 30px;
-				flex-wrap: nowrap !important;
 			}
 
 			&-container {
@@ -469,13 +474,13 @@
 		min-height: 120px;
 
 		&-container {
-			max-width: 1024px;
-			padding: 15px 20px;
+			#flex.space-between(center);
+			width: 1518px;
+			gap: 20px;
+			padding: 15px;
 		}
 
 		&-caption {
-			padding-bottom: 20px;
-
 			img {
 				padding-right: 33px;
 			}
@@ -493,17 +498,17 @@
 		}
 
 		form {
-			height: 73px;
+			#width-height(50%, 73px);
 
 			input {
-				width: 447px;
+				width: 60%;
 				#text-styles(400, 20px, 24px);
-				padding: 0 38px;
+				padding: 0 2vw;
 			}
 
 			button {
-				width: 250px;
-				#text-styles(600, 18px, 18px);
+				width: 40%;
+				#text-styles(600, 20px, 24px);
 			}
 		}
 	}
@@ -515,13 +520,12 @@
 			&-content {
 				display: flex;
 				justify-content: space-between;
-				flex-wrap: wrap;
 				padding: 58px 0 84px;
 				border-bottom: 1px solid white;
 				gap:20px;
 
 				.about {
-					padding-bottom: 20px;
+					width: 19vw;
 
 					h4 {
 						#text-styles(500, 24px, 29px);
@@ -539,7 +543,7 @@
 
 					.social-icons {
 						#flex.align-items(flex-end);
-						gap: 20px;
+						gap: 1vw;
 						height: 48.31px;
 
 						img {
@@ -552,7 +556,7 @@
 
 				.links {
 					display: flex;
-					gap:130px;
+					gap:6.5vw;
 
 					&-container {
 						h4 {
@@ -577,9 +581,11 @@
 				}
 
 				.contact {
+					max-width: 18vw;
+
 					h4{
 						#text-styles(500, 24px, 29px);
-						padding: 20px 0;
+						padding-bottom: 29px;
 
 						i {
 							display: none;
@@ -622,3 +628,4 @@
 		}
 	}
 }
+
