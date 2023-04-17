@@ -8,24 +8,31 @@ header {
 			background: @color[tuna];
 			color: @color[white];
 
-			&-container{
-				#flex.space-between(center);
+			&-container {
+				.flex();
+				.justify-content(space-between);
+				.align-items(center);
 				height: inherit;
 				padding: 0 20px;
 				margin: auto;
 
 				.lang-currency {
-					#flex.space-between(center);
+					.flex();
+					.justify-content(space-between);
+					.align-items(center);
 
 					&-content {
-						#flex.align-items(center);
+						.flex();
+						.align-items(center);
 					}
 				}
 			}
 		}
 
 		&-content {
-			#flex.space-between(center);
+			.flex();
+			.justify-content(space-between);
+			.align-items(center);
 			color: @color[codGray];
 			margin: auto;
 			padding: 0 20px;
@@ -39,7 +46,9 @@ header {
 			}
 
 			.search-bar {
-				#flex.space-between(center);
+				.flex();
+				.justify-content(space-between);
+				.align-items(center);
 				color: @color[dustyGray];
 				border: 2px solid @color[gallery];
 
@@ -57,7 +66,8 @@ header {
 					cursor: pointer;
 
 					&-heading {
-						#flex.align-items(center);
+						.flex();
+						.align-items(center);
 						padding: 0 4px;
 					}
 
@@ -80,7 +90,9 @@ header {
 				}
 
 				button {
-					#flex.center(center);
+					.flex();
+					.justify-content(center);
+					.align-items(center);
 					background: @color[tuna];
 					border: none;
 
@@ -91,7 +103,9 @@ header {
 			}
 
 			.user-buttons {
-				#flex.space-between(center);
+				.flex();
+				.justify-content(space-between);
+				.align-items(center);
 
 				.authentication {
 					cursor: pointer;
@@ -108,7 +122,9 @@ header {
 				}
 
 				.nav-icons {
-					#flex.space-between(center);
+					.flex();
+					.justify-content(space-between);
+					.align-items(center);
 
 					& > * {
 						cursor: pointer;
@@ -122,7 +138,9 @@ header {
 						position: relative;
 
 						&-number {
-							#flex.center(center);
+							.flex();
+							.justify-content(center);
+							.align-items(center);
 							position: absolute;
 							border-radius: 50%;
 							background: @color[grenadier];

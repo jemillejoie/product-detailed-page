@@ -1,4 +1,11 @@
 @media only screen and (max-width: 767px) {
+  .flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
   header .header-top {
     display: none;
   }
@@ -40,6 +47,10 @@
     right: -5px;
   }
   header .header-content .user-buttons .hamburger-menu {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,15 +77,22 @@
     z-index: 5;
     padding: 20px 20px 100px;
   }
-  .hamburger-menu-content .menus {
+  .hamburger-menu-content .menus,
+  .hamburger-menu-content .contact-content {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: white;
+  }
+  .hamburger-menu-content .menus {
     margin: 0;
     padding: 0;
   }
   .hamburger-menu-content .menus-title {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,10 +113,6 @@
     color: #E73C17;
   }
   .hamburger-menu-content .contact-content {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: white;
     padding-top: 50px;
     text-align: center;
   }
@@ -109,6 +123,10 @@
     padding-bottom: 21px;
   }
   footer .footer-content .about h4 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -137,6 +155,10 @@
     padding-bottom: 10px;
   }
   footer .footer-content .about-content .social-icons {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,65 +168,47 @@
     width: 20px;
     height: 20px;
   }
-  footer .footer-content .links-container {
-    padding-bottom: 21px;
-  }
-  footer .footer-content .links-container h4 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  footer .footer-content .footer-dropdown h4,
+  footer .footer-content .footer-dropdown ul {
     font-weight: 500;
     font-size: 10px;
     line-height: 12px;
+  }
+  footer .footer-content .footer-dropdown h4 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: #6F6F6F;
     padding: 0 12px;
     height: 31px;
     cursor: pointer;
   }
-  footer .footer-content .links-container h4 i {
+  footer .footer-content .footer-dropdown h4 i {
     display: block !important;
     font-size: 20px;
   }
-  footer .footer-content .links-container ul {
+  footer .footer-content .footer-dropdown ul {
     display: none;
     font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    padding: 20px 20px 7px;
+    padding: 20px 20px 10px;
     margin: 0;
     background: gray;
   }
-  footer .footer-content .links-container ul li {
-    padding-bottom: 13px;
-  }
-  footer .footer-content .contact h4 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 12px;
-    background: #6F6F6F;
-    padding: 0 12px;
-    height: 31px;
-    cursor: pointer;
-  }
-  footer .footer-content .contact h4 i {
-    display: block !important;
-    font-size: 20px;
-  }
-  footer .footer-content .contact ul {
-    display: none;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    padding: 20px 20px 10px;
-    background: gray;
-  }
-  footer .footer-content .contact ul li {
+  footer .footer-content .footer-dropdown ul li {
     padding-bottom: 10px;
   }
+  footer .footer-content .links-container {
+    padding-bottom: 21px;
+  }
   footer .footer-content .contact ul li:not(.email) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     gap: 4px;
@@ -288,6 +292,10 @@
     border: 1px solid #E73C17;
   }
   .content .product-image {
+    -webkit-box-ordinal-group: -1;
+    -moz-box-ordinal-group: -1;
+    -ms-flex-order: -1;
+    -webkit-order: -1;
     order: -1;
   }
   .content .product-image-show {
@@ -391,6 +399,10 @@
     margin-right: 10px;
   }
   .content .details-title {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     align-items: center;

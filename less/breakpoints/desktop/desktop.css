@@ -75,9 +75,6 @@
     top: -16px;
     right: -13px;
   }
-  header .header-content .user-buttons .nav-icons .mobile {
-    display: none;
-  }
   header .header-content .user-buttons .hamburger-menu {
     display: none;
   }
@@ -91,16 +88,14 @@
     width: 21%;
     height: 76px;
   }
-  .navbar-content .categories-content {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 29px;
-  }
+  .navbar-content .categories-content,
   .navbar-content .categories ul {
     font-weight: 500;
     font-size: 20px;
     text-align: center;
     line-height: 29px;
+  }
+  .navbar-content .categories ul {
     padding-left: 0;
   }
   .navbar-content .categories ul li {
@@ -117,17 +112,15 @@
   .navbar-content .menus .navbar-title {
     height: 56px;
   }
+  .navbar-content .menus-link {
+    padding-left: 20px;
+  }
   .navbar-content .menus-level-1 {
     top: 75px;
-    padding-left: 20px;
   }
-  .navbar-content .menus-level-2 {
-    left: 100%;
-    padding-left: 20px;
-  }
+  .navbar-content .menus-level-2,
   .navbar-content .menus-level-3 {
     left: 100%;
-    padding-left: 20px;
   }
   .navbar-content .contact {
     width: 17%;
@@ -140,15 +133,21 @@
   .navbar-content .contact-content img {
     height: 40px;
   }
-  .navbar-content .contact-content p {
+  .navbar-content .contact-content p,
+  .navbar-content .contact-content a {
     font-weight: 300;
     font-size: 13px;
     line-height: 20px;
   }
   .navbar-content .contact-content a {
     font-weight: 500;
-    font-size: 13px;
-    line-height: 20px;
+  }
+  .flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
   }
   footer .footer {
     max-width: 1800px;
@@ -179,6 +178,10 @@
     padding-bottom: 13px;
   }
   footer .footer-content .about .social-icons {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     align-items: flex-end;
     gap: 1vw;
@@ -232,6 +235,10 @@
     padding-bottom: 21px;
   }
   footer .footer-content .contact ul li:not(.email) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     gap: 4px;
@@ -401,6 +408,10 @@
     margin-right: 30px;
   }
   .content .details-title {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -539,6 +550,10 @@
     min-height: 120px;
   }
   .newsletter-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -564,17 +579,18 @@
     width: 50%;
     height: 73px;
   }
-  .newsletter form input {
-    width: 60%;
+  .newsletter form input,
+  .newsletter form button {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+  }
+  .newsletter form input {
+    width: 60%;
     padding: 0 2vw;
   }
   .newsletter form button {
     width: 40%;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
   }
 }

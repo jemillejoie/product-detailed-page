@@ -7,30 +7,71 @@ h6,
 p {
   margin: 0;
 }
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
 header .header-top {
   background: #2F333A;
   color: #FFFFFF;
 }
 header .header-top-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
+  -ms-flex-align: center;
+  -moz-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
   height: inherit;
   padding: 0 20px;
   margin: auto;
 }
 header .header-top-container .lang-currency {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
+  -ms-flex-align: center;
+  -moz-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
 }
 header .header-top-container .lang-currency-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -ms-flex-align: center;
+  -moz-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
 }
 header .header-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
+  -ms-flex-align: center;
+  -moz-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
   color: #191919;
   margin: auto;
@@ -44,8 +85,17 @@ header .header-content h2 a:hover {
   color: #E73C17;
 }
 header .header-content .search-bar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
+  -ms-flex-align: center;
+  -moz-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
   color: #969696;
   border: 2px solid #F0F0F0;
@@ -62,7 +112,14 @@ header .header-content .search-bar-dropdown {
   cursor: pointer;
 }
 header .header-content .search-bar-dropdown-heading {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -ms-flex-align: center;
+  -moz-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
   padding: 0 4px;
 }
@@ -81,8 +138,17 @@ header .header-content .search-bar-dropdown ul li:hover {
   color: #E73C17;
 }
 header .header-content .search-bar button {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -ms-flex-align: center;
+  -moz-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
   background: #2F333A;
   border: none;
@@ -91,8 +157,17 @@ header .header-content .search-bar button:hover {
   background: #E73C17;
 }
 header .header-content .user-buttons {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
+  -ms-flex-align: center;
+  -moz-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
 }
 header .header-content .user-buttons .authentication {
@@ -105,8 +180,17 @@ header .header-content .user-buttons .authentication a:hover {
   color: #E73C17;
 }
 header .header-content .user-buttons .nav-icons {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
+  -ms-flex-align: center;
+  -moz-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
 }
 header .header-content .user-buttons .nav-icons > * {
@@ -119,8 +203,17 @@ header .header-content .user-buttons .nav-icons .cart {
   position: relative;
 }
 header .header-content .user-buttons .nav-icons .cart-number {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -ms-flex-align: center;
+  -moz-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
   position: absolute;
   border-radius: 50%;

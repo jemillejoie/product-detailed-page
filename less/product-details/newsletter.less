@@ -9,9 +9,10 @@
 	background-position: center;
 
 	.overlay {
-		min-height: inherit;
-		display: flex;
+		.flex();
 		background: fade(@color[codGray], 50%);
+		min-height: inherit;
+		
 	}
 
 	&-container {
@@ -19,7 +20,8 @@
 	}
 
 	&-caption {
-		#flex.align-items(center);
+		.flex();
+		.align-items(center);
 	}
 
 	&-text {
@@ -27,7 +29,7 @@
 	}
 
 	form {
-		display: flex;
+		.flex();
 
 		input, button {
 			height: inherit;

@@ -1,19 +1,47 @@
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
 .content {
   padding: 0 20px;
   margin: auto;
 }
 .content .product {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
   justify-content: center;
-  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .content .product-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .content .product-thumbnail-img {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -ms-flex-align: center;
+  -moz-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
   border: 1px solid #F0F0F0;
   cursor: pointer;
@@ -25,8 +53,17 @@
   border: 1px solid #E73C17;
 }
 .content .product-image-show {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -ms-flex-align: center;
+  -moz-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
   background: #F1F1F1;
 }
@@ -48,7 +85,14 @@
   margin: 0;
 }
 .content .product-details .size {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -ms-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   border-top: 1px solid #F0F0F0;
   border-bottom: 1px solid #F0F0F0;
@@ -73,9 +117,17 @@
   text-decoration: line-through;
 }
 .content .product-details .buy {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .content .product-details .buy .quantity {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .content .product-details .buy .quantity button {
@@ -160,16 +212,23 @@
 .content .related-products h2 {
   text-align: center;
 }
-.content .related-products-all {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
+.content .related-products-all,
 .content .related-products-group {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -ms-flex-align: center;
+  -moz-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .content .related-products-container-item {
@@ -177,23 +236,38 @@
   background: #F1F1F1;
 }
 .content .related-products-container-item .top-btn {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   width: 100%;
 }
-.content .related-products-container-item .top-btn h6 {
-  border-radius: 100px;
-  color: #FFFFFF;
+.content .related-products-container-item .top-btn h6,
+.content .related-products-container-item .top-btn .heart {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -ms-flex-align: center;
+  -moz-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
+}
+.content .related-products-container-item .top-btn h6 {
+  color: #FFFFFF;
+  border-radius: 100px;
 }
 .content .related-products-container-item .top-btn .heart {
   border-radius: 50%;
   border: 1px solid #D9D9D9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
 }
 .content .related-products-container-item .top-btn .heart:hover {
@@ -215,38 +289,57 @@
   position: absolute;
 }
 .content .related-products-container-item .quick-view:hover .text {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .content .related-products-container-item .quick-view .text {
   display: none;
+  -ms-flex-align: center;
+  -moz-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
   position: absolute;
 }
 .content .related-products-container-item .quick-view .text h6 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -ms-flex-align: center;
+  -moz-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
+  color: #FFFFFF;
   background: #6F6F6F;
   border-radius: 4px;
-  color: #FFFFFF;
 }
 .content .related-products-container-item .quick-view img {
   cursor: pointer;
 }
-.content .related-products-container-item .image {
+.content .related-products-container-item .image,
+.content .related-products-container-item .add-to-cart-btn,
+.content .related-products-container-item .add-to-cart-btn button {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
   justify-content: center;
-  align-items: center;
-}
-.content .related-products-container-item .add-to-cart-btn {
-  display: flex;
-  justify-content: center;
+  -ms-flex-align: center;
+  -moz-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
 }
 .content .related-products-container-item .add-to-cart-btn button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #6F6F6F;
   background: #FFFFFF;
   border: none;
@@ -266,7 +359,13 @@
   text-decoration: line-through;
 }
 .content .related-products .navigation {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   margin: auto;
 }

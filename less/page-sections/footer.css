@@ -1,3 +1,10 @@
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
 footer {
   background: #2F333A;
   color: white;
@@ -16,11 +23,21 @@ footer .footer-content .contact ul li a {
   color: #E73C17;
 }
 footer .copyright {
-  flex-flow: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
 }
 footer .copyright,
 footer .cards,
 footer .credits {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -ms-flex-align: center;
+  -moz-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
 }

@@ -6,15 +6,19 @@
 	margin: auto;
 
 	.product {
-		#flex.center(flex-start, wrap);
+		.flex();
+		.justify-content(center);
+		.flex-wrap(wrap);
 
 		&-container {
-			display: flex;
+			.flex();
 		}
 
 		&-thumbnail {
 			&-img {
-				#flex.center(center);
+				.flex();
+				.justify-content(center);
+				.align-items(center);
 				border: 1px solid @color[gallery];
 				cursor: pointer;
 
@@ -31,7 +35,9 @@
 
 		&-image {
 			&-show {
-				#flex.center(center);
+				.flex();
+				.justify-content(center);
+				.align-items(center);
 				background: @color[seashell];
 			}
 
@@ -62,8 +68,8 @@
 			}
 
 			.size {
-				display: flex;
-				flex-wrap: wrap;
+				.flex();
+				.flex-wrap(wrap);
 				border-top: 1px solid @color[gallery];
 				border-bottom: 1px solid @color[gallery];
 
@@ -93,10 +99,10 @@
 			}
 
 			.buy {
-				display: flex;
+				.flex();
 
 				.quantity {	
-					display: flex;				
+					.flex();
 
 					button {
 						background: none;
@@ -211,12 +217,11 @@
 			text-align: center;
 		}
 
-		&-all {
-			#flex.center(center, wrap);
-		}
-
-		&-group {
-			#flex.center(center, wrap);
+		&-all, &-group {
+			.flex();
+			.justify-content(center);
+			.align-items(center);
+			.flex-wrap(wrap);
 		}
 
 		&-container {
@@ -225,20 +230,24 @@
 				background: @color[seashell];
 
 				.top-btn {
-					display: flex;
-					justify-content: space-between;
+					.flex();
+					.justify-content(space-between);
 					width: 100%;
 
+					h6, .heart {
+						.flex();
+						.justify-content(center);
+						.align-items(center);
+					}
+
 					h6 {
-						border-radius: 100px;
 						color: @color[white];
-						#flex.center(center);
+						border-radius: 100px;
 					}
 
 					.heart {
 						border-radius: 50%;
 						border: 1px solid @color[alto];
-						#flex.center(center);
 						cursor: pointer;
 
 						&:hover {
@@ -268,20 +277,22 @@
 
 					&:hover {
 						.text {
-							display: flex;
+							.flex();
 						}
 					}
 
 					.text {
 						display: none;
-						align-items: center;
+						.align-items(center);
 						position: absolute;
 
 						h6 {
-							#flex.center(center);
+							.flex();
+							.justify-content(center);
+							.align-items(center);
+							color: @color[white];
 							background: @color[doveGray];
 							border-radius: 4px;
-							color: @color[white];
 						}
 					}
 
@@ -290,15 +301,14 @@
 					}
 				}
 
-				.image {
-					#flex.center(center);
+				.image, .add-to-cart-btn, .add-to-cart-btn button {
+					.flex();
+					.justify-content(center);
+					.align-items(center);
 				}
 
 				.add-to-cart-btn {
-					#flex.center(center);
-
 					button {
-						#flex.center(center);
 						color: @color[doveGray];
 						background: @color[white];
 						border: none;
@@ -328,8 +338,8 @@
 		}
 
 		.navigation {
-			display: flex;
-			justify-content: space-between;
+			.flex();
+			.justify-content(space-between);
 			margin: auto;
 
 			&-btn {
