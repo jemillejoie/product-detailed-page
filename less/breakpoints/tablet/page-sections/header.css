@@ -19,9 +19,6 @@ header .header-top .lang-currency {
 header .header-container {
   min-height: 100px;
 }
-header .header-content {
-  min-height: inherit;
-}
 header .header-content h2 {
   font-weight: 700;
   font-size: 30px;
@@ -39,10 +36,10 @@ header .header-content .search-bar input {
   padding: 0 20px;
 }
 header .header-content .search-bar-dropdown {
-  width: 160px;
   font-weight: 300;
   font-size: 14px;
   line-height: 14px;
+  width: 160px;
 }
 header .header-content .search-bar-dropdown-heading {
   height: 60px;

@@ -30,26 +30,33 @@ footer .footer-content {
   -moz-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 58px 0 84px;
+  padding: 50px 0 70px;
   border-bottom: 1px solid white;
   gap: 20px;
+}
+footer .footer-content-dropdown h4 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+  padding-bottom: 25px;
+}
+footer .footer-content-dropdown h4 i {
+  display: none;
+}
+footer .footer-content-dropdown p,
+footer .footer-content-dropdown ul {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+footer .footer-content-dropdown ul {
+  padding: 0;
+  margin: 0;
 }
 footer .footer-content .about {
   padding-bottom: 20px;
 }
-footer .footer-content .about h4 {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
-  padding-bottom: 29px;
-}
-footer .footer-content .about h4 i {
-  display: none;
-}
 footer .footer-content .about p {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
   padding-bottom: 13px;
 }
 footer .footer-content .about .social-icons {
@@ -76,42 +83,14 @@ footer .footer-content .links {
   display: flex;
   gap: 130px;
 }
-footer .footer-content .links-container h4 {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
-  padding-bottom: 29px;
-}
-footer .footer-content .links-container h4 i {
-  display: none;
-}
-footer .footer-content .links-container ul {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  padding: 0;
-  margin: 0;
-}
 footer .footer-content .links-container ul li {
   padding-bottom: 13px;
 }
-footer .footer-content .contact h4 {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
-  padding: 20px 0;
-}
-footer .footer-content .contact h4 i {
-  display: none;
-}
-footer .footer-content .contact ul {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  padding: 0;
+footer .footer-content .contact {
+  padding-top: 10px;
 }
 footer .footer-content .contact ul li {
-  padding-bottom: 21px;
+  padding-bottom: 18px;
 }
 footer .footer-content .contact ul li:not(.email) {
   display: -webkit-box;
@@ -129,15 +108,15 @@ footer .footer-content .contact ul li a {
   font-weight: 500;
 }
 footer .copyright {
-  padding: 46px 0;
-  gap: 20px;
+  padding: 35px 0;
+  gap: 15px;
 }
 footer .copyright .cards {
-  gap: 9px;
+  gap: 6px;
 }
 footer .copyright .credits {
   font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
-  gap: 6px;
+  font-size: 12px;
+  line-height: 15px;
+  gap: 4px;
 }

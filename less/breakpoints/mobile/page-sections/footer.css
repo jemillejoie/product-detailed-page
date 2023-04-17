@@ -17,10 +17,14 @@ p {
 footer .footer-content {
   padding-top: 29px;
 }
-footer .footer-content .about {
-  padding-bottom: 21px;
+footer .footer-content-dropdown h4,
+footer .footer-content-dropdown ul,
+footer .footer-content-dropdown p {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
 }
-footer .footer-content .about h4 {
+footer .footer-content-dropdown h4 {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -33,17 +37,27 @@ footer .footer-content .about h4 {
   -moz-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 12px;
   background: #6F6F6F;
   padding: 0 12px;
   height: 31px;
   cursor: pointer;
 }
-footer .footer-content .about h4 i {
+footer .footer-content-dropdown h4 i {
   display: block !important;
   font-size: 20px;
+}
+footer .footer-content-dropdown ul {
+  display: none;
+  font-weight: 400;
+  padding: 20px 20px 10px;
+  margin: 0;
+  background: gray;
+}
+footer .footer-content-dropdown ul li {
+  padding-bottom: 10px;
+}
+footer .footer-content .about {
+  padding-bottom: 21px;
 }
 footer .footer-content .about-content {
   display: none;
@@ -51,9 +65,6 @@ footer .footer-content .about-content {
   background: gray;
 }
 footer .footer-content .about-content p {
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 12px;
   text-align: justify;
   padding-bottom: 10px;
 }
@@ -75,44 +86,6 @@ footer .footer-content .about-content .social-icons {
 footer .footer-content .about-content .social-icons img {
   width: 20px;
   height: 20px;
-}
-footer .footer-content .footer-dropdown h4,
-footer .footer-content .footer-dropdown ul {
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 12px;
-}
-footer .footer-content .footer-dropdown h4 {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -moz-justify-content: space-between;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-align: center;
-  -moz-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  background: #6F6F6F;
-  padding: 0 12px;
-  height: 31px;
-  cursor: pointer;
-}
-footer .footer-content .footer-dropdown h4 i {
-  display: block !important;
-  font-size: 20px;
-}
-footer .footer-content .footer-dropdown ul {
-  display: none;
-  font-weight: 400;
-  padding: 20px 20px 10px;
-  margin: 0;
-  background: gray;
-}
-footer .footer-content .footer-dropdown ul li {
-  padding-bottom: 10px;
 }
 footer .footer-content .links-container {
   padding-bottom: 21px;

@@ -23,7 +23,6 @@ header .header-container {
   min-height: 150px;
 }
 header .header-content {
-  min-height: inherit;
   max-width: 1800px;
 }
 header .header-content h2 {

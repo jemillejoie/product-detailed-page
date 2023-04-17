@@ -1,4 +1,8 @@
-@import 'D:/BSIT/4THYEAR/OJT/FRONTEND/product_details/less/text-styles/text-styles';
+@less: 'D:/BSIT/4THYEAR/OJT/FRONTEND/product_details/less';
+
+@import '@{less}/text-styles/text-styles';
+@import '@{less}/flex/flex';
+@import '@{less}/measurements/width-height';
 
 .newsletter {
 	min-height: 120px;
@@ -12,33 +16,32 @@
 		padding-bottom: 20px;
 
 		img {
-			padding-right: 33px;
+			padding-right: 30px;
 		}
 	}
 
 	&-text {
 		h2 {
-			#text-styles(500, 28px, 34px);
+			#text-styles(500, 24px, 30px);
 			padding-bottom: 4px;
 		}
 
 		p {
-			#text-styles(400, 20px, 24px);
+			#text-styles(400, 18px, 20px);
 		}
 	}
 
 	form {
-		height: 73px;
+		#width-height(90%, 65px);
 
-		input {
-			width: 447px;
-			#text-styles(400, 20px, 24px);
-			padding: 0 38px;
+		input, button {
+			#text-styles(400, 18px, 20px);
+			padding: 0 35px;
 		}
 
 		button {
 			width: 250px;
-			#text-styles(600, 18px, 18px);
+			font-weight: 600;
 		}
 	}
 }

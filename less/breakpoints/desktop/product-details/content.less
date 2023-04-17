@@ -142,9 +142,6 @@
 
 	.details {	
 		&-title {
-			.flex();
-			.justify-content(space-between);
-			.align-items(center);
 			width: 608px;
 
 			h2 {
@@ -165,13 +162,12 @@
 					padding-bottom: 35px;
 				}
 
-				th, td {
+				th, td, .review-container {
 					padding: 20px;
 				}
 
 				.review-container {
 					margin: 20px 0;
-					padding: 20px;
 					border: 1px solid @color[gallery];
 
 					.stars img {
@@ -183,7 +179,7 @@
 	}
 
 	.related-products {
-		margin: 52px 0 168px;
+		margin: 52px 0 174px;
 
 		h2 {
 			#text-styles(500, 32px, 39px);

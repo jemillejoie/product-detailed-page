@@ -11,24 +11,34 @@ footer {
 			.flex();
 			.justify-content(space-between);
 			.flex-wrap(wrap);
-			padding: 58px 0 84px;
+			padding: 50px 0 70px;
 			border-bottom: 1px solid white;
 			gap:20px;
 
-			.about {
-				padding-bottom: 20px;
-
+			&-dropdown {
 				h4 {
-					#text-styles(500, 24px, 29px);
-					padding-bottom: 29px;
+					#text-styles(500, 22px, 24px);
+					padding-bottom: 25px;
 
 					i {
 						display: none;
 					}
 				}
 
+				p, ul {
+					#text-styles(400, 16px, 20px);
+				}
+
+				ul {
+					padding: 0;
+					margin: 0;
+				}
+			}
+
+			.about {
+				padding-bottom: 20px;
+
 				p {
-					#text-styles(400, 18px, 30px);
 					padding-bottom: 13px;
 				}
 
@@ -51,20 +61,7 @@ footer {
 				gap:130px;
 
 				&-container {
-					h4 {
-						#text-styles(500, 24px, 29px);
-						padding-bottom: 29px;
-
-						i {
-							display: none;
-						}
-					}
-
 					ul {
-						#text-styles(400, 18px, 22px);
-						padding: 0;
-						margin: 0;
-
 						li {
 							padding-bottom: 13px;
 						}
@@ -73,21 +70,11 @@ footer {
 			}
 
 			.contact {
-				h4{
-					#text-styles(500, 24px, 29px);
-					padding: 20px 0;
-
-					i {
-						display: none;
-					}
-				}
+				padding-top: 10px;
 
 				ul {
-					#text-styles(400, 18px, 30px);
-					padding: 0;
-
 					li {
-						padding-bottom: 21px;
+						padding-bottom: 18px;
 
 						&:not(.email){
 							.flex();
@@ -105,16 +92,16 @@ footer {
 	}
 
 	.copyright {
-		padding: 46px 0;
-		gap: 20px;
+		padding: 35px 0;
+		gap: 15px;
 
 		.cards {
-			gap: 9px;
+			gap: 6px;
 		}
 
 		.credits {
-			#text-styles(400, 15px, 18px);
-			gap: 6px;
+			#text-styles(400, 12px, 15px);
+			gap: 4px;
 		}
 	}
 }

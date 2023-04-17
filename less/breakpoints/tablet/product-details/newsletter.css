@@ -7,6 +7,13 @@ h6,
 p {
   margin: 0;
 }
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
 .newsletter {
   min-height: 120px;
 }
@@ -18,32 +25,31 @@ p {
   padding-bottom: 20px;
 }
 .newsletter-caption img {
-  padding-right: 33px;
+  padding-right: 30px;
 }
 .newsletter-text h2 {
   font-weight: 500;
-  font-size: 28px;
-  line-height: 34px;
+  font-size: 24px;
+  line-height: 30px;
   padding-bottom: 4px;
 }
 .newsletter-text p {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 20px;
 }
 .newsletter form {
-  height: 73px;
+  width: 90%;
+  height: 65px;
 }
-.newsletter form input {
-  width: 447px;
+.newsletter form input,
+.newsletter form button {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  padding: 0 38px;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 0 35px;
 }
 .newsletter form button {
   width: 250px;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 18px;
 }

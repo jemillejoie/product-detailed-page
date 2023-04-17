@@ -30,22 +30,29 @@ footer .footer-content {
   border-bottom: 1px solid white;
   gap: 20px;
 }
-footer .footer-content .about {
-  width: 19vw;
-}
-footer .footer-content .about h4 {
+footer .footer-content-dropdown h4 {
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
   padding-bottom: 29px;
 }
-footer .footer-content .about h4 i {
+footer .footer-content-dropdown h4 i {
   display: none;
 }
-footer .footer-content .about p {
+footer .footer-content-dropdown ul,
+footer .footer-content-dropdown p {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+}
+footer .footer-content-dropdown ul {
+  padding: 0;
+  margin: 0;
+}
+footer .footer-content .about {
+  width: 19vw;
+}
+footer .footer-content .about p {
   padding-bottom: 13px;
 }
 footer .footer-content .about .social-icons {
@@ -72,42 +79,11 @@ footer .footer-content .links {
   display: flex;
   gap: 6.5vw;
 }
-footer .footer-content .links-container h4 {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
-  padding-bottom: 29px;
-}
-footer .footer-content .links-container h4 i {
-  display: none;
-}
-footer .footer-content .links-container ul {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  padding: 0;
-  margin: 0;
-}
 footer .footer-content .links-container ul li {
-  padding-bottom: 13px;
+  padding-bottom: 5px;
 }
 footer .footer-content .contact {
   max-width: 18vw;
-}
-footer .footer-content .contact h4 {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
-  padding-bottom: 29px;
-}
-footer .footer-content .contact h4 i {
-  display: none;
-}
-footer .footer-content .contact ul {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  padding: 0;
 }
 footer .footer-content .contact ul li {
   padding-bottom: 21px;

@@ -18,10 +18,10 @@ header .header-top {
   display: none;
 }
 header .header-container {
-  height: 56px;
+  min-height: 56px;
 }
 header .header-content {
-  height: inherit;
+  min-height: inherit;
 }
 header .header-content h2 {
   font-weight: 600;

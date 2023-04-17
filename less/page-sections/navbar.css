@@ -121,6 +121,7 @@
   position: absolute;
   background: #2F333A;
   z-index: 1;
+  padding-left: 20px;
 }
 .navbar-content .menus-level-1,
 .navbar-content .menus-level-3 {
