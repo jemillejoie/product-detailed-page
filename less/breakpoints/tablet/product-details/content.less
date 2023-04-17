@@ -13,7 +13,7 @@
 
 		&-container {
 			width: 728px;
-			justify-content: space-between;
+			.justify-content(space-between);
 		}
 
 		&-thumbnail {
@@ -144,7 +144,9 @@
 
 	.details {	
 		&-title {
-			#flex.space-between(center);
+			.flex();
+			.justify-content(space-between);
+			.align-items(center);
 			width: 608px;
 
 			h2 {
@@ -194,7 +196,6 @@
 
 		&-group {
 			width: 728px;
-			flex-wrap: nowrap !important;
 		}
 
 		&-container {

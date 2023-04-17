@@ -306,6 +306,8 @@ header .header-content .user-buttons .nav-icons .cart-number {
   align-items: center;
 }
 .navbar-content .menus .navbar-title {
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
   justify-content: center;
   padding: 0;
 }
@@ -655,6 +657,8 @@ footer .credits {
   -moz-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+.content .related-products-all {
   -ms-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
@@ -812,9 +816,13 @@ footer .credits {
   background-position: center;
 }
 .newsletter .overlay {
-  min-height: inherit;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   background: rgba(25, 25, 25, 0.5);
+  min-height: inherit;
 }
 .newsletter-container {
   margin: auto;
@@ -825,12 +833,19 @@ footer .credits {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  -ms-flex-align: center;
+  -moz-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
 }
 .newsletter-text {
   color: #FFFFFF;
 }
 .newsletter form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .newsletter form input,
@@ -1003,7 +1018,13 @@ footer .credits {
     max-width: 1800px;
   }
   footer .footer-content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     padding: 58px 0 84px;
     border-bottom: 1px solid white;
@@ -1033,6 +1054,9 @@ footer .credits {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -ms-flex-align: flex-end;
+    -moz-flex-align: flex-end;
+    -webkit-align-items: flex-end;
     align-items: flex-end;
     gap: 1vw;
     height: 48.31px;
@@ -1041,6 +1065,10 @@ footer .credits {
     padding-bottom: 17px;
   }
   footer .footer-content .links {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     gap: 6.5vw;
   }
@@ -1090,6 +1118,9 @@ footer .credits {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -ms-flex-align: center;
+    -moz-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     gap: 4px;
   }
@@ -1142,6 +1173,8 @@ footer .credits {
     gap: 34px;
   }
   .content .product-container {
+    -moz-justify-content: space-around;
+    -webkit-justify-content: space-around;
     justify-content: space-around;
     gap: 34px;
   }
@@ -1263,7 +1296,12 @@ footer .credits {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    -ms-flex-align: center;
+    -moz-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     width: 608px;
   }
@@ -1405,7 +1443,12 @@ footer .credits {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    -ms-flex-align: center;
+    -moz-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     width: 1518px;
     gap: 20px;
@@ -1591,8 +1634,17 @@ footer .credits {
     max-width: 1800px;
   }
   footer .footer-content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 58px 0 84px;
     border-bottom: 1px solid white;
@@ -1622,6 +1674,9 @@ footer .credits {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -ms-flex-align: flex-end;
+    -moz-flex-align: flex-end;
+    -webkit-align-items: flex-end;
     align-items: flex-end;
     gap: 20px;
     height: 48.31px;
@@ -1630,6 +1685,10 @@ footer .credits {
     padding-bottom: 17px;
   }
   footer .footer-content .links {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     gap: 130px;
   }
@@ -1676,6 +1735,9 @@ footer .credits {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -ms-flex-align: center;
+    -moz-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     gap: 4px;
   }
@@ -1717,6 +1779,8 @@ footer .credits {
   }
   .content .product-container {
     width: 728px;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
   }
   .content .product-thumbnail-img {
@@ -1838,7 +1902,12 @@ footer .credits {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    -ms-flex-align: center;
+    -moz-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     width: 608px;
   }
@@ -1887,7 +1956,6 @@ footer .credits {
   }
   .content .related-products-group {
     width: 728px;
-    flex-wrap: nowrap !important;
   }
   .content .related-products-container {
     width: 418px;
@@ -2061,7 +2129,12 @@ footer .credits {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
     justify-content: center;
+    -ms-flex-align: center;
+    -moz-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     background: #E73C17;
     padding: 8px;
@@ -2071,6 +2144,10 @@ footer .credits {
     width: 14px;
   }
   header .header-content .user-buttons .mobile {
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: -webkit-flex !important;
     display: flex !important;
   }
   header .header-content .user-buttons .desktop {
@@ -2103,7 +2180,12 @@ footer .credits {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    -ms-flex-align: center;
+    -moz-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
   }
   .hamburger-menu-content .menus li {
@@ -2137,7 +2219,12 @@ footer .credits {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    -ms-flex-align: center;
+    -moz-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     font-weight: 500;
     font-size: 10px;
@@ -2169,7 +2256,12 @@ footer .credits {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
     justify-content: center;
+    -ms-flex-align: center;
+    -moz-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     gap: 10px;
   }
@@ -2189,7 +2281,12 @@ footer .credits {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    -ms-flex-align: center;
+    -moz-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     background: #6F6F6F;
     padding: 0 12px;
@@ -2219,6 +2316,9 @@ footer .credits {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -ms-flex-align: center;
+    -moz-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     gap: 4px;
   }
@@ -2270,10 +2370,19 @@ footer .credits {
     margin: 30px 0 37px;
   }
   .content .product-container {
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
     justify-content: center;
+    -ms-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   .content .product-thumbnail {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     gap: 15px;
     padding-bottom: 15px;
@@ -2342,6 +2451,10 @@ footer .credits {
     padding-bottom: 10px;
   }
   .content .product-details .size {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     gap: 6px;
     height: 87px;
@@ -2405,7 +2518,12 @@ footer .credits {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    -ms-flex-align: center;
+    -moz-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     width: 202px;
   }

@@ -51,7 +51,9 @@ header {
 				}
 
 				.hamburger-menu {
-					#flex.center(center);
+					.flex();
+					.justify-content(center);
+					.align-items(center);
 					background: @color[pomegranate];
 					padding: 8px;
 					cursor: pointer;
@@ -62,7 +64,7 @@ header {
 				}
 
 				.mobile {
-					display: flex !important;
+					.flex() !important;
 				}
 
 				.desktop {

@@ -8,8 +8,8 @@ footer {
 			max-width: 1800px;
 
 			&-content {
-				display: flex;
-				justify-content: space-between;
+				.flex();
+				.justify-content(space-between);
 				padding: 58px 0 84px;
 				border-bottom: 1px solid white;
 				gap:20px;
@@ -32,7 +32,8 @@ footer {
 					}
 
 					.social-icons {
-						#flex.align-items(flex-end);
+						.flex();
+						.align-items(flex-end);
 						gap: 1vw;
 						height: 48.31px;
 
@@ -45,7 +46,7 @@ footer {
 				}
 
 				.links {
-					display: flex;
+					.flex();
 					gap:6.5vw;
 
 					&-container {
@@ -90,7 +91,8 @@ footer {
 							padding-bottom: 21px;
 
 							&:not(.email){
-								#flex.align-items(center);
+								.flex();
+								.align-items(center);
 								gap: 4px;
 							}
 

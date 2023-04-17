@@ -14,7 +14,7 @@
 		gap: 34px;
 
 		&-container {
-			justify-content: space-around;
+			.justify-content(space-around);
 			gap: 34px;
 		}
 
@@ -142,7 +142,9 @@
 
 	.details {	
 		&-title {
-			#flex.space-between(center);
+			.flex();
+			.justify-content(space-between);
+			.align-items(center);
 			width: 608px;
 
 			h2 {

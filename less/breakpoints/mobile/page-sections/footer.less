@@ -14,7 +14,9 @@ footer {
 				padding-bottom: 21px;
 
 				h4 {
-					#flex.space-between(center);
+					.flex();
+					.justify-content(space-between);
+					.align-items(center);
 					#text-styles(500, 10px, 12px);
 					background: @color[doveGray];
 					padding: 0 12px;
@@ -39,7 +41,9 @@ footer {
 					}
 
 					.social-icons {
-						#flex.center(center);
+						.flex();
+						.justify-content(center);
+						.align-items(center);
 						gap: 10px;
 
 						img {
@@ -55,7 +59,9 @@ footer {
 				}
 
 				h4 {
-					#flex.space-between(center);
+					.flex();
+					.justify-content(space-between);
+					.align-items(center);
 					background: @color[doveGray];
 					padding: 0 12px;
 					height: 31px;
@@ -90,7 +96,8 @@ footer {
 				ul {
 					li {
 						&:not(.email){
-							#flex.align-items(center);
+							.flex();
+							.align-items(center);
 							gap: 4px;
 						}
 

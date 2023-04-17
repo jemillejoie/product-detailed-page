@@ -13,12 +13,12 @@
 		margin: 30px 0 37px;
 
 		&-container {
-			justify-content: center;
-			flex-wrap: wrap;
+			.justify-content(center);
+			.flex-wrap(wrap);
 		}
 
 		&-thumbnail {
-			display: flex;
+			.flex();
 			gap: 15px;
 			padding-bottom: 15px;
 
@@ -89,7 +89,7 @@
 			}
 
 			.size {
-				display: flex;
+				.flex();
 				gap: 6px;
 				height: 87px;
 				padding: 16px 0;
@@ -152,7 +152,9 @@
 
 	.details {
 		&-title {
-			#flex.space-between(center);
+			.flex();
+			.justify-content(space-between);
+			.align-items(center);
 			width: 202px;
 
 			h2 {

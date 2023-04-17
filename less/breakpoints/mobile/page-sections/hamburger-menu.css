@@ -7,6 +7,13 @@ h6,
 p {
   margin: 0;
 }
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
 .hamburger-menu-content {
   width: 100vw;
   height: 100vh;
@@ -26,8 +33,17 @@ p {
   padding: 0;
 }
 .hamburger-menu-content .menus-title {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
+  -ms-flex-align: center;
+  -moz-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
 }
 .hamburger-menu-content .menus li {
