@@ -190,15 +190,18 @@ header .header-content .user-buttons .nav-icons .cart-number {
   padding: 10px 0;
   cursor: pointer;
 }
-.navbar-content .menus-link {
+.navbar-content .menus [class^="menus-level"] {
   position: absolute;
   background: #2F333A;
   z-index: 1;
-  top: 0;
 }
 .navbar-content .menus-level-1,
 .navbar-content .menus-level-3 {
   width: 100%;
+}
+.navbar-content .menus-level-2,
+.navbar-content .menus-level-3 {
+  top: 0;
 }
 .navbar-content .menus .active {
   color: #E73C17;
