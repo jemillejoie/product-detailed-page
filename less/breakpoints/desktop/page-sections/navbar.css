@@ -41,9 +41,7 @@ p {
 .navbar-content .menus .navbar-title {
   height: 56px;
 }
-.navbar-content .menus-level-1,
-.navbar-content .menus-level-2,
-.navbar-content .menus-level-3 {
+.navbar-content .menus-link {
   padding-left: 20px;
 }
 .navbar-content .menus-level-1 {

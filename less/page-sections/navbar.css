@@ -62,9 +62,7 @@
   padding: 10px 0;
   cursor: pointer;
 }
-.navbar-content .menus-level-1,
-.navbar-content .menus-level-2,
-.navbar-content .menus-level-3 {
+.navbar-content .menus-link {
   position: absolute;
   background: #2F333A;
   z-index: 1;

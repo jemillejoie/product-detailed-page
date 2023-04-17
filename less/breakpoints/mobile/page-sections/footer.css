@@ -51,16 +51,13 @@ footer .footer-content .about-content .social-icons img {
   width: 20px;
   height: 20px;
 }
-footer .footer-content .links h4,
-footer .footer-content .contact h4,
-footer .footer-content .links ul,
-footer .footer-content .contact ul {
+footer .footer-content .footer-dropdown h4,
+footer .footer-content .footer-dropdown ul {
   font-weight: 500;
   font-size: 10px;
   line-height: 12px;
 }
-footer .footer-content .links h4,
-footer .footer-content .contact h4 {
+footer .footer-content .footer-dropdown h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,21 +66,18 @@ footer .footer-content .contact h4 {
   height: 31px;
   cursor: pointer;
 }
-footer .footer-content .links h4 i,
-footer .footer-content .contact h4 i {
+footer .footer-content .footer-dropdown h4 i {
   display: block !important;
   font-size: 20px;
 }
-footer .footer-content .links ul,
-footer .footer-content .contact ul {
+footer .footer-content .footer-dropdown ul {
   display: none;
   font-weight: 400;
   padding: 20px 20px 10px;
   margin: 0;
   background: gray;
 }
-footer .footer-content .links ul li,
-footer .footer-content .contact ul li {
+footer .footer-content .footer-dropdown ul li {
   padding-bottom: 10px;
 }
 footer .footer-content .links-container {
