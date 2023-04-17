@@ -1,0 +1,82 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.navbar {
+  height: 60px;
+}
+.navbar-content {
+  height: inherit;
+}
+.navbar-content .categories {
+  width: 150px;
+  height: inherit;
+}
+.navbar-content .categories-content {
+  width: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+}
+.navbar-content .categories-content img {
+  width: 20px;
+}
+.navbar-content .categories ul {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 10px 10px 10px 30px;
+}
+.navbar-content .categories ul li {
+  padding: 10px 0;
+}
+.navbar-content .menus {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+}
+.navbar-content .menus-title {
+  width: 90px;
+}
+.navbar-content .menus .navbar-title {
+  height: 50px;
+}
+.navbar-content .menus-level-1 {
+  top: 55px;
+  padding: 10px 0 0 20px;
+}
+.navbar-content .menus-level-2 {
+  left: 65px;
+  top: 0;
+  padding-left: 20px;
+}
+.navbar-content .menus-level-3 {
+  left: 85px;
+  top: 0;
+  padding-left: 20px;
+}
+.navbar-content .contact {
+  height: inherit;
+}
+.navbar-content .contact-content {
+  width: 140px;
+  padding: 0 10px;
+}
+.navbar-content .contact-content img {
+  width: 25px;
+}
+.navbar-content .contact-content p {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 10px;
+}
+.navbar-content .contact-content a {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+}

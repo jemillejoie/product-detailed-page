@@ -1,0 +1,147 @@
+@less: 'D:/BSIT/4THYEAR/OJT/FRONTEND/product_details/less';
+
+@import '@{less}/text-styles/text-styles.less';
+@import '@{less}/text-styles/colors.less';
+@import '@{less}/flex/flex.less';
+@import '@{less}/measurements/width-height.less';
+
+footer {
+	.footer {
+		&-content {
+			padding-top: 29px;
+
+			.about {
+				padding-bottom: 21px;
+
+				h4 {
+					#flex.space-between(center);
+					#text-styles(500, 10px, 12px);
+					background: @color[doveGray];
+					padding: 0 12px;
+					height: 31px;
+					cursor: pointer;
+
+					i {
+						display: block !important;
+						font-size: 20px;
+					}
+				}
+
+				&-content {
+					display: none;
+					padding: 20px;
+					background: gray;
+
+					p {
+						#text-styles(400, 10px, 12px);
+						text-align: justify;
+						padding-bottom: 10px;
+					}
+
+					.social-icons {
+						#flex.center(center);
+						gap: 10px;
+
+						img {
+							#width-height(20px, 20px);
+						}
+					}
+				}
+			}
+
+			.links {
+				&-container {
+					padding-bottom: 21px;
+
+					h4 {
+						#flex.space-between(center);
+						#text-styles(500, 10px, 12px);
+						background: @color[doveGray];
+						padding: 0 12px;
+						height: 31px;
+						cursor: pointer;
+
+						i {
+							display: block !important;
+							font-size: 20px;
+						}
+					}
+
+					ul {
+						display: none;
+						#text-styles(400, 10px, 12px);
+						padding: 20px 20px 7px;
+						margin: 0;
+						background: gray;
+
+						li {
+							padding-bottom: 13px;
+						}
+					}
+				}
+			}
+
+			.contact {
+				h4{
+					#flex.space-between(center);
+					#text-styles(500, 10px, 12px);
+					background: @color[doveGray];
+					padding: 0 12px;
+					height: 31px;
+					cursor: pointer;
+
+					i {
+						display: block !important;
+						font-size: 20px;
+					}
+				}
+
+				ul {
+					display: none;
+					#text-styles(400, 10px, 12px);
+					padding: 20px 20px 10px;
+					background: gray;
+
+					li {
+						padding-bottom: 10px;
+
+						&:not(.email){
+							#flex.align-items(center);
+							gap: 4px;
+						}
+
+						a {
+							font-weight: 500;
+						}
+
+						img {
+							#width-height(20px, 20px);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.copyright {
+		padding: 27px 0 42px;
+		gap: 15px;
+
+		.cards {
+			gap: 5px;
+
+			img {
+				width: 20px;
+			}
+		}
+
+		.credits {
+			#text-styles(400, 6px, 7px);
+			gap: 3px;
+
+			img {
+				width: 10px;
+			}
+		}
+	}
+}

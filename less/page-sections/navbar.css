@@ -1,0 +1,100 @@
+.navbar {
+  position: relative;
+  background: #2F333A;
+}
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.navbar-content .categories {
+  position: relative;
+  background: #E73C17;
+  color: #FFFFFF;
+  order: -1;
+}
+.navbar-content .categories-content {
+  height: inherit;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+}
+.navbar-content .categories ul {
+  display: none;
+  position: absolute;
+  background: #E73C17;
+  margin: 0;
+  width: 100%;
+  z-index: 1;
+}
+.navbar-content .categories ul li:hover {
+  color: #191919;
+}
+.navbar-content .menus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+}
+.navbar-content .menus-title {
+  display: flex;
+  align-items: center;
+}
+.navbar-content .menus .navbar-title {
+  justify-content: center;
+  padding: 0;
+}
+.navbar-content .menus .navbar-title i {
+  rotate: 0deg;
+}
+.navbar-content .menus i {
+  rotate: 270deg;
+}
+.navbar-content .menus li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.navbar-content .menus-level-1 {
+  position: absolute;
+  background: #2F333A;
+  width: 100%;
+  z-index: 1;
+}
+.navbar-content .menus-level-2 {
+  position: absolute;
+  background: #2F333A;
+  top: 0;
+  z-index: 1;
+}
+.navbar-content .menus-level-3 {
+  position: absolute;
+  background: #2F333A;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.navbar-content .menus .active {
+  color: #E73C17;
+}
+.navbar-content .contact {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #F0F0F0;
+}
+.navbar-content .contact-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: inherit;
+}

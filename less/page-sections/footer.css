@@ -1,0 +1,30 @@
+footer {
+  background: #2F333A;
+  color: white;
+}
+footer .footer {
+  margin: auto;
+  padding: 0 20px;
+}
+footer .footer-content .about .social-icons img {
+  cursor: pointer;
+}
+footer .footer-content .contact ul {
+  margin: 0;
+}
+footer .footer-content .contact ul li a {
+  color: #E73C17;
+}
+footer .copyright {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+footer .copyright .cards {
+  display: flex;
+  align-items: center;
+}
+footer .copyright .credits {
+  display: flex;
+  align-items: center;
+}

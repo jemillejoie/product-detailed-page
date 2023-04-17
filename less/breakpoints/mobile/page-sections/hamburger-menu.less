@@ -1,0 +1,51 @@
+@less: 'D:/BSIT/4THYEAR/OJT/FRONTEND/product_details/less';
+
+@import '@{less}/text-styles/text-styles.less';
+@import '@{less}/text-styles/colors.less';
+@import '@{less}/flex/flex.less';
+@import '@{less}/measurements/width-height.less';
+
+.hamburger-menu-content {
+	#width-height(100vw, 100vh);
+	background: @color[tuna];
+	z-index: 5;
+	padding: 20px 20px 100px;
+
+	.menus {
+		#text-styles(400, 16px, 19px);
+		color: white;
+		margin: 0;
+		padding: 0;
+
+		&-title{
+			#flex.space-between(center);
+		}
+
+		li {
+			padding-bottom: 20px;
+
+			&:nth-child(1) {
+				padding-top: 10px;
+			}
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+
+			ul {
+				padding-left: 20px;
+			}
+		}
+
+		.active {
+			color: @color[pomegranate];
+		}
+	}
+
+	.contact-content {
+		#text-styles(400, 16px, 19px);
+		color: white;
+		padding-top: 50px;
+		text-align: center;
+	}
+}

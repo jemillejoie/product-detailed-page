@@ -1,0 +1,89 @@
+@less: 'D:/BSIT/4THYEAR/OJT/FRONTEND/product_details/less';
+
+@import '@{less}/text-styles/text-styles';
+@import '@{less}/measurements/width-height';
+
+header {
+	.header {
+		&-top {
+			#text-styles(300, 12px, 12px);
+			height: 50px;
+
+			.lang-currency {
+				width: 120px;
+			}
+		}
+
+		&-container {
+			min-height: 100px;
+		}
+
+		&-content {
+			min-height: inherit;
+
+			h2{
+				#text-styles(700, 30px, 30px);
+			}
+
+			.search-bar {
+				#width-height(400px, 60px);
+
+				input {
+					width: 70%;
+					#text-styles(300, 16px, 16px);
+					padding: 0 20px;
+				}
+
+				&-dropdown {
+					width: 160px;
+					#text-styles(300, 14px, 14px);
+
+					&-heading {
+						height: 60px;
+					}
+
+					ul {
+						width: 120px;
+					}
+				}
+
+				button {
+					#width-height(60px, 60px);
+				}
+			}
+
+			.user-buttons {
+				width: 160px;
+
+				.authentication {
+					#text-styles(300, 16px, 16px);
+				}
+
+				.nav-icons {
+					width: 45px;
+
+					img {
+						width: 17px;
+					}
+
+					.cart {
+						&-number {
+							font-size: 12px;
+							#width-height(16px, 16px);
+							top: -8px;
+							right: -6px;
+						}
+					}
+
+					.mobile {
+						display: none;
+					}
+				}
+
+				.hamburger-menu {
+					display: none;
+				}
+			}
+		}
+	}
+}

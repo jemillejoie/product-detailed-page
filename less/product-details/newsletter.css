@@ -1,0 +1,36 @@
+.newsletter {
+  background-image: url('../img/news-letter-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+.newsletter .overlay {
+  min-height: inherit;
+  display: flex;
+  background: rgba(25, 25, 25, 0.5);
+}
+.newsletter-container {
+  margin: auto;
+}
+.newsletter-caption {
+  display: flex;
+  align-items: center;
+}
+.newsletter-text {
+  color: #FFFFFF;
+}
+.newsletter form {
+  display: flex;
+}
+.newsletter form input {
+  height: inherit;
+  color: #6F6F6F;
+}
+.newsletter form button {
+  height: inherit;
+  background: #E73C17;
+  border: none;
+  color: white;
+}
+.newsletter form button:hover {
+  color: #191919;
+}

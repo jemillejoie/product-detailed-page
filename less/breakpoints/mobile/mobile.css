@@ -1,12 +1,3 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
 @media only screen and (max-width: 767px) {
   header .header-top {
     display: none;
@@ -67,6 +58,191 @@ p {
   }
   nav {
     display: none;
+  }
+  .hamburger-menu-content {
+    width: 100vw;
+    height: 100vh;
+    background: #2F333A;
+    z-index: 5;
+    padding: 20px 20px 100px;
+  }
+  .hamburger-menu-content .menus {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  .hamburger-menu-content .menus-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hamburger-menu-content .menus li {
+    padding-bottom: 20px;
+  }
+  .hamburger-menu-content .menus li:nth-child(1) {
+    padding-top: 10px;
+  }
+  .hamburger-menu-content .menus li:last-child {
+    padding-bottom: 0;
+  }
+  .hamburger-menu-content .menus li ul {
+    padding-left: 20px;
+  }
+  .hamburger-menu-content .menus .active {
+    color: #E73C17;
+  }
+  .hamburger-menu-content .contact-content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    padding-top: 50px;
+    text-align: center;
+  }
+  footer .footer-content {
+    padding-top: 29px;
+  }
+  footer .footer-content .about {
+    padding-bottom: 21px;
+  }
+  footer .footer-content .about h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    background: #6F6F6F;
+    padding: 0 12px;
+    height: 31px;
+    cursor: pointer;
+  }
+  footer .footer-content .about h4 i {
+    display: block !important;
+    font-size: 20px;
+  }
+  footer .footer-content .about-content {
+    display: none;
+    padding: 20px;
+    background: gray;
+  }
+  footer .footer-content .about-content p {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: justify;
+    padding-bottom: 10px;
+  }
+  footer .footer-content .about-content .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  footer .footer-content .about-content .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+  footer .footer-content .links-container {
+    padding-bottom: 21px;
+  }
+  footer .footer-content .links-container h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    background: #6F6F6F;
+    padding: 0 12px;
+    height: 31px;
+    cursor: pointer;
+  }
+  footer .footer-content .links-container h4 i {
+    display: block !important;
+    font-size: 20px;
+  }
+  footer .footer-content .links-container ul {
+    display: none;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 20px 20px 7px;
+    margin: 0;
+    background: gray;
+  }
+  footer .footer-content .links-container ul li {
+    padding-bottom: 13px;
+  }
+  footer .footer-content .contact h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    background: #6F6F6F;
+    padding: 0 12px;
+    height: 31px;
+    cursor: pointer;
+  }
+  footer .footer-content .contact h4 i {
+    display: block !important;
+    font-size: 20px;
+  }
+  footer .footer-content .contact ul {
+    display: none;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 20px 20px 10px;
+    background: gray;
+  }
+  footer .footer-content .contact ul li {
+    padding-bottom: 10px;
+  }
+  footer .footer-content .contact ul li:not(.email) {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  footer .footer-content .contact ul li a {
+    font-weight: 500;
+  }
+  footer .footer-content .contact ul li img {
+    width: 20px;
+    height: 20px;
+  }
+  footer .copyright {
+    padding: 27px 0 42px;
+    gap: 15px;
+  }
+  footer .copyright .cards {
+    gap: 5px;
+  }
+  footer .copyright .cards img {
+    width: 20px;
+  }
+  footer .copyright .credits {
+    font-weight: 400;
+    font-size: 6px;
+    line-height: 7px;
+    gap: 3px;
+  }
+  footer .copyright .credits img {
+    width: 10px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
   }
   .page-title {
     height: 93px;
@@ -411,181 +587,5 @@ p {
     font-weight: 500;
     font-size: 10px;
     line-height: 12px;
-  }
-  footer .footer-content {
-    padding-top: 29px;
-  }
-  footer .footer-content .about {
-    padding-bottom: 21px;
-  }
-  footer .footer-content .about h4 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 12px;
-    background: #6F6F6F;
-    padding: 0 12px;
-    height: 31px;
-    cursor: pointer;
-  }
-  footer .footer-content .about h4 i {
-    display: block !important;
-    font-size: 20px;
-  }
-  footer .footer-content .about-content {
-    display: none;
-    padding: 20px;
-    background: gray;
-  }
-  footer .footer-content .about-content p {
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    text-align: justify;
-    padding-bottom: 10px;
-  }
-  footer .footer-content .about-content .social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  footer .footer-content .about-content .social-icons img {
-    width: 20px;
-    height: 20px;
-  }
-  footer .footer-content .links-container {
-    padding-bottom: 21px;
-  }
-  footer .footer-content .links-container h4 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 12px;
-    background: #6F6F6F;
-    padding: 0 12px;
-    height: 31px;
-    cursor: pointer;
-  }
-  footer .footer-content .links-container h4 i {
-    display: block !important;
-    font-size: 20px;
-  }
-  footer .footer-content .links-container ul {
-    display: none;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    padding: 20px 20px 7px;
-    margin: 0;
-    background: gray;
-  }
-  footer .footer-content .links-container ul li {
-    padding-bottom: 13px;
-  }
-  footer .footer-content .contact h4 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 12px;
-    background: #6F6F6F;
-    padding: 0 12px;
-    height: 31px;
-    cursor: pointer;
-  }
-  footer .footer-content .contact h4 i {
-    display: block !important;
-    font-size: 20px;
-  }
-  footer .footer-content .contact ul {
-    display: none;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    padding: 20px 20px 10px;
-    background: gray;
-  }
-  footer .footer-content .contact ul li {
-    padding-bottom: 10px;
-  }
-  footer .footer-content .contact ul li:not(.email) {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
-  footer .footer-content .contact ul li a {
-    font-weight: 500;
-  }
-  footer .footer-content .contact ul li img {
-    width: 20px;
-    height: 20px;
-  }
-  footer .copyright {
-    padding: 27px 0 42px;
-    gap: 15px;
-  }
-  footer .copyright .cards {
-    gap: 5px;
-  }
-  footer .copyright .cards img {
-    width: 20px;
-  }
-  footer .copyright .credits {
-    font-weight: 400;
-    font-size: 6px;
-    line-height: 7px;
-    gap: 3px;
-  }
-  footer .copyright .credits img {
-    width: 10px;
-  }
-  .hamburger-menu-content {
-    width: 100vw;
-    height: 100vh;
-    background: #2F333A;
-    z-index: 5;
-    padding: 20px 20px 100px;
-  }
-  .hamburger-menu-content .menus {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: white;
-    margin: 0;
-    padding: 0;
-  }
-  .hamburger-menu-content .menus-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .hamburger-menu-content .menus li {
-    padding-bottom: 20px;
-  }
-  .hamburger-menu-content .menus li:nth-child(1) {
-    padding-top: 10px;
-  }
-  .hamburger-menu-content .menus li:last-child {
-    padding-bottom: 0;
-  }
-  .hamburger-menu-content .menus li ul {
-    padding-left: 20px;
-  }
-  .hamburger-menu-content .menus .active {
-    color: #E73C17;
-  }
-  .hamburger-menu-content .contact-content {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: white;
-    padding-top: 50px;
-    text-align: center;
   }
 }

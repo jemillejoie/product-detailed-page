@@ -1,0 +1,78 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.navbar {
+  min-height: 76px;
+}
+.navbar-content {
+  max-width: 1760px;
+}
+.navbar-content .categories {
+  width: 21%;
+  height: 76px;
+}
+.navbar-content .categories-content {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+}
+.navbar-content .categories ul {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  line-height: 29px;
+  padding-left: 0;
+}
+.navbar-content .categories ul li {
+  padding: 1vw 0;
+}
+.navbar-content .menus {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.navbar-content .menus-title {
+  width: 130px;
+}
+.navbar-content .menus .navbar-title {
+  height: 56px;
+}
+.navbar-content .menus-level-1 {
+  top: 75px;
+  padding-left: 20px;
+}
+.navbar-content .menus-level-2 {
+  left: 100%;
+  padding-left: 20px;
+}
+.navbar-content .menus-level-3 {
+  left: 100%;
+  padding-left: 20px;
+}
+.navbar-content .contact {
+  width: 17%;
+  height: 76px;
+  padding-right: 10px;
+}
+.navbar-content .contact-content {
+  gap: 2vw;
+}
+.navbar-content .contact-content img {
+  height: 40px;
+}
+.navbar-content .contact-content p {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+}
+.navbar-content .contact-content a {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+}

@@ -1,0 +1,48 @@
+@less: 'D:/BSIT/4THYEAR/OJT/FRONTEND/product_details/less';
+
+@import '@{less}/text-styles/text-styles.less';
+@import '@{less}/measurements/width-height.less';
+
+.newsletter {
+	min-height: 169px;
+
+	&-container {
+		width: 320px;
+		padding: 0 20px;
+	}
+
+	&-caption {
+		padding-bottom: 29px;
+
+		img {
+			#width-height(20px, 21px);
+			margin-right: 10px;
+		}
+	}
+
+	&-text {
+		h2 {
+			#text-styles(600, 13px, 16px);
+			padding-bottom: 3px;
+		}
+
+		p {
+			#text-styles(400, 10px, 12px);
+		}
+	}
+
+	form {
+		height: 37px;
+
+		input {
+			width: 180px;
+			#text-styles(400, 10px, 12px);
+			padding: 0 17px;
+		}
+
+		button {
+			width: 100px;
+			#text-styles(500, 10px, 12px);
+		}
+	}
+}

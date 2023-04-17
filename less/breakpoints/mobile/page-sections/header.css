@@ -1,0 +1,66 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+header .header-top {
+  display: none;
+}
+header .header-container {
+  height: 56px;
+}
+header .header-content {
+  height: inherit;
+}
+header .header-content h2 {
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 19px;
+  color: black;
+}
+header .header-content .search-bar {
+  display: none !important;
+}
+header .header-content .user-buttons {
+  width: 137px;
+}
+header .header-content .user-buttons .authentication {
+  display: none !important;
+}
+header .header-content .user-buttons .nav-icons {
+  width: 94px;
+}
+header .header-content .user-buttons .nav-icons img {
+  width: 16px;
+}
+header .header-content .user-buttons .nav-icons .cart-number {
+  font-weight: 500;
+  font-size: 7px;
+  line-height: 8px;
+  width: 12px;
+  height: 12px;
+  color: white;
+  top: -5px;
+  right: -5px;
+}
+header .header-content .user-buttons .hamburger-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #E73C17;
+  padding: 8px;
+  cursor: pointer;
+}
+header .header-content .user-buttons .hamburger-menu img {
+  width: 14px;
+}
+header .header-content .user-buttons .mobile {
+  display: flex !important;
+}
+header .header-content .user-buttons .desktop {
+  display: none !important;
+}

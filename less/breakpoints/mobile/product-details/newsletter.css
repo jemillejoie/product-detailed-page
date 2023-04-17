@@ -1,0 +1,51 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.newsletter {
+  min-height: 169px;
+}
+.newsletter-container {
+  width: 320px;
+  padding: 0 20px;
+}
+.newsletter-caption {
+  padding-bottom: 29px;
+}
+.newsletter-caption img {
+  width: 20px;
+  height: 21px;
+  margin-right: 10px;
+}
+.newsletter-text h2 {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  padding-bottom: 3px;
+}
+.newsletter-text p {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+}
+.newsletter form {
+  height: 37px;
+}
+.newsletter form input {
+  width: 180px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  padding: 0 17px;
+}
+.newsletter form button {
+  width: 100px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+}

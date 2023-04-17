@@ -1,0 +1,83 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+header .header-top {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+  height: 50px;
+}
+header .header-top .lang-currency {
+  width: 120px;
+}
+header .header-container {
+  min-height: 100px;
+}
+header .header-content {
+  min-height: inherit;
+}
+header .header-content h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+}
+header .header-content .search-bar {
+  width: 400px;
+  height: 60px;
+}
+header .header-content .search-bar input {
+  width: 70%;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0 20px;
+}
+header .header-content .search-bar-dropdown {
+  width: 160px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+}
+header .header-content .search-bar-dropdown-heading {
+  height: 60px;
+}
+header .header-content .search-bar-dropdown ul {
+  width: 120px;
+}
+header .header-content .search-bar button {
+  width: 60px;
+  height: 60px;
+}
+header .header-content .user-buttons {
+  width: 160px;
+}
+header .header-content .user-buttons .authentication {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+}
+header .header-content .user-buttons .nav-icons {
+  width: 45px;
+}
+header .header-content .user-buttons .nav-icons img {
+  width: 17px;
+}
+header .header-content .user-buttons .nav-icons .cart-number {
+  font-size: 12px;
+  width: 16px;
+  height: 16px;
+  top: -8px;
+  right: -6px;
+}
+header .header-content .user-buttons .nav-icons .mobile {
+  display: none;
+}
+header .header-content .user-buttons .hamburger-menu {
+  display: none;
+}

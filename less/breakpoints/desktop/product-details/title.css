@@ -1,0 +1,24 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.page-title {
+  height: 256px;
+}
+.page-title h1 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 65px;
+  padding-bottom: 20px;
+}
+.page-title p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.15em;
+}

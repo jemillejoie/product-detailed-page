@@ -1,0 +1,48 @@
+@import '../text-styles/colors';
+@import '../flex/flex';
+
+@img: "../img/";
+
+.newsletter {
+	background-image: url('@{img}news-letter-bg.png');
+	background-size: cover;
+	background-position: center;
+
+	.overlay {
+		min-height: inherit;
+		display: flex;
+		background: fade(@color[codGray], 50%);
+	}
+
+	&-container {
+		margin: auto;
+	}
+
+	&-caption {
+		#flex.align-items(center);
+	}
+
+	&-text {
+		color: @color[white];
+	}
+
+	form {
+		display: flex;
+
+		input {
+			height: inherit;
+			color: @color[doveGray];
+		}
+
+		button {
+			height: inherit;
+			background: @color[pomegranate];
+			border: none;
+			color: white;
+
+			&:hover {
+				color: @color[codGray];
+			}
+		}
+	}
+}

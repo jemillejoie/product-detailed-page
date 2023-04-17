@@ -1,0 +1,47 @@
+@import '../text-styles/colors';
+@import '../flex/flex';
+
+footer {
+	background: @color[tuna];
+	color: white;
+
+	.footer {
+		margin: auto;
+		padding: 0 20px;
+
+		&-content {
+			.about {
+				.social-icons {
+					img {
+						cursor: pointer;
+					}
+				}
+			}
+
+			.contact {
+				ul {
+					margin: 0;
+
+					li {
+						a {
+							color: @color[pomegranate];
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.copyright {
+		#flex.align-items(center);
+		flex-flow: column;
+
+		.cards {
+			#flex.align-items(center);
+		}
+
+		.credits {
+			#flex.align-items(center);
+		}
+	}
+}

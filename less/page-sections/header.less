@@ -1,0 +1,141 @@
+@import '../text-styles/text-styles';
+@import '../text-styles/colors';
+@import '../flex/flex';
+
+header {
+	.header {
+		&-top {
+			background: @color[tuna];
+			color: @color[white];
+
+			&-container{
+				#flex.space-between(center);
+				height: inherit;
+				padding: 0 20px;
+				margin: auto;
+
+				.lang-currency {
+					#flex.space-between(center);
+
+					&-content {
+						#flex.align-items(center);
+					}
+				}
+			}
+		}
+
+		&-content {
+			#flex.space-between(center);
+			color: @color[codGray];
+			margin: auto;
+			padding: 0 20px;
+
+			h2 {
+				font-family: @font-family[inconsolata];
+
+				span {
+					color: @color[pomegranate];
+				}
+
+				a {
+					&:hover {
+						color: @color[codGray];
+					}
+				}
+			}
+
+			.search-bar {
+				#flex.space-between(center);
+				color: @color[dustyGray];
+				border: 2px solid @color[gallery];
+
+				input {
+					height: inherit;
+					border: 2px solid @color[gallery];
+
+					&::placeholder {
+						color: inherit;
+					}
+				}
+
+				&-dropdown {
+					color: @color[codGray];
+					cursor: pointer;
+
+					&-heading {
+						#flex.align-items(center);
+						padding: 0 4px;
+					}
+
+					ul {
+						display: none;
+						position: absolute;
+						background: @color[gallery];
+						margin: 0;
+						padding-left: 20px;
+						z-index: 1;
+
+						li {
+							padding: 20px 0;
+
+							&:hover {
+								color: @color[pomegranate];
+							}
+						}
+					}
+				}
+
+				button {
+					#flex.center(center);
+					background: @color[tuna];
+					border: none;
+
+					&:hover {
+						background: @color[pomegranate];
+					}
+				}
+			}
+
+			.user-buttons {
+				#flex.space-between(center);
+
+				.authentication {
+					cursor: pointer;
+
+					span {
+						color: @color[gallery];
+					}
+
+					a {
+						&:hover {
+							color: @color[pomegranate];
+						}
+					}
+				}
+
+				.nav-icons {
+					#flex.space-between(center);
+
+					& > * {
+						cursor: pointer;
+
+						&:hover {
+							transform: scale(1.1);
+						}
+					}
+
+					.cart {
+						position: relative;
+
+						&-number {
+							#flex.center(center);
+							position: absolute;
+							border-radius: 50%;
+							background: @color[grenadier];
+						}
+					}
+				}
+			}
+		}
+	}
+}
