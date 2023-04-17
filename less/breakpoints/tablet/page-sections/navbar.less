@@ -12,17 +12,15 @@
 		.categories {
 			#width-height(150px, inherit);
 
+			&-content, ul {
+				#text-styles(500, 14px, 14px);
+			}
+
 			&-content {
 				width: inherit;
-				#text-styles(500, 14px, 14px);
-
-				img {
-					width: 20px;
-				}
 			}
 
 			ul {
-				#text-styles(500, 14px, 14px);
 				padding: 10px 10px 10px 30px;
 
 				li {
@@ -48,16 +46,17 @@
 					padding: 10px 0 0 20px;
 				}
 
-				&-2 {
-					left: 65px;
+				&-2, &-3 {
 					top: 0;
 					padding-left: 20px;
 				}
 
+				&-2 {
+					left: 65px;
+				}
+
 				&-3 {
 					left: 85px;
-					top: 0;
-					padding-left: 20px;
 				}
 			}
 		}

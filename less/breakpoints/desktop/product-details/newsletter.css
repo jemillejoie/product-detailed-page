@@ -36,16 +36,17 @@ p {
   width: 50%;
   height: 73px;
 }
-.newsletter form input {
-  width: 60%;
+.newsletter form input,
+.newsletter form button {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+}
+.newsletter form input {
+  width: 60%;
   padding: 0 2vw;
 }
 .newsletter form button {
   width: 40%;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
 }

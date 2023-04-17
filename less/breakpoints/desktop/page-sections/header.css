@@ -83,9 +83,6 @@ header .header-content .user-buttons .nav-icons .cart-number {
   top: -16px;
   right: -13px;
 }
-header .header-content .user-buttons .nav-icons .mobile {
-  display: none;
-}
 header .header-content .user-buttons .hamburger-menu {
   display: none;
 }

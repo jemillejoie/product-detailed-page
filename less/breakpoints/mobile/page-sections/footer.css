@@ -51,63 +51,43 @@ footer .footer-content .about-content .social-icons img {
   width: 20px;
   height: 20px;
 }
-footer .footer-content .links-container {
-  padding-bottom: 21px;
-}
-footer .footer-content .links-container h4 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+footer .footer-content .links h4,
+footer .footer-content .contact h4,
+footer .footer-content .links ul,
+footer .footer-content .contact ul {
   font-weight: 500;
   font-size: 10px;
   line-height: 12px;
-  background: #6F6F6F;
-  padding: 0 12px;
-  height: 31px;
-  cursor: pointer;
 }
-footer .footer-content .links-container h4 i {
-  display: block !important;
-  font-size: 20px;
-}
-footer .footer-content .links-container ul {
-  display: none;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 12px;
-  padding: 20px 20px 7px;
-  margin: 0;
-  background: gray;
-}
-footer .footer-content .links-container ul li {
-  padding-bottom: 13px;
-}
+footer .footer-content .links h4,
 footer .footer-content .contact h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 12px;
   background: #6F6F6F;
   padding: 0 12px;
   height: 31px;
   cursor: pointer;
 }
+footer .footer-content .links h4 i,
 footer .footer-content .contact h4 i {
   display: block !important;
   font-size: 20px;
 }
+footer .footer-content .links ul,
 footer .footer-content .contact ul {
   display: none;
   font-weight: 400;
-  font-size: 10px;
-  line-height: 12px;
   padding: 20px 20px 10px;
+  margin: 0;
   background: gray;
 }
+footer .footer-content .links ul li,
 footer .footer-content .contact ul li {
   padding-bottom: 10px;
+}
+footer .footer-content .links-container {
+  padding-bottom: 21px;
 }
 footer .footer-content .contact ul li:not(.email) {
   display: flex;

@@ -17,16 +17,14 @@ p {
   width: 21%;
   height: 76px;
 }
-.navbar-content .categories-content {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 29px;
-}
+.navbar-content .categories-content,
 .navbar-content .categories ul {
   font-weight: 500;
   font-size: 20px;
   text-align: center;
   line-height: 29px;
+}
+.navbar-content .categories ul {
   padding-left: 0;
 }
 .navbar-content .categories ul li {
@@ -43,17 +41,17 @@ p {
 .navbar-content .menus .navbar-title {
   height: 56px;
 }
+.navbar-content .menus-level-1,
+.navbar-content .menus-level-2,
+.navbar-content .menus-level-3 {
+  padding-left: 20px;
+}
 .navbar-content .menus-level-1 {
   top: 75px;
-  padding-left: 20px;
 }
-.navbar-content .menus-level-2 {
-  left: 100%;
-  padding-left: 20px;
-}
+.navbar-content .menus-level-2,
 .navbar-content .menus-level-3 {
   left: 100%;
-  padding-left: 20px;
 }
 .navbar-content .contact {
   width: 17%;
@@ -66,13 +64,12 @@ p {
 .navbar-content .contact-content img {
   height: 40px;
 }
-.navbar-content .contact-content p {
+.navbar-content .contact-content p,
+.navbar-content .contact-content a {
   font-weight: 300;
   font-size: 13px;
   line-height: 20px;
 }
 .navbar-content .contact-content a {
   font-weight: 500;
-  font-size: 13px;
-  line-height: 20px;
 }

@@ -39,11 +39,9 @@ header .header-content {
 header .header-content h2 {
   font-family: 'Inconsolata';
 }
-header .header-content h2 span {
-  color: #E73C17;
-}
+header .header-content h2 span,
 header .header-content h2 a:hover {
-  color: #191919;
+  color: #E73C17;
 }
 header .header-content .search-bar {
   display: flex;

@@ -17,19 +17,16 @@ p {
   width: 150px;
   height: inherit;
 }
-.navbar-content .categories-content {
-  width: inherit;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 14px;
-}
-.navbar-content .categories-content img {
-  width: 20px;
-}
+.navbar-content .categories-content,
 .navbar-content .categories ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
+}
+.navbar-content .categories-content {
+  width: inherit;
+}
+.navbar-content .categories ul {
   padding: 10px 10px 10px 30px;
 }
 .navbar-content .categories ul li {
@@ -50,15 +47,16 @@ p {
   top: 55px;
   padding: 10px 0 0 20px;
 }
-.navbar-content .menus-level-2 {
-  left: 65px;
+.navbar-content .menus-level-2,
+.navbar-content .menus-level-3 {
   top: 0;
   padding-left: 20px;
 }
+.navbar-content .menus-level-2 {
+  left: 65px;
+}
 .navbar-content .menus-level-3 {
   left: 85px;
-  top: 0;
-  padding-left: 20px;
 }
 .navbar-content .contact {
   height: inherit;

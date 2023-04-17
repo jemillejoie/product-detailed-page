@@ -39,11 +39,9 @@ header .header-content {
 header .header-content h2 {
   font-family: 'Inconsolata';
 }
-header .header-content h2 span {
-  color: #E73C17;
-}
+header .header-content h2 span,
 header .header-content h2 a:hover {
-  color: #191919;
+  color: #E73C17;
 }
 header .header-content .search-bar {
   display: flex;
@@ -192,24 +190,17 @@ header .header-content .user-buttons .nav-icons .cart-number {
   padding: 10px 0;
   cursor: pointer;
 }
-.navbar-content .menus-level-1 {
-  position: absolute;
-  background: #2F333A;
-  width: 100%;
-  z-index: 1;
-}
-.navbar-content .menus-level-2 {
-  position: absolute;
-  background: #2F333A;
-  top: 0;
-  z-index: 1;
-}
+.navbar-content .menus-level-1,
+.navbar-content .menus-level-2,
 .navbar-content .menus-level-3 {
   position: absolute;
   background: #2F333A;
-  top: 0;
-  width: 100%;
   z-index: 1;
+  top: 0;
+}
+.navbar-content .menus-level-1,
+.navbar-content .menus-level-3 {
+  width: 100%;
 }
 .navbar-content .menus .active {
   color: #E73C17;
@@ -246,15 +237,11 @@ footer .footer-content .contact ul li a {
   color: #E73C17;
 }
 footer .copyright {
-  display: flex;
-  align-items: center;
   flex-flow: column;
 }
-footer .copyright .cards {
-  display: flex;
-  align-items: center;
-}
-footer .copyright .credits {
+footer .copyright,
+footer .cards,
+footer .credits {
   display: flex;
   align-items: center;
 }
@@ -570,12 +557,14 @@ footer .copyright .credits {
 .newsletter form {
   display: flex;
 }
-.newsletter form input {
+.newsletter form input,
+.newsletter form button {
   height: inherit;
+}
+.newsletter form input {
   color: #6F6F6F;
 }
 .newsletter form button {
-  height: inherit;
   background: #E73C17;
   border: none;
   color: white;
@@ -660,9 +649,6 @@ footer .copyright .credits {
     top: -16px;
     right: -13px;
   }
-  header .header-content .user-buttons .nav-icons .mobile {
-    display: none;
-  }
   header .header-content .user-buttons .hamburger-menu {
     display: none;
   }
@@ -676,16 +662,14 @@ footer .copyright .credits {
     width: 21%;
     height: 76px;
   }
-  .navbar-content .categories-content {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 29px;
-  }
+  .navbar-content .categories-content,
   .navbar-content .categories ul {
     font-weight: 500;
     font-size: 20px;
     text-align: center;
     line-height: 29px;
+  }
+  .navbar-content .categories ul {
     padding-left: 0;
   }
   .navbar-content .categories ul li {
@@ -702,17 +686,17 @@ footer .copyright .credits {
   .navbar-content .menus .navbar-title {
     height: 56px;
   }
+  .navbar-content .menus-level-1,
+  .navbar-content .menus-level-2,
+  .navbar-content .menus-level-3 {
+    padding-left: 20px;
+  }
   .navbar-content .menus-level-1 {
     top: 75px;
-    padding-left: 20px;
   }
-  .navbar-content .menus-level-2 {
-    left: 100%;
-    padding-left: 20px;
-  }
+  .navbar-content .menus-level-2,
   .navbar-content .menus-level-3 {
     left: 100%;
-    padding-left: 20px;
   }
   .navbar-content .contact {
     width: 17%;
@@ -725,15 +709,14 @@ footer .copyright .credits {
   .navbar-content .contact-content img {
     height: 40px;
   }
-  .navbar-content .contact-content p {
+  .navbar-content .contact-content p,
+  .navbar-content .contact-content a {
     font-weight: 300;
     font-size: 13px;
     line-height: 20px;
   }
   .navbar-content .contact-content a {
     font-weight: 500;
-    font-size: 13px;
-    line-height: 20px;
   }
   footer .footer {
     max-width: 1800px;
@@ -1149,18 +1132,19 @@ footer .copyright .credits {
     width: 50%;
     height: 73px;
   }
-  .newsletter form input {
-    width: 60%;
+  .newsletter form input,
+  .newsletter form button {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+  }
+  .newsletter form input {
+    width: 60%;
     padding: 0 2vw;
   }
   .newsletter form button {
     width: 40%;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
   }
 }
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
@@ -1232,9 +1216,6 @@ footer .copyright .credits {
     top: -8px;
     right: -6px;
   }
-  header .header-content .user-buttons .nav-icons .mobile {
-    display: none;
-  }
   header .header-content .user-buttons .hamburger-menu {
     display: none;
   }
@@ -1248,19 +1229,16 @@ footer .copyright .credits {
     width: 150px;
     height: inherit;
   }
-  .navbar-content .categories-content {
-    width: inherit;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 14px;
-  }
-  .navbar-content .categories-content img {
-    width: 20px;
-  }
+  .navbar-content .categories-content,
   .navbar-content .categories ul {
     font-weight: 500;
     font-size: 14px;
     line-height: 14px;
+  }
+  .navbar-content .categories-content {
+    width: inherit;
+  }
+  .navbar-content .categories ul {
     padding: 10px 10px 10px 30px;
   }
   .navbar-content .categories ul li {
@@ -1281,15 +1259,16 @@ footer .copyright .credits {
     top: 55px;
     padding: 10px 0 0 20px;
   }
-  .navbar-content .menus-level-2 {
-    left: 65px;
+  .navbar-content .menus-level-2,
+  .navbar-content .menus-level-3 {
     top: 0;
     padding-left: 20px;
   }
+  .navbar-content .menus-level-2 {
+    left: 65px;
+  }
   .navbar-content .menus-level-3 {
     left: 85px;
-    top: 0;
-    padding-left: 20px;
   }
   .navbar-content .contact {
     height: inherit;
@@ -1463,10 +1442,13 @@ footer .copyright .credits {
   .content .product-details {
     max-width: 700px;
   }
-  .content .product-details .attributes {
+  .content .product-details .attributes,
+  .content .product-details .description {
     font-weight: 300;
     font-size: 18px;
     line-height: 22px;
+  }
+  .content .product-details .attributes {
     padding: 0 0 7px;
   }
   .content .product-details .attributes li {
@@ -1482,9 +1464,6 @@ footer .copyright .credits {
     padding-right: 5px;
   }
   .content .product-details .description {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 22px;
     padding: 20px 0 17px 20px;
   }
   .content .product-details .description li {
@@ -1522,9 +1501,12 @@ footer .copyright .credits {
     font-size: 24px;
     padding-left: 11px;
   }
-  .content .product-details .buy .quantity {
+  .content .product-details .buy .quantity,
+  .content .product-details .buy button {
     width: 202px;
     height: 60px;
+  }
+  .content .product-details .buy .quantity {
     margin-right: 30px;
   }
   .content .product-details .buy .quantity button {
@@ -1538,8 +1520,6 @@ footer .copyright .credits {
     width: 74px;
   }
   .content .product-details .buy button {
-    width: 202px;
-    height: 60px;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
@@ -1573,12 +1553,12 @@ footer .copyright .credits {
     padding-bottom: 35px;
   }
   .content .details-text-content th,
-  .content .details-text-content td {
+  .content .details-text-content td,
+  .content .details-text-content .review-container {
     padding: 20px;
   }
   .content .details-text-content .review-container {
     margin: 20px 0;
-    padding: 20px;
   }
   .content .details-text-content .review-container .stars img {
     height: 20px;
@@ -1592,12 +1572,12 @@ footer .copyright .credits {
     line-height: 39px;
     padding-bottom: 96px;
   }
-  .content .related-products-all {
+  .content .related-products-all,
+  .content .related-products-group {
     gap: 30px;
   }
   .content .related-products-group {
     width: 728px;
-    gap: 30px;
     flex-wrap: nowrap !important;
   }
   .content .related-products-container {
@@ -1661,16 +1641,17 @@ footer .copyright .credits {
   .content .related-products-container-details {
     padding-top: 38px;
   }
-  .content .related-products-container-details h3 {
+  .content .related-products-container-details h3,
+  .content .related-products-container-details h4 {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+  }
+  .content .related-products-container-details h3 {
     padding-bottom: 13px;
   }
   .content .related-products-container-details h4 {
     font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
   }
   .content .related-products-container-details h4 span {
     padding-left: 14px;
@@ -1792,11 +1773,14 @@ footer .copyright .credits {
     z-index: 5;
     padding: 20px 20px 100px;
   }
-  .hamburger-menu-content .menus {
+  .hamburger-menu-content .menus,
+  .hamburger-menu-content .contact-content {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: white;
+  }
+  .hamburger-menu-content .menus {
     margin: 0;
     padding: 0;
   }
@@ -1821,10 +1805,6 @@ footer .copyright .credits {
     color: #E73C17;
   }
   .hamburger-menu-content .contact-content {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: white;
     padding-top: 50px;
     text-align: center;
   }
@@ -1872,63 +1852,43 @@ footer .copyright .credits {
     width: 20px;
     height: 20px;
   }
-  footer .footer-content .links-container {
-    padding-bottom: 21px;
-  }
-  footer .footer-content .links-container h4 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  footer .footer-content .links h4,
+  footer .footer-content .contact h4,
+  footer .footer-content .links ul,
+  footer .footer-content .contact ul {
     font-weight: 500;
     font-size: 10px;
     line-height: 12px;
-    background: #6F6F6F;
-    padding: 0 12px;
-    height: 31px;
-    cursor: pointer;
   }
-  footer .footer-content .links-container h4 i {
-    display: block !important;
-    font-size: 20px;
-  }
-  footer .footer-content .links-container ul {
-    display: none;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    padding: 20px 20px 7px;
-    margin: 0;
-    background: gray;
-  }
-  footer .footer-content .links-container ul li {
-    padding-bottom: 13px;
-  }
+  footer .footer-content .links h4,
   footer .footer-content .contact h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 12px;
     background: #6F6F6F;
     padding: 0 12px;
     height: 31px;
     cursor: pointer;
   }
+  footer .footer-content .links h4 i,
   footer .footer-content .contact h4 i {
     display: block !important;
     font-size: 20px;
   }
+  footer .footer-content .links ul,
   footer .footer-content .contact ul {
     display: none;
     font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
     padding: 20px 20px 10px;
+    margin: 0;
     background: gray;
   }
+  footer .footer-content .links ul li,
   footer .footer-content .contact ul li {
     padding-bottom: 10px;
+  }
+  footer .footer-content .links-container {
+    padding-bottom: 21px;
   }
   footer .footer-content .contact ul li:not(.email) {
     display: flex;

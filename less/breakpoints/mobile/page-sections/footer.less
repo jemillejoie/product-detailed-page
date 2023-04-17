@@ -49,42 +49,13 @@ footer {
 				}
 			}
 
-			.links {
-				&-container {
-					padding-bottom: 21px;
-
-					h4 {
-						#flex.space-between(center);
-						#text-styles(500, 10px, 12px);
-						background: @color[doveGray];
-						padding: 0 12px;
-						height: 31px;
-						cursor: pointer;
-
-						i {
-							display: block !important;
-							font-size: 20px;
-						}
-					}
-
-					ul {
-						display: none;
-						#text-styles(400, 10px, 12px);
-						padding: 20px 20px 7px;
-						margin: 0;
-						background: gray;
-
-						li {
-							padding-bottom: 13px;
-						}
-					}
-				}
-			}
-
-			.contact {
-				h4{
-					#flex.space-between(center);
+			.links, .contact {
+				h4, ul {
 					#text-styles(500, 10px, 12px);
+				}
+
+				h4 {
+					#flex.space-between(center);
 					background: @color[doveGray];
 					padding: 0 12px;
 					height: 31px;
@@ -98,13 +69,26 @@ footer {
 
 				ul {
 					display: none;
-					#text-styles(400, 10px, 12px);
+					font-weight: 400;
 					padding: 20px 20px 10px;
+					margin: 0;
 					background: gray;
 
 					li {
 						padding-bottom: 10px;
+					}
+				}
+			}
 
+			.links {
+				&-container {
+					padding-bottom: 21px;
+				}
+			}
+
+			.contact {
+				ul {
+					li {
 						&:not(.email){
 							#flex.align-items(center);
 							gap: 4px;

@@ -21,12 +21,14 @@
 .newsletter form {
   display: flex;
 }
-.newsletter form input {
+.newsletter form input,
+.newsletter form button {
   height: inherit;
+}
+.newsletter form input {
   color: #6F6F6F;
 }
 .newsletter form button {
-  height: inherit;
   background: #E73C17;
   border: none;
   color: white;

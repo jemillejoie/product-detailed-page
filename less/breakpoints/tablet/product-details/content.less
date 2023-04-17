@@ -48,8 +48,11 @@
 		&-details {
 			max-width: 700px;
 
-			.attributes {
+			.attributes, .description {
 				#text-styles(300, 18px, 22px);
+			}
+
+			.attributes {
 				padding: 0 0 7px;
 
 				li {
@@ -69,7 +72,6 @@
 			}
 
 			.description {
-				#text-styles(300, 18px, 22px);
 				padding: 20px 0 17px 20px;
 
 				li {
@@ -111,8 +113,11 @@
 			}
 
 			.buy {
-				.quantity {
+				.quantity, button {
 					#width-height(202px, 60px);
+				}
+
+				.quantity {
 					margin-right: 30px;
 
 					button {
@@ -127,7 +132,6 @@
 				}
 
 				button {
-					#width-height(202px, 60px);
 					#text-styles(500, 18px, 22px);	
 				}
 
@@ -161,13 +165,12 @@
 					padding-bottom: 35px;
 				}
 
-				th, td {
+				th, td, .review-container {
 					padding: 20px;
 				}
 
 				.review-container {
 					margin: 20px 0;
-					padding: 20px;
 
 					.stars img {
 						height: 20px;
@@ -185,13 +188,12 @@
 			padding-bottom: 96px;
 		}
 
-		&-all {
+		&-all, &-group {
 			gap: 30px;
 		}
 
 		&-group {
 			width: 728px;
-			gap: 30px;
 			flex-wrap: nowrap !important;
 		}
 
@@ -258,13 +260,16 @@
 			&-details {
 				padding-top: 38px;
 
-				h3 {
+				h3, h4 {
 					#text-styles(400, 20px, 24px);
+				}
+
+				h3 {
 					padding-bottom: 13px;
 				}
 
 				h4 {
-					#text-styles(600, 20px, 24px);
+					font-weight: 600;
 
 					span {
 						padding-left: 14px;

@@ -62,24 +62,17 @@
   padding: 10px 0;
   cursor: pointer;
 }
-.navbar-content .menus-level-1 {
-  position: absolute;
-  background: #2F333A;
-  width: 100%;
-  z-index: 1;
-}
-.navbar-content .menus-level-2 {
-  position: absolute;
-  background: #2F333A;
-  top: 0;
-  z-index: 1;
-}
+.navbar-content .menus-level-1,
+.navbar-content .menus-level-2,
 .navbar-content .menus-level-3 {
   position: absolute;
   background: #2F333A;
-  top: 0;
-  width: 100%;
   z-index: 1;
+  top: 0;
+}
+.navbar-content .menus-level-1,
+.navbar-content .menus-level-3 {
+  width: 100%;
 }
 .navbar-content .menus .active {
   color: #E73C17;

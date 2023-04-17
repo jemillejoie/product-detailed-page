@@ -16,15 +16,11 @@ footer .footer-content .contact ul li a {
   color: #E73C17;
 }
 footer .copyright {
-  display: flex;
-  align-items: center;
   flex-flow: column;
 }
-footer .copyright .cards {
-  display: flex;
-  align-items: center;
-}
-footer .copyright .credits {
+footer .copyright,
+footer .cards,
+footer .credits {
   display: flex;
   align-items: center;
 }

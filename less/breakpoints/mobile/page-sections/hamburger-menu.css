@@ -14,11 +14,14 @@ p {
   z-index: 5;
   padding: 20px 20px 100px;
 }
-.hamburger-menu-content .menus {
+.hamburger-menu-content .menus,
+.hamburger-menu-content .contact-content {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: white;
+}
+.hamburger-menu-content .menus {
   margin: 0;
   padding: 0;
 }
@@ -43,10 +46,6 @@ p {
   color: #E73C17;
 }
 .hamburger-menu-content .contact-content {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: white;
   padding-top: 50px;
   text-align: center;
 }
