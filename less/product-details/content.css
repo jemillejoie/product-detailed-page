@@ -234,16 +234,6 @@
   -moz-justify-content: center;
   -webkit-justify-content: center;
   justify-content: center;
-  -ms-flex-align: center;
-  -moz-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-.content .related-products-all {
-  -ms-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 .content .related-products-container-item {
   position: relative;

@@ -200,23 +200,36 @@
 
 		&-all, &-group {
 			& > * + * {
-				margin-left: 30px;
+				margin-left: 1.5vw;
 			}
 		}
 
+		&-all {
+			max-width: 1762px;
+			width: 100%;
+		}
+
+		&-group {
+			max-width: 866px;
+			width: 100%;
+			padding-bottom: 30px;
+		}
+
 		&-container {
-			width: 418px;
+			max-width: 418px;
+			width: 100%;
 
 			&-item {
 				padding-bottom: 28px;
 
 				.top-btn {
-					padding: 22px 22px 49px;
+					padding: 22px 22px 3vw;
 
 					h6 {
 						#text-styles(500, 12px, 12px);
 						height: 26px;
 						min-width: 67px;
+						max-width: 100px;
 						padding: 0 20px;
 					}
 
@@ -251,13 +264,19 @@
 
 				.image {
 					height: 300px;
+
+					img {
+						max-width: 300px;
+						width: 80%;
+					}
 				}
 
 				.add-to-cart-btn {
 					padding-top: 35px;
 
 					button {
-						#width-height(248px, 64px);
+						max-width: 248px;
+						#width-height(80%, 64px);
 						#text-styles(500, 18px, 22px);
 
 						img {
@@ -287,7 +306,7 @@
 
 		.navigation {
 			width: 86px;
-			padding-top: 69px;
+			padding-top: 39px;
 
 			&-btn {
 				#width-height(14px, 14px);

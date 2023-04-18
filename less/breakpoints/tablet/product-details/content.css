@@ -185,8 +185,15 @@ p {
   line-height: 35px;
   padding-bottom: 85px;
 }
+.content .related-products-all {
+  -ms-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
 .content .related-products-group {
   width: 700px;
+  margin-bottom: 25px;
 }
 .content .related-products-group > * + * {
   margin-left: 25px;

@@ -231,6 +231,10 @@ p {
   padding-bottom: 20px;
 }
 .content .related-products-all {
+  -ms-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
   height: 243px;
   margin: auto;
   overflow: hidden;
