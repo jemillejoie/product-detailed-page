@@ -185,12 +185,11 @@ p {
   line-height: 35px;
   padding-bottom: 85px;
 }
-.content .related-products-all,
-.content .related-products-group {
-  gap: 25px;
-}
 .content .related-products-group {
   width: 700px;
+}
+.content .related-products-group > * + * {
+  margin-left: 25px;
 }
 .content .related-products-container {
   width: 400px;
@@ -248,7 +247,9 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  gap: 8px;
+}
+.content .related-products-container-item .add-to-cart-btn button img {
+  margin-right: 8px;
 }
 .content .related-products-container-details {
   padding-top: 30px;

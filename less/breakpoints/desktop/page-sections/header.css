@@ -66,12 +66,12 @@ header .header-content .search-bar button img {
 }
 header .header-content .user-buttons {
   width: 236px;
-  gap: 36px;
 }
 header .header-content .user-buttons .authentication {
   font-weight: 300;
   font-size: 20px;
   line-height: 24.2px;
+  margin-right: 36px;
 }
 header .header-content .user-buttons .nav-icons {
   width: 65px;

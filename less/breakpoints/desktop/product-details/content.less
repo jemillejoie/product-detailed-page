@@ -10,16 +10,17 @@
 
 	.product {
 		max-width: 1665px;
-		margin: 96px 0;
-		gap: 34px;
+		margin: 96px 0 135px;
 
 		&-container {
 			max-width: 927px;
 			width: 100%;
-			gap: 34px;
+			margin-right: 34px;
 		}
 
 		&-thumbnail {
+			margin-right: 34px;
+
 			&-img {
 				#max-width-height(200px, 151px);
 				#width-height(100%, 100%);
@@ -197,12 +198,10 @@
 			padding-bottom: 96px;
 		}
 
-		&-all {
-			gap: 30px;
-		}
-
-		&-group {
-			gap: 30px;
+		&-all, &-group {
+			& > * + * {
+				margin-left: 30px;
+			}
 		}
 
 		&-container {
@@ -260,7 +259,10 @@
 					button {
 						#width-height(248px, 64px);
 						#text-styles(500, 18px, 22px);
-						gap: 9px;
+
+						img {
+							margin-right: 9px;
+						}
 					}
 				}
 			}

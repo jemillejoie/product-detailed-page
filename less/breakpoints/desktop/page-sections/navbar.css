@@ -53,11 +53,9 @@ p {
   height: 76px;
   padding-right: 10px;
 }
-.navbar-content .contact-content {
-  gap: 2vw;
-}
 .navbar-content .contact-content img {
   height: 40px;
+  margin-right: 2vw;
 }
 .navbar-content .contact-content p,
 .navbar-content .contact-content a {

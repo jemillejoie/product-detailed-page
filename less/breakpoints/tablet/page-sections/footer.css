@@ -32,7 +32,9 @@ footer .footer-content {
   flex-wrap: wrap;
   padding: 50px 0 70px;
   border-bottom: 1px solid white;
-  gap: 20px;
+}
+footer .footer-content > * + * {
+  margin-left: 20px;
 }
 footer .footer-content-dropdown h4 {
   font-weight: 500;
@@ -69,8 +71,10 @@ footer .footer-content .about .social-icons {
   -moz-flex-align: flex-end;
   -webkit-align-items: flex-end;
   align-items: flex-end;
-  gap: 20px;
   height: 48.31px;
+}
+footer .footer-content .about .social-icons > * + * {
+  margin-left: 20px;
 }
 footer .footer-content .about .social-icons img:hover {
   padding-bottom: 17px;
@@ -81,7 +85,9 @@ footer .footer-content .links {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  gap: 130px;
+}
+footer .footer-content .links > * + * {
+  margin-left: 130px;
 }
 footer .footer-content .links-container ul li {
   padding-bottom: 13px;
@@ -102,21 +108,27 @@ footer .footer-content .contact ul li:not(.email) {
   -moz-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  gap: 4px;
+}
+footer .footer-content .contact ul li:not(.email) img {
+  margin-right: 4px;
 }
 footer .footer-content .contact ul li a {
   font-weight: 500;
 }
 footer .copyright {
   padding: 35px 0;
-  gap: 15px;
 }
 footer .copyright .cards {
-  gap: 6px;
+  margin-bottom: 15px;
+}
+footer .copyright .cards > * + * {
+  margin-left: 6px;
 }
 footer .copyright .credits {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
-  gap: 4px;
+}
+footer .copyright .credits img {
+  margin-right: 4px;
 }

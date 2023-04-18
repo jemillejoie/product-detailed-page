@@ -189,12 +189,12 @@
 			padding-bottom: 85px;
 		}
 
-		&-all, &-group {
-			gap: 25px;
-		}
-
 		&-group {
 			width: 700px;
+
+			& > * + * {
+				margin-left: 25px;
+			}
 		}
 
 		&-container {
@@ -252,7 +252,10 @@
 					button {
 						#width-height(240px, 60px);
 						#text-styles(500, 16px, 20px);
-						gap: 8px;
+
+						img {
+							margin-right: 8px;
+						}
 					}
 				}
 			}

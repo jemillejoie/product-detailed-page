@@ -11,9 +11,6 @@
   header .header-container {
     min-height: 100px;
   }
-  header .header-content {
-    min-height: inherit;
-  }
   header .header-content h2 {
     font-weight: 700;
     font-size: 30px;
@@ -31,10 +28,10 @@
     padding: 0 20px;
   }
   header .header-content .search-bar-dropdown {
-    width: 160px;
     font-weight: 300;
     font-size: 14px;
     line-height: 14px;
+    width: 160px;
   }
   header .header-content .search-bar-dropdown-heading {
     height: 60px;
@@ -108,12 +105,10 @@
   }
   .navbar-content .menus-level-1 {
     top: 55px;
-    padding: 10px 0 0 20px;
   }
   .navbar-content .menus-level-2,
   .navbar-content .menus-level-3 {
     top: 0;
-    padding-left: 20px;
   }
   .navbar-content .menus-level-2 {
     left: 65px;
@@ -152,29 +147,47 @@
     max-width: 1800px;
   }
   footer .footer-content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 58px 0 84px;
+    padding: 50px 0 70px;
     border-bottom: 1px solid white;
-    gap: 20px;
+  }
+  footer .footer-content > * + * {
+    margin-left: 20px;
+  }
+  footer .footer-content-dropdown h4 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 24px;
+    padding-bottom: 25px;
+  }
+  footer .footer-content-dropdown h4 i {
+    display: none;
+  }
+  footer .footer-content-dropdown p,
+  footer .footer-content-dropdown ul {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  footer .footer-content-dropdown ul {
+    padding: 0;
+    margin: 0;
   }
   footer .footer-content .about {
     padding-bottom: 20px;
   }
-  footer .footer-content .about h4 {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    padding-bottom: 29px;
-  }
-  footer .footer-content .about h4 i {
-    display: none;
-  }
   footer .footer-content .about p {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
     padding-bottom: 13px;
   }
   footer .footer-content .about .social-icons {
@@ -183,53 +196,36 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -ms-flex-align: flex-end;
+    -moz-flex-align: flex-end;
+    -webkit-align-items: flex-end;
     align-items: flex-end;
-    gap: 20px;
     height: 48.31px;
+  }
+  footer .footer-content .about .social-icons > * + * {
+    margin-left: 20px;
   }
   footer .footer-content .about .social-icons img:hover {
     padding-bottom: 17px;
   }
   footer .footer-content .links {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    gap: 130px;
   }
-  footer .footer-content .links-container h4 {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    padding-bottom: 29px;
-  }
-  footer .footer-content .links-container h4 i {
-    display: none;
-  }
-  footer .footer-content .links-container ul {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    padding: 0;
-    margin: 0;
+  footer .footer-content .links > * + * {
+    margin-left: 130px;
   }
   footer .footer-content .links-container ul li {
     padding-bottom: 13px;
   }
-  footer .footer-content .contact h4 {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    padding: 20px 0;
-  }
-  footer .footer-content .contact h4 i {
-    display: none;
-  }
-  footer .footer-content .contact ul {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    padding: 0;
+  footer .footer-content .contact {
+    padding-top: 10px;
   }
   footer .footer-content .contact ul li {
-    padding-bottom: 21px;
+    padding-bottom: 18px;
   }
   footer .footer-content .contact ul li:not(.email) {
     display: -webkit-box;
@@ -237,24 +233,33 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -ms-flex-align: center;
+    -moz-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
-    gap: 4px;
+  }
+  footer .footer-content .contact ul li:not(.email) img {
+    margin-right: 4px;
   }
   footer .footer-content .contact ul li a {
     font-weight: 500;
   }
   footer .copyright {
-    padding: 46px 0;
-    gap: 20px;
+    padding: 35px 0;
   }
   footer .copyright .cards {
-    gap: 9px;
+    margin-bottom: 15px;
+  }
+  footer .copyright .cards > * + * {
+    margin-left: 6px;
   }
   footer .copyright .credits {
     font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    gap: 6px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  footer .copyright .credits img {
+    margin-right: 4px;
   }
   h1,
   h2,
@@ -283,11 +288,17 @@
     max-width: 1064px;
   }
   .content .product {
+    -ms-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: 50px 0;
   }
   .content .product-container {
-    width: 728px;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    width: 728px;
   }
   .content .product-thumbnail-img {
     width: 157px;
@@ -403,86 +414,77 @@
     margin-right: 30px;
   }
   .content .details-title {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 608px;
+    width: 550px;
   }
   .content .details-title h2 {
     font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    padding-bottom: 23px;
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 18px;
   }
   .content .details-text {
-    padding-top: 38px;
-    min-height: 421px;
+    padding-top: 30px;
+    min-height: 400px;
   }
   .content .details-text-content {
     width: 70%;
     font-weight: 300;
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 30px;
   }
   .content .details-text-content p {
-    padding-bottom: 35px;
+    padding-bottom: 30px;
   }
   .content .details-text-content th,
   .content .details-text-content td,
   .content .details-text-content .review-container {
-    padding: 20px;
+    padding: 18px;
   }
   .content .details-text-content .review-container {
-    margin: 20px 0;
+    margin: 18px 0;
   }
   .content .details-text-content .review-container .stars img {
     height: 20px;
   }
   .content .related-products {
-    margin: 52px 0 168px;
+    margin: 45px 0 100px;
   }
   .content .related-products h2 {
     font-weight: 500;
-    font-size: 32px;
-    line-height: 39px;
-    padding-bottom: 96px;
-  }
-  .content .related-products-all,
-  .content .related-products-group {
-    gap: 30px;
+    font-size: 28px;
+    line-height: 35px;
+    padding-bottom: 85px;
   }
   .content .related-products-group {
-    width: 728px;
-    flex-wrap: nowrap !important;
+    width: 700px;
+  }
+  .content .related-products-group > * + * {
+    margin-left: 25px;
   }
   .content .related-products-container {
-    width: 418px;
+    width: 400px;
   }
   .content .related-products-container-item {
-    padding-bottom: 28px;
+    padding-bottom: 25px;
   }
   .content .related-products-container-item .top-btn {
-    padding: 22px 22px 49px;
+    padding: 20px 20px 45px;
   }
   .content .related-products-container-item .top-btn h6 {
     font-weight: 500;
-    font-size: 12px;
-    line-height: 12px;
-    height: 26px;
-    min-width: 67px;
-    padding: 0 20px;
+    font-size: 10px;
+    line-height: 10px;
+    height: 20px;
+    min-width: 60px;
+    padding: 0 16px;
   }
   .content .related-products-container-item .top-btn .heart {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
   .content .related-products-container-item .quick-view {
     right: 39px;
-    top: 104px;
+    top: 85px;
   }
   .content .related-products-container-item .quick-view .text {
     right: 33px;
@@ -504,44 +506,46 @@
     position: relative;
   }
   .content .related-products-container-item .image {
-    height: 300px;
+    height: 200px;
   }
   .content .related-products-container-item .add-to-cart-btn {
-    padding-top: 35px;
+    padding-top: 30px;
   }
   .content .related-products-container-item .add-to-cart-btn button {
-    width: 248px;
-    height: 64px;
+    width: 240px;
+    height: 60px;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    gap: 9px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .content .related-products-container-item .add-to-cart-btn button img {
+    margin-right: 8px;
   }
   .content .related-products-container-details {
-    padding-top: 38px;
+    padding-top: 30px;
   }
   .content .related-products-container-details h3,
   .content .related-products-container-details h4 {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 20px;
   }
   .content .related-products-container-details h3 {
-    padding-bottom: 13px;
+    padding-bottom: 10px;
   }
   .content .related-products-container-details h4 {
     font-weight: 600;
   }
   .content .related-products-container-details h4 span {
-    padding-left: 14px;
+    padding-left: 10px;
   }
   .content .related-products .navigation {
-    width: 86px;
-    padding-top: 69px;
+    width: 80px;
+    padding-top: 65px;
   }
   .content .related-products .navigation-btn {
-    width: 14px;
-    height: 14px;
+    width: 10px;
+    height: 10px;
   }
   .newsletter {
     min-height: 120px;
@@ -554,33 +558,32 @@
     padding-bottom: 20px;
   }
   .newsletter-caption img {
-    padding-right: 33px;
+    padding-right: 30px;
   }
   .newsletter-text h2 {
     font-weight: 500;
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 24px;
+    line-height: 30px;
     padding-bottom: 4px;
   }
   .newsletter-text p {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 20px;
   }
   .newsletter form {
-    height: 73px;
+    width: 90%;
+    height: 65px;
   }
-  .newsletter form input {
-    width: 447px;
+  .newsletter form input,
+  .newsletter form button {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    padding: 0 38px;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 0 35px;
   }
   .newsletter form button {
     width: 250px;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 18px;
   }
 }

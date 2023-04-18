@@ -31,8 +31,10 @@ p {
   -webkit-align-items: center;
   align-items: center;
   width: 1518px;
-  gap: 20px;
   padding: 15px;
+}
+.newsletter-caption {
+  margin-right: 20px;
 }
 .newsletter-caption img {
   padding-right: 33px;

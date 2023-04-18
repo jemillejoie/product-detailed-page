@@ -20,7 +20,6 @@
 
 		&-thumbnail {
 			.flex();
-			gap: 15px;
 			padding-bottom: 15px;
 
 			&-img {
@@ -36,6 +35,10 @@
 
 				.active {
 					border: 1px solid @color[pomegranate];
+				}
+
+				&:not(:last-child) {
+					margin-right: 15px;
 				}
 			}
 		}
@@ -93,7 +96,6 @@
 
 			.size {
 				.flex();
-				gap: 6px;
 				max-height: 87px;
 				padding: 16px 0;
 
@@ -105,6 +107,10 @@
 
 				.active {
 					font-weight: 500;
+				}
+
+				& > * + * {
+					margin-left: 6px;
 				}
 			}
 
@@ -214,16 +220,13 @@
 		&-all {
 			height: 243px;
 			margin: auto;
-			// gap: 16px;
 			overflow: hidden;
 		}
 
-		&-group {
-			// gap: 16px;
-		}
-
-		&-group > * + *, &-all > * + * {
-			margin-left: 16px;
+		&-all, &-group {
+			> * + * {
+				margin-left: 16px;
+			}
 		}
 
 		&-container {
@@ -291,10 +294,10 @@
 					button {
 						#width-height(97px, 25px);
 						#text-styles(500, 8px, 10px);
-						gap: 3px;
 
 						img {
 							width: 10px;
+							margin-right: 3px;
 						}
 					}
 				}
