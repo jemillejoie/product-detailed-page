@@ -155,8 +155,6 @@ document.getElementById('add').addEventListener(
 	addQty,
 	false)
 
-productQty.addEventListener('keypress', intOnly, false)
-
 productQty.addEventListener('input', noLeadingZeros, false)
 
 for(let i=1; i<=detailsTitle.children.length; i++){

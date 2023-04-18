@@ -134,15 +134,6 @@ function subtractQty(){
 }
 
 /**
- * This is to prevent the use of non-numerical values
- * in the product quantity's input field.
- * Only charcode 48-57 are numerical values
- */
-function intOnly(){
-	return (event.charCode !== 8 && event.charCode === 0 || (event.charCode >= 48 && event.charCode <= 57))
-}
-
-/**
  * This is for removing the leading zeros
  * in the product quantity's input field
  */
