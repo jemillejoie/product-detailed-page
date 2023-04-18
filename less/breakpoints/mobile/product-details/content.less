@@ -6,16 +6,16 @@
 @import '@{less}/measurements/width-height.less';
 
 .content {
-	max-width: 360px;
-
 	.product {
 		.flex-wrap(wrap);
 		max-width: inherit;
 		margin: 30px 0 37px;
 
 		&-container {
-			.justify-content(center);
+			.align-items(center);
 			.flex-wrap(wrap);
+			.flex-direction(column);
+			width: 100%;
 		}
 
 		&-thumbnail {
@@ -60,6 +60,8 @@
 		}
 
 		&-details {
+			max-width: 600px;
+			
 			.attributes {
 				#text-styles(300, 8px, 10px);
 				padding: 0 0 3px;
@@ -92,7 +94,7 @@
 			.size {
 				.flex();
 				gap: 6px;
-				height: 87px;
+				max-height: 87px;
 				padding: 16px 0;
 
 				button {
@@ -153,7 +155,8 @@
 
 	.details {
 		&-title {
-			width: 202px;
+			min-width: 202px;
+			width: 45%;
 
 			h2 {
 				#text-styles(500, 10px, 12px);
@@ -162,7 +165,9 @@
 		}
 
 		&-text {
+			max-width: 600px;
 			padding-top: 16px;
+			margin: auto;
 
 			&-content {
 				#text-styles(300, 8px, 10px);
@@ -206,12 +211,15 @@
 			padding-bottom: 20px;
 		}
 
+		&-all {
+			height: 243px;
+			margin: auto;
+			gap: 16px;
+			overflow: hidden;
+		}
+
 		&-group {
 			gap: 16px;
-
-			&:nth-child(2) {
-				display: none;
-			}
 		}
 
 		&-container {
