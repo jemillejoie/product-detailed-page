@@ -2500,11 +2500,11 @@ footer .credits {
   .content .related-products-all {
     height: 243px;
     margin: auto;
-    gap: 16px;
     overflow: hidden;
   }
-  .content .related-products-group {
-    gap: 16px;
+  .content .related-products-group > * + *,
+  .content .related-products-all > * + * {
+    margin-left: 16px;
   }
   .content .related-products-container {
     width: 132px;

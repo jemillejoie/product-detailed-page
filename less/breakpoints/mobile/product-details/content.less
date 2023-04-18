@@ -214,12 +214,16 @@
 		&-all {
 			height: 243px;
 			margin: auto;
-			gap: 16px;
+			// gap: 16px;
 			overflow: hidden;
 		}
 
 		&-group {
-			gap: 16px;
+			// gap: 16px;
+		}
+
+		&-group > * + *, &-all > * + * {
+			margin-left: 16px;
 		}
 
 		&-container {
