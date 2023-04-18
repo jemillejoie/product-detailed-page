@@ -18,10 +18,6 @@
   -moz-justify-content: center;
   -webkit-justify-content: center;
   justify-content: center;
-  -ms-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 .content .product-container {
   display: -webkit-box;

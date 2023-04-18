@@ -14,13 +14,15 @@
 		gap: 34px;
 
 		&-container {
-			.justify-content(space-around);
+			max-width: 927px;
+			width: 100%;
 			gap: 34px;
 		}
 
 		&-thumbnail {
 			&-img {
-				#width-height(200px, 151px);
+				#max-width-height(200px, 151px);
+				#width-height(100%, 100%);
 				margin-bottom: 39px;
 
 				img {
@@ -31,9 +33,12 @@
 
 		&-image {
 			margin-bottom: 50px;
+			max-width: 693px;
+			width: 100%;
 
 			&-show {
-				#width-height(695px, 715px);
+				#max-width-height(695px, 715px);
+				#width-height(100%, 100%);
 				margin-bottom: 45px;
 
 				img {
@@ -49,6 +54,7 @@
 
 		&-details {
 			max-width: 700px;
+			width: 100%;
 
 			.attributes {
 				#text-styles(300, 18px, 22px);
@@ -81,8 +87,7 @@
 
 			.size {
 				max-width: 666px;
-				height: 178px;
-				padding: 32px 0;
+				padding-top: 32px;
 
 				button {
 					#width-height(200px, 60px);
@@ -113,9 +118,14 @@
 			}
 
 			.buy {
+				.justify-content(space-between);
+				#max-width-height(666px, 60px);
+				#width-height(100%, 100%);
+				
+
 				.quantity {
-					#width-height(202px, 60px);
-					margin-right: 30px;
+					#max-width-height(202px, 60px);
+					margin-right: 10px;
 
 					button {
 						width: 64px;
@@ -129,12 +139,13 @@
 				}
 
 				button {
-					#width-height(202px, 60px);
+					#max-width-height(202px, 60px);
+					width: 100%;
 					#text-styles(500, 18px, 22px);	
 				}
 
 				&-now-btn {
-					margin-right: 30px;
+					margin-right: 10px;
 				}
 			}
 		}
