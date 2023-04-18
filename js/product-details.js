@@ -149,7 +149,8 @@ function intOnly(){
 function noLeadingZeros(){
 	const val = document.getElementById('qty-num');
 
-	val.value = parseInt(val.value);
+	if(val.value!="")
+		val.value = parseInt(val.value);
 
 	if(val.value)
 		return
@@ -209,7 +210,7 @@ function hamburgerMenu(){
 		close.style.display = "block";
 		hamburger.style.display = "none";
 		body.style.overflow = "hidden";
-		container.style.overflow = "auto";
+		container.style.overflow = "scroll";
 		container.append(menus);
 		container.append(contact);
 	}

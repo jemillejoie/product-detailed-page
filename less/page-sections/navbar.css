@@ -98,10 +98,10 @@
   padding: 0;
 }
 .navbar-content .menus .navbar-title i {
-  rotate: 0deg;
+  transform: rotate(0deg);
 }
 .navbar-content .menus i {
-  rotate: 270deg;
+  transform: rotate(270deg);
 }
 .navbar-content .menus li {
   display: -webkit-box;

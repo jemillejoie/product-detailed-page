@@ -140,6 +140,9 @@
 .content .product-details .buy .quantity-number::-webkit-outer-spin-button,
 .content .product-details .buy .quantity-number::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
 }
 .content .product-details .buy-now-btn {
   background: #E73C17;
