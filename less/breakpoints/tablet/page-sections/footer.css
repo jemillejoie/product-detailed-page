@@ -33,9 +33,6 @@ footer .footer-content {
   padding: 50px 0 70px;
   border-bottom: 1px solid white;
 }
-footer .footer-content > * + * {
-  margin-left: 20px;
-}
 footer .footer-content-dropdown h4 {
   font-weight: 500;
   font-size: 22px;
