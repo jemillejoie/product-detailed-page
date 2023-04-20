@@ -16,7 +16,7 @@ footer {
 
 			&-dropdown {
 				h4 {
-					#text-styles(500, 22px, 24px);
+					#text-styles(500, 16px, 16px);
 					padding-bottom: 25px;
 
 					i {
@@ -25,7 +25,7 @@ footer {
 				}
 
 				p, ul {
-					#text-styles(400, 16px, 20px);
+					#text-styles(400, 14px, 14px);
 				}
 
 				ul {
@@ -38,13 +38,12 @@ footer {
 				padding-bottom: 20px;
 
 				p {
-					padding-bottom: 13px;
+					padding-bottom: 20px;
 				}
 
 				.social-icons {
 					.flex();
 					.align-items(flex-end);
-					height: 48.31px;
 
 					& > * + * {
 						margin-left: 20px;
@@ -60,12 +59,16 @@ footer {
 
 			.links {
 				.flex();
+				.justify-content(space-between);
+				width: 60%;
 
 				& > * + * {
-					margin-left: 130px;
+					// margin-left: 65px;
 				}
 
 				&-container {
+					// margin-right: 65px;
+
 					ul {
 						li {
 							padding-bottom: 13px;
@@ -75,7 +78,7 @@ footer {
 			}
 
 			.contact {
-				padding-top: 10px;
+				max-width: 30%;
 
 				ul {
 					li {

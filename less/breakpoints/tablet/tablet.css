@@ -162,9 +162,6 @@
     padding: 50px 0 70px;
     border-bottom: 1px solid white;
   }
-  footer .footer-content > * + * {
-    margin-left: 20px;
-  }
   footer .footer-content-dropdown h4 {
     font-weight: 500;
     font-size: 22px;
@@ -455,8 +452,15 @@
     line-height: 35px;
     padding-bottom: 85px;
   }
+  .content .related-products-all {
+    -ms-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
   .content .related-products-group {
     width: 700px;
+    margin-bottom: 25px;
   }
   .content .related-products-group > * + * {
     margin-left: 25px;
