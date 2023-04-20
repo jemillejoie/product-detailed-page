@@ -131,11 +131,11 @@ p {
   line-height: 8px;
   margin-bottom: 2px;
 }
+.content .product-details .size button:not(:last-child) {
+  margin-right: 6px;
+}
 .content .product-details .size .active {
   font-weight: 500;
-}
-.content .product-details .size > * + * {
-  margin-left: 6px;
 }
 .content .product-details .price p {
   font-weight: 300;

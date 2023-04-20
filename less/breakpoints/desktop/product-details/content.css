@@ -19,7 +19,7 @@ p {
 }
 .content .product {
   max-width: 1665px;
-  margin: 96px 0 135px;
+  margin: 96px 0 140px;
 }
 .content .product-container {
   max-width: 927px;
@@ -192,7 +192,7 @@ p {
   height: 20px;
 }
 .content .related-products {
-  margin: 52px 0 174px;
+  margin: 52px 0 163px;
 }
 .content .related-products h2 {
   font-weight: 500;
@@ -221,16 +221,15 @@ p {
   padding-bottom: 28px;
 }
 .content .related-products-container-item .top-btn {
-  padding: 22px 22px 3vw;
+  padding: 20px 20px 3vw;
 }
 .content .related-products-container-item .top-btn h6 {
   font-weight: 500;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 11px;
+  line-height: 11px;
   height: 26px;
-  min-width: 67px;
-  max-width: 100px;
-  padding: 0 20px;
+  max-width: 140px;
+  padding: 5px 20px;
 }
 .content .related-products-container-item .top-btn .heart {
   width: 60px;
