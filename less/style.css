@@ -1500,7 +1500,7 @@ footer .credits {
     font-weight: 600;
   }
 }
-@media only screen and (min-width: 767px) and (max-width: 1024px) {
+@media only screen and (min-width: 767.6px) and (max-width: 1024px) {
   header .header-top {
     font-weight: 300;
     font-size: 12px;
@@ -2077,7 +2077,7 @@ footer .credits {
     font-weight: 600;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.5px) {
   header .header-top {
     display: none;
   }

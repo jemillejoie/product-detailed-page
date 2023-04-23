@@ -286,7 +286,7 @@
   }
   .content .product {
     max-width: 1665px;
-    margin: 96px 0 135px;
+    margin: 96px 0 140px;
   }
   .content .product-container {
     max-width: 927px;
@@ -459,7 +459,7 @@
     height: 20px;
   }
   .content .related-products {
-    margin: 52px 0 174px;
+    margin: 52px 0 163px;
   }
   .content .related-products h2 {
     font-weight: 500;
@@ -469,24 +469,34 @@
   }
   .content .related-products-all > * + *,
   .content .related-products-group > * + * {
-    margin-left: 30px;
+    margin-left: 1.5vw;
+  }
+  .content .related-products-all {
+    max-width: 1762px;
+    width: 100%;
+  }
+  .content .related-products-group {
+    max-width: 866px;
+    width: 100%;
+    padding-bottom: 30px;
   }
   .content .related-products-container {
-    width: 418px;
+    max-width: 418px;
+    width: 100%;
   }
   .content .related-products-container-item {
     padding-bottom: 28px;
   }
   .content .related-products-container-item .top-btn {
-    padding: 22px 22px 49px;
+    padding: 20px 20px 3vw;
   }
   .content .related-products-container-item .top-btn h6 {
     font-weight: 500;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 11px;
+    line-height: 11px;
     height: 26px;
-    min-width: 67px;
-    padding: 0 20px;
+    max-width: 140px;
+    padding: 5px 20px;
   }
   .content .related-products-container-item .top-btn .heart {
     width: 60px;
@@ -518,11 +528,16 @@
   .content .related-products-container-item .image {
     height: 300px;
   }
+  .content .related-products-container-item .image img {
+    max-width: 300px;
+    width: 80%;
+  }
   .content .related-products-container-item .add-to-cart-btn {
     padding-top: 35px;
   }
   .content .related-products-container-item .add-to-cart-btn button {
-    width: 248px;
+    max-width: 248px;
+    width: 80%;
     height: 64px;
     font-weight: 500;
     font-size: 18px;
@@ -550,7 +565,7 @@
   }
   .content .related-products .navigation {
     width: 86px;
-    padding-top: 69px;
+    padding-top: 39px;
   }
   .content .related-products .navigation-btn {
     width: 14px;

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.5px) {
   .flex {
     display: -webkit-box;
     display: -moz-box;
@@ -390,11 +390,11 @@
     line-height: 8px;
     margin-bottom: 2px;
   }
+  .content .product-details .size button:not(:last-child) {
+    margin-right: 6px;
+  }
   .content .product-details .size .active {
     font-weight: 500;
-  }
-  .content .product-details .size > * + * {
-    margin-left: 6px;
   }
   .content .product-details .price p {
     font-weight: 300;
@@ -490,6 +490,10 @@
     padding-bottom: 20px;
   }
   .content .related-products-all {
+    -ms-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
     height: 243px;
     margin: auto;
     overflow: hidden;
