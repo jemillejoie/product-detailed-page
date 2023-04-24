@@ -1,4 +1,4 @@
-@media only screen and (min-width: 767.6px) and (max-width: 1024px) {
+@media only screen and (min-width: 767.6px) and (max-width: 1024.5px) {
   header .header-top {
     font-weight: 300;
     font-size: 12px;
@@ -200,9 +200,6 @@
   }
   footer .footer-content .about .social-icons > * + * {
     margin-left: 20px;
-  }
-  footer .footer-content .about .social-icons img:hover {
-    padding-bottom: 17px;
   }
   footer .footer-content .links {
     display: -webkit-box;

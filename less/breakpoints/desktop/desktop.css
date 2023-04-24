@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024.6px) {
   header .header-top {
     font-weight: 300;
     font-size: 16px;
@@ -181,7 +181,7 @@
     margin: 0;
   }
   footer .footer-content .about {
-    width: 19vw;
+    width: 20%;
   }
   footer .footer-content .about p {
     padding-bottom: 13px;
@@ -210,15 +210,16 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-  }
-  footer .footer-content .links > * + * {
-    margin-left: 6.5vw;
+    -moz-justify-content: space-around;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    width: 50%;
   }
   footer .footer-content .links-container ul li {
     padding-bottom: 5px;
   }
   footer .footer-content .contact {
-    max-width: 18vw;
+    width: 20%;
   }
   footer .footer-content .contact ul li {
     padding-bottom: 21px;
