@@ -182,6 +182,9 @@
   color: #191919;
   cursor: pointer;
 }
+.content .details-title h2:not(.active) {
+  border-bottom: 2px solid white;
+}
 .content .details-title .active {
   border-bottom: 2px solid #E73C17;
 }
