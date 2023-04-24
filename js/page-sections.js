@@ -10,7 +10,7 @@ function dropdown(itemID, caretID){
 		caret = document.getElementById(caretID),
 		dropdown = document.querySelectorAll(`[id^=${itemID}]`),
 		carets = document.querySelectorAll(`[id^=${caretID}]`),
-		mobile = window.matchMedia("(max-width: 767px)");
+		mobile = window.matchMedia("(max-width: 768px)");
 
 	if(!mobile.matches) return
 
@@ -42,7 +42,7 @@ function dropdown(itemID, caretID){
 function showDropdown(itemID){
 	const item = document.getElementById(itemID);
 
-	if(!window.matchMedia("(min-width: 767px)").matches)
+	if(!window.matchMedia("(min-width: 768px)").matches)
 		return
 
 	item.style.display = "block";
@@ -57,7 +57,7 @@ function showDropdown(itemID){
 function hideDropdown(itemID){
 	const item = document.getElementById(itemID);
 
-	if(!window.matchMedia("(min-width: 767px)").matches)
+	if(!window.matchMedia("(min-width: 768px)").matches)
 		return
 
 	item.style.display = "none";
