@@ -1703,9 +1703,6 @@ footer .credits {
   footer .footer-content .about .social-icons > * + * {
     margin-left: 20px;
   }
-  footer .footer-content .about .social-icons img:hover {
-    padding-bottom: 17px;
-  }
   footer .footer-content .links {
     display: -webkit-box;
     display: -moz-box;
