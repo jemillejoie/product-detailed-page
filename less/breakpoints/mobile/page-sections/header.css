@@ -41,6 +41,13 @@ header .header-content .user-buttons .authentication {
 header .header-content .user-buttons .nav-icons {
   width: 94px;
 }
+header .header-content .user-buttons .nav-icons .icons {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
 header .header-content .user-buttons .nav-icons img {
   width: 16px;
 }
