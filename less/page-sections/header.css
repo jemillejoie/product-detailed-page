@@ -200,6 +200,9 @@ header .header-content .user-buttons .nav-icons > * {
 header .header-content .user-buttons .nav-icons > *:hover {
   transform: scale(1.1);
 }
+header .header-content .user-buttons .nav-icons .icons {
+  display: flex;
+}
 header .header-content .user-buttons .nav-icons .cart {
   position: relative;
 }

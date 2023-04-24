@@ -200,6 +200,9 @@ header .header-content .user-buttons .nav-icons > * {
 header .header-content .user-buttons .nav-icons > *:hover {
   transform: scale(1.1);
 }
+header .header-content .user-buttons .nav-icons .icons {
+  display: flex;
+}
 header .header-content .user-buttons .nav-icons .cart {
   position: relative;
 }
@@ -2108,13 +2111,6 @@ footer .credits {
   }
   header .header-content .user-buttons .nav-icons {
     width: 94px;
-  }
-  header .header-content .user-buttons .nav-icons .icons {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
   }
   header .header-content .user-buttons .nav-icons img {
     width: 16px;
